@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script>
+        function loadDoc() {
+            var petValue = document.querySelector('input[name="pet"]:checked').value;
+            var weigthValue = document.getElementById("weigth").value;
+            var actValue = document.querySelector('input[name="activity"]:checked').value;
+            var element = document.getElementById("age");
+            var ageValue = element.options[element.selectedIndex].value;
+            var ageText = element.options[element.selectedIndex].text;
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "calculadora.php", true);
+            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
+                }
+            };
+            xhttp.send('a='+petValue+'&b='+ageValue+'&c='+ageText+'&d='+weigthValue+'&e='+actValue);
+        }
+    </script>
 </head>
 <body>
-    <form action="calculadora.php" method="POST">
+    <div id="form">
         <div>
-            <input type="radio" id="dog" name="pet" value="dog"><label>Perro</label>
-            <input type="radio" id="cat" name="pet" value="cat"><label>Gato</label>
+            <input type="radio" id="dog" name="pet" value="dog" checked>
+            <label>Perro</label>
+            <input type="radio" id="cat" name="pet" value="cat">
+            <label>Gato</label>
         </div><br>
         <div>
             <label>Edad:</label>
-            <select name="age">
-                <option name="age" value="2">2 meses</option><!--10-->
-                <option name="age" value="3">3 meses</option><!--9-->
-                <option name="age" value="4">4 meses</option><!--8-->
-                <option name="age" value="5">5 meses</option><!--7-->
-                <option name="age" value="6">6 meses</option><!--6-->
-                <option name="age" value="7">7 meses</option><!--5-->
-                <option name="age" value="8">8 meses</option><!--4-->
-                <option name="age" value="9">9 meses</option><!--4-->
-                <option name="age" value="10">10 meses</option><!--3,5-->
-                <option name="age" value="11">11 meses</option><!--3,5-->
-                <option name="age" value="12">12 meses</option><!--3-->
-                <option name="age" value="13">mayor 1 año</option><!--2/3-->
+            <select id="age">
+                <option value="2">2 meses</option>
+                <option value="3">3 meses</option>
+                <option value="4">4 meses</option>
+                <option value="5">5 meses</option>
+                <option value="6">6 meses</option>
+                <option value="7">7 meses</option>
+                <option value="8">8 meses</option>
+                <option value="9">9 meses</option>
+                <option value="10">10 meses</option>
+                <option value="11">11 meses</option>
+                <option value="12">12 meses</option>
+                <option value="13">mayor 1 año</option>
             </select>
         </div><br>
         <div>
             <label>Peso:</label>
-            <input type="text" id="weigth" name="weigth" value=""/>
+            <input type="number" id="weigth" name="weigth" value="" placeholder="15.6" />
         </div><br>
         <div>
-            <label>Actividad:</label><br>
+            <label>Actividad:</label>
+            <br>
             <input type="radio" id="low" name="activity" value="low"><label>Baja</label>
-            <input type="radio" id="medium" name="activity" value="medium"><label id="medium">Media</label>
+            <input type="radio" id="medium" name="activity" value="medium" checked><label id="medium">Media</label>
             <input type="radio" id="high" name="activity" value="high"><label>Alta</label>
         </div>
-        <input type="submit" value="Calcular"/>
-    </form>
+        <input type="button" value="Calcular" onclick="loadDoc()" />
+    </div> 
+    <div>
+        <p id="result">
+
+        </p>
+    </div>
 </body>
 </html>
