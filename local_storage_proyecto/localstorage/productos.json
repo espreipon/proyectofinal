@@ -1,0 +1,30 @@
+ [
+     {
+         "id": 1,
+         "pathImg": "imagenes/bombilla.jpeg",
+         "name": "Bombilla",
+         "description": "Proporciona los beneficios de la luz natural del sol (UVB, UVA, luz visible y calor). Ayuda a prevenir las enfermedades metabólicas óseas",
+         "price": 19.99
+     },
+     {
+        "id": 2,
+        "pathImg": "imagenes/comedero.jpeg",
+        "name": "Comedero arborícola",
+        "description": "Comedero elevado ideal para animales arborícolas. Útil para introducir alimento vivo ya que este no se escapa. Puede montarse a cualquier altura. Desmontable en dos partes y fácil de limpiar.",
+        "price": 29.99
+    },
+    {
+        "id": 3,
+        "pathImg": "imagenes/infrarrojo.jpg",
+        "name": "Bombilla Infrarroja",
+        "description": "Lámpara de infrarroja para reptiles. Permite calentar la zona deseada del terrario, ideal para animales desérticos.",
+        "price": 39.99
+    },
+    {
+        "id": 4,
+        "pathImg": "imagenes/terrario.jpg",
+        "name": "Terrario",
+        "description": "Terrarios de Cristal ideal para especies de reptiles y anfibios arborícolas! Ventana frontal de ventilación, puertas dobles con cierre de seguridad, cubierta de malla, agujeros herméticos para cables y tubos.",
+        "price": 49.99
+    }
+ ]
