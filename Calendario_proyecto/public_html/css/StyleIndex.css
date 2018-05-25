@@ -1,0 +1,17 @@
+#botonCalendar{
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    top: 7px;
+    left: 15px;
+    position: relative;
+}
+
+#caja{
+    padding: 15px;
+    width: 230px;
+    background-color: #ffffe5;
+    border-radius: 15px;
+}
