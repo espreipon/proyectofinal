@@ -1,9 +1,10 @@
 <?php
 
-$pet = $_POST['pet'];
-$age = $_POST['age'];
-$weigth = $_POST['weigth'];
-$activity = $_POST['activity'];
+$pet = $_POST['a'];
+$age = $_POST['b'];
+//$agetext = $_POST['c'];
+$weigth = $_POST['d'];
+$activity = $_POST['e'];
 $percent;
 echo "pet: ".$pet."<br>peso ".$weigth."<br> edad ".$age."<br>actividad: ".$activity."<br>";
 
@@ -17,10 +18,11 @@ switch($pet){
 }
 
 //PERRO - Calcular cantidad de comida en base al peso
+
 function rationCat(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
-    $cantidadMes = $cantidad*31/1000; /* TRUNCAR 2 DECIMALES*/
+    $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
     echo "<br><br>----Ración diaria de comida: ".$cantidad ." gr----<br>";
     echo $cantidad*0.4 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
@@ -41,7 +43,7 @@ function rationCat(){
 function rationDog(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
-    $cantidadMes = $cantidad*31/1000; /* TRUNCAR 2 DECIMALES*/
+    $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
     echo "<br><br>----Ración diaria de comida: ".$cantidad ." gr----<br>";
     echo $cantidad*0.6 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
@@ -234,5 +236,6 @@ function calculationDog(){
             break;
     } 
 }
+
 
 ?>
