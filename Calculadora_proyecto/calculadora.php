@@ -1,12 +1,11 @@
 <?php
-
-$pet = $_POST['a'];
-$age = $_POST['b'];
-//$agetext = $_POST['c'];
-$weigth = $_POST['d'];
-$activity = $_POST['e'];
+$pet = $_POST['petValue'];
+$age = $_POST['ageValue'];
+$agetext = $_POST['ageText'];
+$weigth = $_POST['weigthValue'];
+$activity = $_POST['actValue'];
 $percent;
-echo "pet: ".$pet."<br>peso ".$weigth."<br> edad ".$age."<br>actividad: ".$activity."<br>";
+echo "pet: ".$pet."<br>peso ".$weigth."<br>edad ".$agetext."<br>actividad: ".$activity."<br>";
 
 switch($pet){
     case "dog":
@@ -18,7 +17,6 @@ switch($pet){
 }
 
 //PERRO - Calcular cantidad de comida en base al peso
-
 function rationCat(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;

@@ -6,23 +6,42 @@
  <title>Login</title>
 
  <meta charset = "utf-8">
+ <script>
+    function loadDoc() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "checklogin.php", true);
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("result").innerHTML = this.responseText;
+            }
+        };
+        xhttp.send('username='+username+'&password='+password);
+    }
+</script>
 </head>
 
 <body>
-
 <h1>Login de Usuarios</h1>
-<hr />
+<hr/>
 
-<form action="checklogin.php" method="post" >
+<form action="checklogin" method="POST">
     <label>Nombre Usuario:</label><br>
-    <input name="username" type="text" id="username" required>
+    <input id="username" name="username" type="text" value="esperanza" required>
     <br><br>
     
     <label>Password:</label><br>
-    <input name="password" type="password" id="password" required>
+    <input id="password" name="password" type="password" value="1234" required>
     <br><br>
 
-    <input type="submit" name="Submit" value="LOGIN">
+    <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
 </form>
+<hr/>
+<div id="result">
+
+</div>
 </body>
 </html>
