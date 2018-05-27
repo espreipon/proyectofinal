@@ -7,12 +7,48 @@
 
  <meta charset = "utf-8">
  <script>
+    
+    var username, password;
+    function valida() {
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;      
+        var regExpUser = /^[a-z\d_]{4,15}$/i,
+        regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;    
+        
+        if(regExpUser.test(username)){
+            
+            if(regExpPass.test(password)){
+                registro();
+            }
+            else{
+                alert("La contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula, un numero y un caracter especial. Longitud de 8 a 20 caracteres");
+            }
+        }  
+        else{   
+            alert("El nombre de usuario no es adecuado. Tan solo están permitidos números y letras. Longitud de 4 a 15 caracteres");
+        }       
+    }
+
     function loadDoc() {
-        var username = document.getElementById("username").value;
-        var password = document.getElementById("password").value;
+        username = document.getElementById("username").value;
+        password = document.getElementById("password").value;
 
         var xhttp = new XMLHttpRequest();
         xhttp.open("POST", "checklogin.php", true);
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("result").innerHTML = this.responseText;
+            }
+        };
+        xhttp.send('username='+username+'&password='+password);
+    }
+    function registro() {
+        //var username = document.getElementById("username").value;
+        //var password = document.getElementById("password").value;
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "registry.php", true);
         xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -38,6 +74,7 @@
     <br><br>
 
     <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
+    <input type="button" name="button" value="REGISTRATE" onclick="valida()">
 </form>
 <hr/>
 <div id="result">

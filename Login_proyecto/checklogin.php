@@ -23,9 +23,8 @@ if ($result->num_rows > 0) {
  
  }
  $row = $result->fetch_array(MYSQLI_ASSOC);
- $hash = password_hash($row["password"], PASSWORD_DEFAULT);
 
- if(password_verify($password, $hash)) {
+ if(password_verify($password, $row["password"])) {
     $_SESSION['loggedin'] = true;
     $_SESSION['username'] = $username;
     $_SESSION['start'] = time();
@@ -41,6 +40,7 @@ if ($result->num_rows > 0) {
 
    echo "<br><a href='login.html'>Volver a Intentarlo</a>";
  }
+ 
 mysqli_close($conexion);
  
 

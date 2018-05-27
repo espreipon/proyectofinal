@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Método de Pago</title>
+ <meta charset = "utf-8">
+ <style>
+    .hideable { position: relative; visibility: visible; }
+ </style>
+ <script>
+    function Mostrar_Ocultar(hide) {
+        if (document.layers)
+        /*aqui se cambian los valores 'show' y 'hide' para ocultarlo o mostrar los campos:
+        document.contenido.visibility = ****variable(hide)**** ? ****estado('hide') **** y despues *****: 'show'; */
+            document.contenido.visibility = hide ? 'hide' : 'show';
+        else {
+            var g = document.all ? document.all.contenido :
+            document.getElementById('contenido');
+            g.style.visibility = hide ? 'hidden' : 'visible';
+        }
+    }
+ </script>
+ </head>
+<body>
+<form action="formapago.php " method="POST">
+    <p>Dirección de la factura</p>
+    <hr/>
+    <label>Nombre:*</label><input id="firstname" name="firstname" type="text" value="Esperanza" required><br>
+    <label>Apellidos:*</label><input id="lastname" name="lastname" type="text" value="Reina Ponce" required>
+    <label>Empresa:</label><input id="company" name="company" type="text" value="">
+    <label>Información adicional:</label><input id="additional" name="additional" type="text" value="">
+    <label>Calle:*</label><input id="street" name="street" type="text" value="Madrid" required><label>Número y piso:*</label><input id="number" name="number" type="text" value="3" required>
+    <label>Código Postal:</label><input id="postal" name="postal" type="text" value="21111" required>
+    
+    <label>Ciudad:*</label><input id="city" name="city" type="text" value="Madrid" required>
+    <label>Pais:*</label><input id="country" name="country" type="text" value="España" required> <!--Desplegable-->
+    <label>Teléfono:</label><input id="phone" name="phone" type="text" value="">
+    <br>
+    <p>Dirección de envío</p>
+    <hr/>
+    <input name="Accion" type="checkbox" onclick="Mostrar_Ocultar(this.checked);"/><label>Usar direccion de facturacion para envio</label><br><br>
+    <div ID="contenido" class="hideable">
+        <label>Nombre:*</label><input id="firstname2" name="firstname2" type="text" value="Esperanza" required><br>
+        <label>Apellidos:*</label><input id="lastname2" name="lastname2" type="text" value="Reina Ponce" required>
+        <label>Empresa:</label><input id="company2" name="company2" type="text" value="">
+        <label>Información adicional:</label><input id="additional2" name="additional2" type="text" value="">
+        <label>Calle:*</label><input id="street2" name="street2" type="text" value="Madrid" required><label>Número y piso:*</label><input id="number" name="number" type="text" value="3" required>
+        <label>Código Postal:</label><input id="postal2" name="postal2" type="text" value="21111" required>
+        
+        <label>Ciudad:*</label><input id="city2" name="city2" type="text2" value="Madrid" required>
+        <label>Pais:*</label><input id="country2" name="country2" type="text2" value="España" required> <!--Desplegable-->
+        <label>Teléfono:</label><input id="phone2" name="phone2" type="text" value="">
+        
+    </div>
+    <br>
+    <p>Otros</p>
+    <hr/>
+    <p>Comentarios adicionales:</p>
+    <textarea name="Observ" id="Observ" cols="45" rows="5"></textarea><br><br>
+    <input type="submit" name="submit" value="Continúe al siguiente paso">
+</form>
+
+</body>
+</html>

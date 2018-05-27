@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+_______________________________
+ 
+Codigo por Karloz Moreno
+_______________________________
+ 
+<STYLE>
+.hideable { position: relative; visibility: visible; }
+</STYLE>
+<SCRIPT>
+function Mostrar_Ocultar(hide) {
+if (document.layers)
+/*aqui se cambian los valores 'show' y 'hide' para cultarlo o mostrarlo
+aqui la variable (hide) esta en hide para ocultarlos campos
+document.contenido.visibility = ****variable(hide)**** ? ****estado('hide') **** y despues *****: 'show'; */
+document.contenido.visibility = hide ? 'hide' : 'show';
+else {
+var g = document.all ? document.all.contenido :
+document.getElementById('contenido');
+g.style.visibility = hide ? 'hidden' : 'visible';
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE>
+<TR>
+<TD VALIGN="top">
+<FORM NAME="form0">
+Desmarcalo Para Ver los Campos
+  <INPUT NAME="Accion" TYPE="checkbox"
+ONCLICK="Mostrar_Ocultar(this.checked);"
+>
+</FORM></TD>
+<TD>
+<SPAN ID="contenido" CLASS="hideable">
+<FORM NAME="form1">
+  <p>
+    <select name="nombre">
+      <option>Tipo Documento
+        <option value="Cedula Ciudadania">CC
+          <option value="Tarjeta Indentidad">TI
+            <option value="Cedula Extranjeria">CE
+          </select>
+  </p>
+  <p>
+    <label>
+    <input type="text" name="Observaciones" id="Observaciones">
+    <br>
+    <br>
+    <textarea name="Observ" id="Observ" cols="45" rows="5">Introduce un texto</textarea>
+    </label>
+</p>
+</FORM>
+</SPAN></TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
