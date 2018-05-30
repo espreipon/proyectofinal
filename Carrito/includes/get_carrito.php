@@ -16,7 +16,7 @@ $myArray = array();
 $consulta= 'SELECT p.id, p.nombre, p.descripcion, c.cantidad, p.precio, (p.precio*c.cantidad) AS total FROM tienda.carrito c INNER JOIN tienda.productos p ON c.producto_id = p.id';
 if ($resultado = $conn->query($consulta)) {
 
-    while($row = $resultado->fetch_array(MYSQL_ASSOC)) {
+    while($row = $resultado->fetch_assoc()) {
             $myArray[] = $row;
     }
     echo json_encode($myArray);

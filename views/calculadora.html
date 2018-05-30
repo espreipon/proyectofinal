@@ -7,93 +7,222 @@
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+
+    <script>
+        function loadDoc() {
+            var petValue = document.querySelector('input[name="pet"]:checked').value;
+
+            var weigthValue = document.getElementById("weigth").value;
+
+            var actValue = document.querySelector('input[name="activity"]:checked').value;
+            //funciona
+            var sel = document.getElementById("age");
+            var opt = sel.options[sel.selectedIndex];
+            var ageValue = opt.value;
+            var ageText = opt.text;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "../php/calculadora.php", true);
+            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+
+                    document.getElementById("result").innerHTML = this.responseText;
+
+                }
+            };
+            xhttp.send('petValue='+petValue+'&ageValue='+ageValue+'&ageText='+ ageText +'&weigthValue='+weigthValue+'&actValue='+actValue);
+        }
+    </script>
+    <!-- /Applications/XAMPP/xamppfiles/htdocs/proyectofinal/php/calculadora.php -->
 </head>
 <body>
 <div class="container">
     <header>
-        <div class="col-md-12">
-            <nav class="navbar navbar-header" role="navigation">
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alimentación</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="alimentacion.html">Carne</a></li>
-                                <li><a href="alimentacion.html">Pescado</a></li>
-                                <li><a href="alimentacion.html">Verdura</a></li>
-                                <li><a href="alimentacion.html">Suplemento</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recetario</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="recetario.html">Recetas para perro</a></li>
-                                <li><a href="recetario.html">Recetas para gato</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consejos</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="consejos.html">¿Qué es BARF?</a></li>
-                                <li><a href="consejos.html">Como empezar</a></li>
-                                <li><a href="consejos.html">Beneficios a largo plazo</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="calculadora.html">Calculadora</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quienes somos</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="quienesSomos.html">Contacto</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <!-- Slide -->
+        <!--
+        <div class="bs-example">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="../images/carrusel/dog-cat_BANNER.jpg" width="1200" alt="First Slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/carrusel/banner-index.jpg" width="1000"alt="Second Slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/carrusel/matt-nelson-259365-unsplash.jpg" height="100" alt="Third Slide">
+                    </div>
                 </div>
-            </nav>
+
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        -->
+        <!-- LOGO -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <img src="../images/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- BREADCRUMB --> <!-- Poner solo en paginas secundarias!!!!
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+-->
+        <!-- EXAMPLE BREADCRUMB
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+        -->
+
+        <!-- BANNER -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr/>
+                <div class="image_banner">
+                    <img src="../images/banner-index.png" width="1150" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- Nav -->
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Alimentación</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="submenus/alimentosCrudos.html">Alimentos crudos</a></li>
+                                        <li><a href="alimentacion.html">Verduras y frutas</a></li>
+                                        <li><a href="alimentacion.html">Suplementos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Recetario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="recetario.html">Para perro</a></li>
+                                        <li><a href="recetario.html">Para gato</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Consejos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="consejos.html">¿Qué es BARF?</a></li>
+                                        <li><a href="consejos.html">Como empezar</a></li>
+                                        <li><a href="consejos.html">Beneficios</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="calculadora.html">Calculadora</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Quienes somos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="quienesSomos.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
-    <body>
-    <form action="/Calculadora_proyecto/calculadora.php" method="POST">
-        <div>
-            <input type="radio" id="dog" name="pet" value="dog"><label>Perro</label>
-            <input type="radio" id="cat" name="pet" value="cat"><label>Gato</label>
-        </div>
-        <br>
-        <div>
-            <label>Edad:</label>
-            <select name="age">
-                <option name="age" value="2">2 meses</option><!--10-->
-                <option name="age" value="3">3 meses</option><!--9-->
-                <option name="age" value="4">4 meses</option><!--8-->
-                <option name="age" value="5">5 meses</option><!--7-->
-                <option name="age" value="6">6 meses</option><!--6-->
-                <option name="age" value="7">7 meses</option><!--5-->
-                <option name="age" value="8">8 meses</option><!--4-->
-                <option name="age" value="9">9 meses</option><!--4-->
-                <option name="age" value="10">10 meses</option><!--3,5-->
-                <option name="age" value="11">11 meses</option><!--3,5-->
-                <option name="age" value="12">12 meses</option><!--3-->
-                <option name="age" value="13">mayor 1 año</option><!--2/3-->
-            </select>
-        </div>
-        <br>
-        <div>
-            <label>Peso:</label>
-            <input type="text" id="weigth" name="weigth" value=""/>
-        </div>
-        <br>
-        <div>
-            <label>Actividad:</label><br>
-            <input type="radio" id="low" name="activity" value="low"><label>Baja</label>
-            <input type="radio" id="medium" name="activity" value="medium"><label id="medium">Media</label>
-            <input type="radio" id="high" name="activity" value="high"><label>Alta</label>
-        </div>
-        <input type="submit" value="Calcular"/>
-    </form>
 
-    </body>
+    <main>
+        <div id="form">
+            <div>
+                <input type="radio" id="dog" name="pet" value="dog" checked>
+                <label>Perro</label>
+                <input type="radio" id="cat" name="pet" value="cat">
+                <label>Gato</label>
+            </div><br>
+            <div>
+                <label>Edad:</label>
+                <select id="age" name="age">
+                    <option value="2">2 meses</option>
+                    <option value="3">3 meses</option>
+                    <option value="4">4 meses</option>
+                    <option value="5">5 meses</option>
+                    <option value="6">6 meses</option>
+                    <option value="7">7 meses</option>
+                    <option value="8">8 meses</option>
+                    <option value="9">9 meses</option>
+                    <option value="10">10 meses</option>
+                    <option value="11">11 meses</option>
+                    <option value="12">12 meses</option>
+                    <option value="13">mayor 1 año</option>
+                </select>
+            </div><br>
+            <div>
+                <label>Peso:</label>
+                <input type="number" id="weigth" name="weigth" value="5" placeholder="15.6" />
+            </div><br>
+            <div>
+                <label>Actividad:</label>
+                <br>
+                <input type="radio" id="low" name="activity" value="low"><label>Baja</label>
+                <input type="radio" id="medium" name="activity" value="medium" checked><label id>Media</label>
+                <input type="radio" id="high" name="activity" value="high"><label>Alta</label>
+            </div>
+            <input type="button" value="Calcular" onclick="loadDoc()" />
+        </div>
+        <div>
+            <p id="result">
+
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-12" style="background-color: blue"></div>
+        </div>
+    </footer>
 </div>
 </body>
 </html>

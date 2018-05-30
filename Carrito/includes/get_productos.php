@@ -16,7 +16,7 @@ $myArray = array();
 $consulta= 'SELECT * FROM productos';
 if ($resultado = $conn->query($consulta)) {
 
-    while($row = $resultado->fetch_array(MYSQL_ASSOC)) {
+    while($row = $resultado->fetch_assoc()) {
             $myArray[] = $row;
     }
     echo json_encode($myArray);
