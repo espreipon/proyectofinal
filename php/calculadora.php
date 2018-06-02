@@ -5,7 +5,9 @@ $agetext = $_POST['ageText'];
 $weigth = $_POST['weigthValue'];
 $activity = $_POST['actValue'];
 $percent;
-echo "pet: ".$pet."<br>peso: ".$weigth." kilos"."<br>edad: ".$agetext."<br>actividad: ".$activity."<br><br>Porcentaje recomendado: ";
+/*echo "pet: ".$pet."<br>peso: ".$weigth." kilos"."<br>edad: ".$agetext."<br>actividad: ".$activity."<br><br>Porcentaje recomendado: ";
+*/
+echo "Porcentaje recomendado: ";
 
 switch($pet){
     case "dog":
