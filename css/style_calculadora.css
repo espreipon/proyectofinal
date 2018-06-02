@@ -1,0 +1,19 @@
+.cuadroOption{
+    width: 20%;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cuadroResult{
+    width: 30%;
+}
+
+.inp{
+    width:90px;
+}
+
+select{
+    width: 90px;
+}

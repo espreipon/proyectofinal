@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_calculadora.css">
 
     <script>
         function loadDoc() {
@@ -27,6 +28,9 @@
             xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").style.border="2px solid black";
+                    document.getElementById("result").style.padding="10px";
+                    document.getElementById("result").style.borderRadius="10px";
                     document.getElementById("result").innerHTML = this.responseText;
                 }
             };
@@ -172,17 +176,17 @@
 
         <main>
             <div class="row">
-                <div class="col-md-6" style="background-color: lightblue">
+                <div class="col-md-6 col-md-offset-1 cuadroOption">
                     <div id="form">
                         <div>
                             <input type="radio" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
                             <input type="radio" id="cat" name="pet" value="cat">
                             <label>Gato</label>
-                        </div><br>
+                        </div>
                         <div>
+                            <label>Edad </label>
                             <select id="age" name="age">
-                                <option value="0" disabled>Edad</option>
                                 <option value="2">2 meses</option>
                                 <option value="3">3 meses</option>
                                 <option value="4">4 meses</option>
@@ -198,8 +202,9 @@
                             </select>
                         </div>
                         <div>
-                            <input type="number" id="weigth" name="weigth" value="5" placeholder="Peso" />
-                        </div><br>
+                            <label>Peso </label>
+                            <input class="inp" type="number" id="weigth" name="weigth" value="5"/>
+                        </div>
                         <div>
                             <label>Actividad:</label>
                             <br>
@@ -210,11 +215,9 @@
                         <input type="button" value="Calcular" onclick="loadDoc()" />
                     </div>
                 </div>
-                <div class="col-md-6" style="background-color: lightcoral">
-                        <p id="result">
-
-                        </p>
-                    </div>
+                <div class="col-md-6 cuadroResult">
+                        <p id="result"></p>
+                </div>
             </div>
         </main>
         <footer>
