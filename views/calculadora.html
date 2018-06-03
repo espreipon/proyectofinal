@@ -28,10 +28,13 @@
             xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
                     document.getElementById("result").style.border="2px solid black";
                     document.getElementById("result").style.padding="10px";
                     document.getElementById("result").style.borderRadius="10px";
-                    document.getElementById("result").innerHTML = this.responseText;
+                    document.getElementById("result").style.textAlign="center";
+                    document.getElementById("result").style.backgroundColor="#ffd29d";
+
                 }
             };
             xhttp.send('petValue=' + petValue + '&ageValue=' + ageValue + '&ageText=' + ageText + '&weigthValue=' + weigthValue + '&actValue=' + actValue);
@@ -175,8 +178,21 @@
         </header>
 
         <main>
+            <hr>
+            <div class="row texto">
+                <h2>Calcula la cantidad de comida para tu peludo!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</p>
+                <img src="../images/dogandcat.jpg" width="300" class="image" alt="">
+            </div>
             <div class="row">
-                <div class="col-md-6 col-md-offset-1 cuadroOption">
+                <div class="col-md-6 col-md-offset-3 cuadroOption">
                     <div id="form">
                         <div>
                             <input type="radio" id="dog" name="pet" value="dog" checked>

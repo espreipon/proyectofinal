@@ -7,7 +7,6 @@ $activity = $_POST['actValue'];
 $percent;
 /*echo "pet: ".$pet."<br>peso: ".$weigth." kilos"."<br>edad: ".$agetext."<br>actividad: ".$activity."<br><br>Porcentaje recomendado: ";
 */
-echo "Porcentaje recomendado: ";
 
 switch($pet){
     case "dog":
@@ -23,7 +22,7 @@ function rationCat(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
     $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "<br><br>----Ración diaria de comida: ".$cantidad ." gr----<br>";
+    echo "----Ración diaria de comida: ".$cantidad ." gr----<br>";
     echo $cantidad*0.4 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
     echo $cantidad*0.2 . " gr corazón<br>";
@@ -44,7 +43,7 @@ function rationDog(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
     $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "<br><br>----Ración diaria de comida: ".$cantidad ." gr----<br>";
+    echo "----Ración diaria de comida: ".$cantidad ." gr----<br>";
     echo $cantidad*0.6 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
     echo $cantidad*0.05 . " gr Hígado<br>";
@@ -109,62 +108,62 @@ function calculationCat(){
     switch ($age) {
         case 2:
             $percent = 0.1;
-            echo "10% peso";
+            //echo "10% peso";
             rationCat();
             break;
         case 3:
             $percent = 0.09;
-            echo "9% peso";
+            //echo "9% peso";
             rationCat();
             break;
         case 4:
             $percent = 0.085;
-            echo "8,5% peso";
+            //echo "8,5% peso";
             rationCat();
             break;
         case 5:
             $percent = 0.08;
-            echo "8% peso";
+            //echo "8% peso";
             rationCat();
             break;
         case 6:
             $percent = 0.075;
-            echo "7,5% peso";
+            //echo "7,5% peso";
             rationCat();
             break;
         case 7:
             $percent = 0.07;
-            echo "7% peso";
+            //echo "7% peso";
             rationCat();
             break;
         case 8:
             $percent = 0.065;
-            echo "6,5% peso";
+            //echo "6,5% peso";
             rationCat();
             break;
         case 9:
             $percent = 0.06;
-            echo "6% peso";
+            //echo "6% peso";
             rationCat();
             break;
         case 10:
             $percent = 0.055;
-            echo "5,5% peso";
+            //echo "5,5% peso";
             rationCat();
             break;
         case 11:
             $percent = 0.05;
-            echo "5% peso";
+            //echo "5% peso";
             rationCat();
             break;
         case 12:
             $percent = 0.045;
-            echo "4,5% peso";
+            //echo "4,5% peso";
             rationCat();
             break;
         case 13:
             $percent = 0.04;
-            echo "4% peso";
+            //echo "4% peso";
             activity();
             break;
     }
@@ -176,62 +175,62 @@ function calculationDog(){
     switch ($age) {
         case 2:
             $percent = 0.1;
-            echo "10% peso";
+            //echo "10% peso";
             rationDog();
             break;
         case 3:
             $percent = 0.95;
-            echo "9,5% peso";
+            //echo "9,5% peso";
             rationDog();
             break;
         case 4:
             $percent = 0.09;
-            echo "9% peso";
+            //echo "9% peso";
             rationDog();
             break;
         case 5:
             $percent = 0.08;
-            echo "8% peso";
+            //echo "8% peso";
             rationDog();
             break;
         case 6:
             $percent = 0.07;
-            echo "7% peso";
+            //echo "7% peso";
             rationDog();
             break;
         case 7:
             $percent = 0.06;
-            echo "6% peso";
+            //echo "6% peso";
             rationDog();
             break;
         case 8:
             $percent = 0.05;
-            echo "5% peso";
+            //echo "5% peso";
             rationDog();
             break;
         case 9:
             $percent = 0.045;
-            echo "4,5% peso";
+            //echo "4,5% peso";
             rationDog();
             break;
         case 10:
             $percent = 0.04;
-            echo "4% peso";
+            //echo "4% peso";
             rationDog();
             break;
         case 11:
             $percent = 0.03;
-            echo "3,5% peso";
+            //echo "3,5% peso";
             rationDog();
             break;
         case 12:
             $percent = 0.03;
-            echo "3% peso";
+            //echo "3% peso";
             rationDog();
             break;
         case 13:
             $percent = 0.025;
-            echo "3% peso";
+            // echo "3% peso";
             activity();
             break;
     } 
