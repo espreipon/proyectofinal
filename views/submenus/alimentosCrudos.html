@@ -8,6 +8,10 @@
     <script src="../../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../../css/style.css">
     <script type="text/javascript" src="../../js/script-carrito.js"></script>
+
+    <script>
+        window.onload = renderProductos() + renderCarrito();
+    </script>
 </head>
 <body>
     <div class="container">
@@ -151,11 +155,12 @@
 
             <body onload="renderProductos();renderCarrito();">
             <h1>Productos</h1>
-            <ul id="productosContenedor"></ul>
-            <h1>Carrito</h1>
-            <ul id="carrito"></ul>
+            <div class="row" id="productosContenedor">
+
+            </div>
+
+            <div id="carrito"></div>
             </body>
-            </html>
         </main>
         <footer>
 
