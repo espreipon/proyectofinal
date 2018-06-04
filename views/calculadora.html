@@ -29,11 +29,11 @@
             xhttp.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("result").innerHTML = this.responseText;
-                    document.getElementById("result").style.border="2px solid black";
-                    document.getElementById("result").style.padding="10px";
-                    document.getElementById("result").style.borderRadius="10px";
-                    document.getElementById("result").style.textAlign="center";
-                    document.getElementById("result").style.backgroundColor="#ffd29d";
+                    //document.getElementById("result").style.border="2px solid black";
+                    //document.getElementById("result").style.padding="10px";
+                    //document.getElementById("result").style.borderRadius="10px";
+                    document.getElementById("result").style.textAlign="justify";
+                    //document.getElementById("result").style.backgroundColor="#ffd29d";
 
                 }
             };
@@ -181,21 +181,23 @@
             <hr>
             <div class="row">
                 <h2>Calcula la cantidad de comida para tu peludo!</h2>
-                <label>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
-                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
-                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
-                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
-                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</label>
-                <img src="../images/dogandcat.jpg" width="300" class="image" alt="">
+    
             </div>
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 cuadroOption">
+               <div class="col-md-6 texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</p>
+               </div>
+                <div class="col-md-6 cuadroOption">
                     <div id="form">
                         <div>
-                            <input type="radio" id="dog" name="pet" value="dog" checked>
+                            <input type="radio" id="dog" name="pet" value="dog" checked> 
                             <label>Perro</label>
                             <input type="radio" id="cat" name="pet" value="cat">
                             <label>Gato</label>
