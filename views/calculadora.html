@@ -9,6 +9,7 @@
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style_calculadora.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script>
         function loadDoc() {
@@ -196,10 +197,10 @@
                </div>
                 <div class="col-md-6 cuadroOption">
                     <div id="form">
-                        <div>
-                            <input type="radio" id="dog" name="pet" value="dog" checked> 
+                        <div class="col-md-12">
+                            <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
-                            <input type="radio" id="cat" name="pet" value="cat">
+                            <input type="radio" class="pet" id="cat" name="pet" value="cat">
                             <label>Gato</label>
                         </div>
                         <div>
@@ -226,9 +227,9 @@
                         <div>
                             <label>Actividad:</label>
                             <br>
-                            <input type="radio" id="low" name="activity" value="low"><label>Baja</label>
-                            <input type="radio" id="medium" name="activity" value="medium" checked><label id>Media</label>
-                            <input type="radio" id="high" name="activity" value="high"><label>Alta</label>
+                            <input type="radio" class="pet" id="low" name="activity" value="low"><label>Baja</label>
+                            <input type="radio" class="pet" id="medium" name="activity" value="medium" checked><label id>Media</label>
+                            <input type="radio" class="pet" id="high" name="activity" value="high"><label>Alta</label>
                         </div>
                         <input type="button" value="Calcular" onclick="loadDoc()" />
                     </div>
