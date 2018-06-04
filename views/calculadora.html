@@ -198,10 +198,14 @@
                 <div class="col-md-6 cuadroOption">
                     <div id="form">
                         <div class="col-md-12">
+                            <!--
                             <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
                             <input type="radio" class="pet" id="cat" name="pet" value="cat">
                             <label>Gato</label>
+                            -->
+                            <buttom class="btn btn-default">Perro</buttom>
+                            <buttom class="btn btn-default">Gato</buttom>
                         </div>
                         <div>
                             <label>Edad </label>
@@ -224,11 +228,12 @@
                             <label>Peso </label>
                             <input class="inp" type="number" id="weigth" name="weigth" value="5"/>
                         </div>
-                        <div>
+                        <div class="actividad">
                             <label>Actividad:</label>
-                            <br>
-                            <input type="radio" class="pet" id="low" name="activity" value="low"><label>Baja</label>
-                            <input type="radio" class="pet" id="medium" name="activity" value="medium" checked><label id>Media</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="pet" id="low" name="activity" value="low"><label>Baja</label><br>
+                            <input type="radio" class="pet" id="medium" name="activity" value="medium" checked><label id>Media</label><br>
                             <input type="radio" class="pet" id="high" name="activity" value="high"><label>Alta</label>
                         </div>
                         <input type="button" value="Calcular" onclick="loadDoc()" />
