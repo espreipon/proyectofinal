@@ -10,3 +10,22 @@ ENVIO MAIL
 http://php.net/manual/es/function.mail.php
 https://desarrolloweb.com/articulos/969.php
 
+FONT AWESOME (para botones bonitos)
+
+https://lipis.github.io/bootstrap-social/
+http://www.creamosweb.es/blog/como-usar-los-iconos-gratis-de-font-awesome/
+
+lo que tengo apuntado de carlos
+- crear un perfil de usuario
+- factura cuando haces la compra en pdf
+- historico de compras
+- recuperar la ultima compra (va a ser que no). A menos que... cuando compres el carrito no se quede vacio
+
+Modificaciones del diseño:
+- incluir el logo dentro del banner a la izquierda
+
+- Implementar login
+- Implementar buscador
+
+
+
