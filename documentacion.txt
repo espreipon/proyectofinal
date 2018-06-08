@@ -1,0 +1,12 @@
+DESCARGA PDF
+
+https://mimentevuela.wordpress.com/2015/01/20/descarga-de-archivos-con-php/
+https://es.stackoverflow.com/questions/33006/c%C3%B3mo-descargar-un-archivo-pdf-y-doc-desde-php
+https://www.solingest.com/descarga-de-archivos-en-php
+
+
+ENVIO MAIL
+
+http://php.net/manual/es/function.mail.php
+https://desarrolloweb.com/articulos/969.php
+
