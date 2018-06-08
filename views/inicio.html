@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<head>
     <meta charset="UTF-8">
     <title>Home</title>
     <script src="../jquery-3.2.1.min.js"></script>
@@ -8,6 +9,8 @@
     <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style-index.css">
+    <link href="../fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+
 
 </head>
 <body>
@@ -51,12 +54,7 @@
             </div>
         </div>
         -->
-        <!-- LOGO -->
-        <div class="row">
-            <div class="col-md-12">
-                    <a href="inicio.html"><img src="../images/logo.png" height="100" alt=""></a>
-            </div>
-        </div>
+
 
         <!-- BREADCRUMB --> <!-- Poner solo en paginas secundarias!!!!
         <nav aria-label="breadcrumb">
@@ -76,24 +74,19 @@
 </nav>
 
         -->
-
-        <!-- BANNER -->
+                       <!-- LOGO -->
         <div class="row">
-            <div class="col-md-12">
-                <hr/>
-                <div class="image_banner">
-                    <img src="../images/banner-index.png" width="1150" class="img-fluid" alt="Responsive image">
-                </div>
+            <div class="col-md-2">
+                    <a href="inicio.html"><img src="../images/logo.png" height="100" alt=""></a>
             </div>
-        </div>
-        <br>
+        
 
-
-        <!-- Nav -->
-        <div class="row">
-            <div class="col-md-12">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
+               <!-- Nav -->
+        <br><br>
+        
+            <div class="col-md-10 ">
+                <nav class="navbar navbar-default ">
+                    <div class="container-fluid menu">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                     data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -150,7 +143,19 @@
                 </nav>
             </div>
         </div>
-        
+     
+        <!-- BANNER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="image_banner">
+                    <img src="../images/banner-index.png" width="1150" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
     </header>
 
     <main>
@@ -175,7 +180,7 @@
         <div class="row">
             <div class="col-md-3 col-md-offset-1">
                 <div class="thumbnail">
-                    <img src="../images/dogandcat.jpg" height="300" width="960"/>
+                    <img src="../images/dogandcat.jpg" class="imag"/>
                     <div class="caption">
                         <h3>Título de la imagen</h3>
                         <p>Descrición Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa ipsum officiis quaerat quisquam! Animi deserunt dicta exercitationem hic illo.</p>
@@ -187,7 +192,7 @@
             </div>
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <img src="../images/dogandcat.jpg" height="300" width="960"/>
+                    <img src="../images/dogandcat.jpg"  class="imag"/>
                     <div class="caption">
                         <h3>Título de la imagen</h3>
                         <p>Descrición Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa ipsum officiis quaerat quisquam! Animi deserunt dicta exercitationem hic illo.</p>
@@ -199,7 +204,7 @@
             </div>
             <div class="col-md-3">
                 <div class="thumbnail">
-                    <img src="../images/dogandcat.jpg" height="300" width="960"/>
+                    <img src="../images/dogandcat.jpg"  class="imag"/>
                     <div class="caption">
                         <h3>Título de la imagen</h3>
                         <p>Descrición Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ipsa ipsum officiis quaerat quisquam! Animi deserunt dicta exercitationem hic illo.</p>
@@ -219,8 +224,11 @@
     <footer>
         <div class="row">
             <div class="col-md-12 pie">
-                
-                
+                <i class="fab fa-facebook-f fa-lg"></i>
+                <i class="fab fa-google-plus-g fa-lg"></i>
+                <i class="fab fa-instagram fa-lg"></i>
+                <i class="fab fa-twitter fa-lg"></i>
+                                
             </div>
         </div>
     </footer>
