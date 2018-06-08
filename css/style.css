@@ -162,3 +162,11 @@ ul{
 	border-top-color: #000;
 	position: relative;
 }
+
+
+/* FOOTER */
+
+.pie{
+    background-color: #6b6b6b;
+    height: 100px;
+}
