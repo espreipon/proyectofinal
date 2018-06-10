@@ -13,9 +13,10 @@ header('Content-Type: text/json');
 header("Cache-Control: no-cache, must-revalidate");
 
 $idProducto = $_GET["id"];
+//$userId =  recoger aquí el valor del id del usuario que esta logado
 
 $cantidad=null;
-$consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto;
+$consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' and user_id = '.$userId;
 $resultado = $conn->query($consulta);
 if($conn->affected_rows == 1)
 {
@@ -25,11 +26,13 @@ $resultado->close();
 $consulta = '';
 if($cantidad != null)
 {
-    $consulta = 'UPDATE carrito SET cantidad = '.($cantidad+1).' WHERE producto_id = '.$idProducto;
+    $consulta = 'UPDATE carrito SET cantidad = '.($cantidad+1).' WHERE producto_id = '.$idProducto.' and user_id = '.$userId;
+    $resultado = $conn->query($consulta);
 }
 else
 {
-    $consulta = 'INSERT INTO carrito (producto_id, cantidad) VALUES('.$idProducto.', 1)';
+    $consulta = 'INSERT INTO carrito (producto_id, cantidad, user_id) VALUES('.$idProducto.', 1,'.$userId.')';
+    $resultado = $conn->query($consulta);
 }
 $conn->query($consulta);
 echo $conn->affected_rows;
