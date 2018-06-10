@@ -4,10 +4,10 @@
     border: none;
 }
 
-p{
-    text-align: justify;
+hr{
+    width: 70%;
+    align-items: center;
 }
-
 
 .imag{
 	width: 300px;

@@ -79,11 +79,20 @@ ul{
 
 
 /* FOOTER */
-i{
+.redes{
     color:white;
-    padding: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+i{
+    padding: 5px;
 }
 .pie{
     background-color: #615a53;
-    height: 100px;
+    height: 70px;
+}
+.licencia{
+    color:white;
+    padding-top: 20px;
+    font-size: 20px;
 }
