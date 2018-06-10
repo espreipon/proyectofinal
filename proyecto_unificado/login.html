@@ -3,51 +3,56 @@
 <html lang="en">
 
 <head>
- <title>Login</title>
+    <title>Login</title>
 
- <meta charset = "utf-8">
- <script>
-    
-    var username, password;
-    function loadDoc() {
-        username = document.getElementById("username").value;
-        password = document.getElementById("password").value;
+    <meta charset="utf-8">
+    <script>
 
-        var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "checklogin.php", true);
-        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-        xhttp.onreadystatechange = function () {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("result").innerHTML = this.responseText;
-            }
-        };
-        xhttp.send('username='+username+'&password='+password);
-    }
-    function registro() {
-        document.location = "registro.html";
-    }
-</script>
+        var username, password;
+        function loadDoc() {
+            username = document.getElementById("username").value;
+            password = document.getElementById("password").value;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "checklogin.php", true);
+            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
+                }
+            };
+            xhttp.send('username=' + username + '&password=' + password);
+        }
+        function registro() {
+            document.location = "registro.html";
+        }
+    </script>
 </head>
 
 <body>
-<h1>Login de Usuarios</h1>
-<hr/>
+    <h1>Login de Usuarios</h1>
+    <hr/>
 
-<form action="checklogin" method="POST">
-    <label>Nombre Usuario:</label><br>
-    <input id="username" name="username" type="text" value="esperanza" required>
-    <br><br>
-    
-    <label>Password:</label><br>
-    <input id="password" name="password" type="password" value="1234" required>
-    <br><br>
+    <form action="checklogin" method="POST">
+        <label>Nombre Usuario:</label>
+        <br>
+        <input id="username" name="username" type="text" value="esperanza" required>
+        <br>
+        <br>
 
-    <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
-    <input type="button" name="button" value="REGISTRARME" onclick="registro()">
-</form>
-<hr/>
-<div id="result">
+        <label>Password:</label>
+        <br>
+        <input id="password" name="password" type="password" value="1234" required>
+        <br>
+        <br>
 
-</div>
+        <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
+        <input type="button" name="button" value="REGISTRARME" onclick="registro()">
+    </form>
+    <hr/>
+    <div id="result">
+
+    </div>
 </body>
+
 </html>

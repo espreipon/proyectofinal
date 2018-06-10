@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Recetario</title>
@@ -9,53 +10,19 @@
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/script-carrito.js"></script>
+    <script> 
+        $(function () {
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+        });
+    </script>
 </head>
+
 <body>
-<div class="container">
-    <header>
-        <div class="col-md-12">
-            <nav class="navbar navbar-header" role="navigation">
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Alimentación</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="alimentacion.html">Carne</a></li>
-                                <li><a href="alimentacion.html">Pescado</a></li>
-                                <li><a href="alimentacion.html">Verdura</a></li>
-                                <li><a href="alimentacion.html">Suplemento</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recetario</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="recetario.html">Recetas para perro</a></li>
-                                <li><a href="recetario.html">Recetas para gato</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consejos</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="consejos.html">¿Qué es BARF?</a></li>
-                                <li><a href="consejos.html">Como empezar</a></li>
-                                <li><a href="consejos.html">Beneficios a largo plazo</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="calculadora.html">Calculadora</a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quienes somos</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="quienesSomos.html">Contacto</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-</div>
+    <div class="container">
+        <header></header>
+        <footer></footer>
+    </div>
 </body>
+
 </html>
