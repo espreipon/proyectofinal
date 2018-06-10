@@ -4,11 +4,10 @@
     border: none;
 }
 
-p{
-    text-align:left;
-    background-color: red;
+hr{
+    width: 70%;
+    align-items: center;
 }
-
 
 .imag{
 	width: 300px;
