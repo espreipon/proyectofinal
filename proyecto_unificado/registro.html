@@ -4,6 +4,13 @@
 <head>
     <title>Registro</title>
     <meta charset="utf-8">
+    <script src="./libs/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.gif" />
     <script> 
         $(function () {
             $("header").load("header.html");
@@ -60,7 +67,7 @@
         function registro() {
 
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "registry.php", true);
+            xhttp.open("POST", "includes/login/registry.php", true);
             xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -74,75 +81,79 @@
 </head>
 
 <body>
-    <header></header>
-    <h1>Login de Usuarios</h1>
-    <hr/>
+    <div class="container">
+        <header></header>
+        <main>
+            <h1>Login de Usuarios</h1>
+            <hr/>
 
-    <form action="checklogin" method="POST">
-        <label>Nombre de usuario*:</label>
-        <br>
-        <input id="username" name="username" type="text" value="espe3" maxlength="20" required>
-        <br>
-        <br>
+            <form action="checklogin" method="POST">
+                <label>Nombre de usuario*:</label>
+                <br>
+                <input id="username" name="username" type="text" value="espe3" maxlength="20" required>
+                <br>
+                <br>
 
-        <label>Password*:</label>
-        <br>
-        <input id="password" name="password" type="password" value="Ma00000." maxlength="100" required>
-        <br>
-        <br>
+                <label>Password*:</label>
+                <br>
+                <input id="password" name="password" type="password" value="Ma00000." maxlength="100" required>
+                <br>
+                <br>
 
-        <label>Confirmar password*:</label>
-        <br>
-        <input id="password2" name="password2" type="password" value="Ma00000." maxlength="100" required>
-        <br>
-        <br>
+                <label>Confirmar password*:</label>
+                <br>
+                <input id="password2" name="password2" type="password" value="Ma00000." maxlength="100" required>
+                <br>
+                <br>
 
-        <label>Nombre*:</label>
-        <br>
-        <input id="firstname" name="firstname" type="text" value="espe" maxlength="50" required>
-        <br>
-        <br>
+                <label>Nombre*:</label>
+                <br>
+                <input id="firstname" name="firstname" type="text" value="espe" maxlength="50" required>
+                <br>
+                <br>
 
-        <label>Primer apellido*:</label>
-        <br>
-        <input id="lastname1" name="lastname1" type="text" value="rei" maxlength="50" required>
-        <br>
-        <br>
+                <label>Primer apellido*:</label>
+                <br>
+                <input id="lastname1" name="lastname1" type="text" value="rei" maxlength="50" required>
+                <br>
+                <br>
 
-        <label>Segundo apellido:</label>
-        <br>
-        <input id="lastname2" name="lastname2" type="text" maxlength="50">
-        <br>
-        <br>
+                <label>Segundo apellido:</label>
+                <br>
+                <input id="lastname2" name="lastname2" type="text" maxlength="50">
+                <br>
+                <br>
 
-        <label>Teléfono:</label>
-        <br>
-        <input id="phone" name="phone" type="text" maxlength="9">
-        <br>
-        <br>
+                <label>Teléfono:</label>
+                <br>
+                <input id="phone" name="phone" type="text" maxlength="9">
+                <br>
+                <br>
 
-        <label>Email*:</label>
-        <br>
-        <input id="email" name="email" type="text" value="esperanza@hotmail.com" maxlength="150" required>
-        <br>
-        <br>
+                <label>Email*:</label>
+                <br>
+                <input id="email" name="email" type="text" value="esperanza@hotmail.com" maxlength="150" required>
+                <br>
+                <br>
 
-        <label>Dirección:</label>
-        <br>
-        <input id="address" name="address" type="text" maxlength="250">
-        <br>
-        <br>
+                <label>Dirección:</label>
+                <br>
+                <input id="address" name="address" type="text" maxlength="250">
+                <br>
+                <br>
 
 
-        <input type="button" name="button" value="ENVIAR" onclick="valida()">
+                <input type="button" name="button" value="ENVIAR" onclick="valida()">
 
-    </form>
-    <p>*Campos obligatorios</p>
-    <hr/>
-    <div id="result">
+            </form>
+            <p>*Campos obligatorios</p>
+            <hr/>
+            <div id="result">
 
+            </div>
+        </main>
+        <footer></footer>
     </div>
-    <footer></footer>
 </body>
 
 </html>

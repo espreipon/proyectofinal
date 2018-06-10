@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -14,6 +15,7 @@ header("Cache-Control: no-cache, must-revalidate");
 
 $idProducto = $_GET["id"];
 //$userId =  recoger aquí el valor del id del usuario que esta logado
+$userId = $_SESSION['userId'];
 
 $cantidad=null;
 $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' and user_id = '.$userId;

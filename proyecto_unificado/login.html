@@ -6,19 +6,37 @@
     <title>Login</title>
 
     <meta charset="utf-8">
-    <script>
 
+    <script src="./libs/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.gif" />
+    <script>
+        $(function () {
+            $("header").load("header.html");
+            $("footer").load("footer.html");
+        });
         var username, password;
         function loadDoc() {
             username = document.getElementById("username").value;
             password = document.getElementById("password").value;
 
             var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "checklogin.php", true);
+            xhttp.open("POST", "includes/login/checklogin.php", true);
             xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("result").innerHTML = this.responseText;
+                    var data = JSON.parse(this.response);
+                    if(data.loggedin === true) {
+                        //redireccionar a index
+                        window.location.href = "index.html";
+                    } else {
+                        document.getElementById("result").innerHTML = data.error;
+                    }
+                    
                 }
             };
             xhttp.send('username=' + username + '&password=' + password);
@@ -30,28 +48,36 @@
 </head>
 
 <body>
-    <h1>Login de Usuarios</h1>
-    <hr/>
+    <div class="container">
+        <header>
+        </header>
+        <main>
+            <h1>Login de Usuarios</h1>
+            <hr/>
 
-    <form action="checklogin" method="POST">
-        <label>Nombre Usuario:</label>
-        <br>
-        <input id="username" name="username" type="text" value="esperanza" required>
-        <br>
-        <br>
+            <form action="checklogin" method="POST">
+                <label>Nombre Usuario:</label>
+                <br>
+                <input id="username" name="username" type="text" value="esperanza" required>
+                <br>
+                <br>
 
-        <label>Password:</label>
-        <br>
-        <input id="password" name="password" type="password" value="1234" required>
-        <br>
-        <br>
+                <label>Password:</label>
+                <br>
+                <input id="password" name="password" type="password" value="1234" required>
+                <br>
+                <br>
 
-        <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
-        <input type="button" name="button" value="REGISTRARME" onclick="registro()">
-    </form>
-    <hr/>
-    <div id="result">
+                <input type="button" name="button" value="LOGIN" onclick="loadDoc()">
+                <input type="button" name="button" value="REGISTRARME" onclick="registro()">
+            </form>
+            <hr/>
+            <div id="result">
 
+            </div>
+        </main>
+        <footer>
+        </footer>
     </div>
 </body>
 

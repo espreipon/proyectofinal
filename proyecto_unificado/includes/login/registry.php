@@ -2,7 +2,7 @@
 $host_db = "localhost";
 $user_db = "root";
 $pass_db = "";
-$db_name = "databaselogin";
+$db_name = "tienda";
 $tbl_name = "usuarios";
 
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
@@ -32,14 +32,9 @@ else{
     $sql = "INSERT INTO `$tbl_name` (`username`, `password`, `firstname`, `lastname1`, `lastname2`, `phone`, `email`, `address`) VALUES ('$username','$hash','$firstname','$lastname1','$lastname2','$phone','$email','$address');";
     if($conexion->query($sql)){
     echo "Registro realizado con exito";
-    
-    "echo hola";
     }
-    //crear tabla
 }
 
 mysqli_close($conexion);
-mysqli_close($newConnection);
-
 
 ?>

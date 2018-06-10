@@ -8,23 +8,12 @@ error_reporting(E_ALL);
 mb_internal_encoding('UTF-8'); 
 // Esto le dice a PHP que generaremos cadenas UTF-8
 mb_http_output('UTF-8');
-
-require_once('../conexion.php');
 header('Content-Type: text/json');
 header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
 $myObj->loggedin = isset($_SESSION['loggedin']);
-$myObj->list = array();
-if(isset($_GET['typeId'])) {
-    $typeId = $_GET['typeId'];
-    $consulta= 'SELECT * FROM productos WHERE type_id = '.$typeId;
-    if ($resultado = $conn->query($consulta)) {
-    
-        while($row = $resultado->fetch_assoc()) {
-            $myObj->list[] = $row;
-        }
-        echo json_encode($myObj);
-    }
-    $resultado->close();
+if($myObj->loggedin) {
+    $myObj->userId = $_SESSION['userId'];
+    $myObj->username = $_SESSION['username'];        
 }
-$conn->close();
+echo json_encode($myObj);
