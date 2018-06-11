@@ -21,7 +21,7 @@ function renderProductos(typeId) {
                     "    <div class=\"thumbnail\" >\n" +
                     //"      <img data-src="+productos[i].image+" alt=\"...\">\n" +
                     "      <div class=\"caption\">\n" +
-                    "        <h3 id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "-" + productos[i].precio + "€</h3>\n" +
+                    "        <h3 id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "-" + productos[i].precio + "€</h3>"+productos[i].descripcionCorta+"\n" +
                     "        <p>\n";
                 if (data.loggedin == true) {
                     html += "         <input type='button' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>";
