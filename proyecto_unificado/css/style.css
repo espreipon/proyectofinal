@@ -59,11 +59,6 @@ ul{
     margin-top: 0; 
  }
 
-@media screen and (max-width: 992px) {
-  body {
-    background-color: blue; /*ARREGLAR HOVER PARA PANTALLAS PEQUEÑAS*/
-  }
-}
 
 /* SLIDE */
 
