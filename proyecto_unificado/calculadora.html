@@ -11,44 +11,15 @@
     <link rel="stylesheet" href="./css/style_calculadora.css">
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="./js/script-carrito.js"></script>
+    <script type="text/javascript" src="./js/script-calculadora.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.gif" />
+    
     <script> 
         $(function () {
             $("header").load("header.html");
             $("footer").load("footer.html");
         });
-    </script>
-    <script>
-        function loadDoc() {
-            var petValue = document.querySelector('input[name="pet"]:checked').value;
-            var weigthValue = document.getElementById("weigth").value;
-
-            var actValue = document.querySelector('input[name="activity"]:checked').value;
-
-            //funciona
-            var sel = document.getElementById("age");
-            var opt = sel.options[sel.selectedIndex];
-            var ageValue = opt.value;
-            var ageText = opt.text;
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "php/calculadora.php", true);
-            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("result").innerHTML = this.responseText;
-                    //document.getElementById("result").style.border="2px solid black";
-                    //document.getElementById("result").style.padding="10px";
-                    //document.getElementById("result").style.borderRadius="10px";
-                    document.getElementById("result").style.textAlign = "justify";
-                    //document.getElementById("result").style.backgroundColor="#ffd29d";
-
-                }
-            };
-            xhttp.send('petValue=' + petValue + '&ageValue=' + ageValue + '&ageText=' + ageText + '&weigthValue=' + weigthValue + '&actValue=' + actValue);
-        }
-
-    </script>
+    </script>    
 </head>
 
 <body>
@@ -75,14 +46,16 @@
                 <div class="col-md-6 cuadroOption">
                     <div id="form">
                         <div class="col-md-12">
-                            <!--
+                            
                             <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
                             <input type="radio" class="pet" id="cat" name="pet" value="cat">
                             <label>Gato</label>
+                            
+                            <!--
+                            <buttom class="btn btn-default btnn">Perro</buttom>
+                            <buttom class="btn btn-default btnn">Gato</buttom>
                             -->
-                            <buttom class="btn btn-default">Perro</buttom>
-                            <buttom class="btn btn-default">Gato</buttom>
                         </div>
                         <div>
                             <label>Edad </label>

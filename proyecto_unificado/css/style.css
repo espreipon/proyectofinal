@@ -1,3 +1,23 @@
+/* HEADER */
+
+.boton{
+    background-color: #009997;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    padding:  10px;
+    border-radius: 0px;
+}
+p{
+    font-size: 16px;
+    text-align: justify;
+}
+ol{
+    font-size: 16px;
+    text-align: justify;
+}
+
+
 /* NAV */
 .menu{
     border-bottom: 2px solid #009997;
@@ -74,9 +94,12 @@ ul{
     background: none;
 }
 
+/* HR */ 
 
-
-
+hr{
+    width: 70%;
+    align-items: center;
+}
 
 /* FOOTER */
 .redes{

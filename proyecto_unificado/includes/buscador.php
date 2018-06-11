@@ -60,6 +60,7 @@ if($_POST){
 ?>
 
 <!--Ahora toca definir un formulario donde poder realizar nuestras búsquedas o consultas.-->
+<!-- 
 <!DOCTYPE html>
 <html lang="es-ES">
 <head> 
@@ -67,10 +68,11 @@ if($_POST){
 <head> 
 <body>
 <h1>Ejemplo de buscado</h1> 
-<form id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>"> 
+<form id="buscador" name="buscador" method="post" action="<?php //echo $_SERVER['PHP_SELF'] ?>"> 
     <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
     <input type="submit" name="buscador" class="boton peque aceptar" value="buscar">
 </form>
+-->
 <?php 
 // Resultado, número de registros y contenido.
 echo $registros;
