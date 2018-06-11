@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_calculadora.css">
+ <link href="../fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+
+    <script>
+        function loadDoc() {
+            var petValue = document.querySelector('input[name="pet"]:checked').value;
+            var weigthValue = document.getElementById("weigth").value;
+
+            var actValue = document.querySelector('input[name="activity"]:checked').value;
+
+            //funciona
+            var sel = document.getElementById("age");
+            var opt = sel.options[sel.selectedIndex];
+            var ageValue = opt.value;
+            var ageText = opt.text;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("POST", "../php/calculadora.php", true);
+            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
+                    //document.getElementById("result").style.border="2px solid black";
+                    //document.getElementById("result").style.padding="10px";
+                    //document.getElementById("result").style.borderRadius="10px";
+                    document.getElementById("result").style.textAlign="justify";
+                    //document.getElementById("result").style.backgroundColor="#ffd29d";
+
+                }
+            };
+            xhttp.send('petValue=' + petValue + '&ageValue=' + ageValue + '&ageText=' + ageText + '&weigthValue=' + weigthValue + '&actValue=' + actValue);
+        }
+
+    </script>
+</head>
+
+<body>
+   <div class="container">
+    <header>
+    <div class="row">
+            <div class="col-md-12 col-md-offset-10">
+                    <p>BUSCADOR Y LOGIN</p>
+            </div>
+        </div>
+       
+        <!-- Slide -->
+        <!--
+        <div class="bs-example">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="../images/carrusel/dog-cat_BANNER.jpg" width="1200" alt="First Slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/carrusel/banner-index.jpg" width="1000"alt="Second Slide">
+                    </div>
+                    <div class="item">
+                        <img src="../images/carrusel/matt-nelson-259365-unsplash.jpg" height="100" alt="Third Slide">
+                    </div>
+                </div>
+
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+        -->
+
+
+        <!-- BREADCRUMB --> <!-- Poner solo en paginas secundarias!!!!
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
+-->
+        <!-- EXAMPLE BREADCRUMB
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+
+        -->
+                       <!-- LOGO -->
+        <div class="row">
+            <div class="col-md-2">
+                    <a href="inicio.html"><img src="../images/logo.png" height="100" alt=""></a>
+            </div>
+        
+
+               <!-- Nav -->
+        <br><br>
+        
+            <div class="col-md-10 ">
+                <nav class="navbar navbar-default ">
+                    <div class="container-fluid menu">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="inicio.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Alimentación</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="submenus/alimentosCrudos.html">Alimentos crudos</a></li>
+                                        <li><a href="submenus/suplementos.html">Verduras y frutas</a></li>
+                                        <li><a href="submenus/verduras.html">Suplementos</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Recetario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="submenus/recetasPerro.html">Para perro</a></li>
+                                        <li><a href="submenus/recetasGato.html">Para gato</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Consejos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="submenus/queEs.html">¿Qué es BARF?</a></li>
+                                        <li><a href="submenus/comoEmpezar.html">Como empezar</a></li>
+                                        <li><a href="submenus/beneficios.html">Beneficios</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="calculadora.html">Calculadora</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button"
+                                       data-toggle="dropdown">Quienes somos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="quienesSomos.html">Contacto</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+     
+        <!-- BANNER -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="image_banner">
+                    <img src="../images/banner-index.png" width="1150" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+
+    </header>
+
+        <main>
+            <hr>
+            <div class="row">
+                <h2>Calcula la cantidad de comida para tu peludo!</h2>
+    
+            </div>
+            <div class="row">
+               <div class="col-md-6 texto">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
+                    sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</p>
+               </div>
+                <div class="col-md-6 cuadroOption">
+                    <div id="form">
+                        <div class="col-md-12">
+                            <!--
+                            <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
+                            <label>Perro</label>
+                            <input type="radio" class="pet" id="cat" name="pet" value="cat">
+                            <label>Gato</label>
+                            -->
+                            <buttom class="btn btn-default">Perro</buttom>
+                            <buttom class="btn btn-default">Gato</buttom>
+                        </div>
+                        <div>
+                            <label>Edad </label>
+                            <select id="age" name="age">
+                                <option value="2">2 meses</option>
+                                <option value="3">3 meses</option>
+                                <option value="4">4 meses</option>
+                                <option value="5">5 meses</option>
+                                <option value="6">6 meses</option>
+                                <option value="7">7 meses</option>
+                                <option value="8">8 meses</option>
+                                <option value="9">9 meses</option>
+                                <option value="10">10 meses</option>
+                                <option value="11">11 meses</option>
+                                <option value="12">12 meses</option>
+                                <option value="13">mayor 1 año</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Peso </label>
+                            <input class="inp" type="number" id="weigth" name="weigth" value="5"/>
+                        </div>
+                        <div class="actividad">
+                            <label>Actividad:</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="pet" id="low" name="activity" value="low"><label>Baja</label><br>
+                            <input type="radio" class="pet" id="medium" name="activity" value="medium" checked><label id>Media</label><br>
+                            <input type="radio" class="pet" id="high" name="activity" value="high"><label>Alta</label>
+                        </div>
+                        <input type="button" value="Calcular" onclick="loadDoc()" />
+                    </div>
+                </div>
+                <div class="col-md-6 cuadroResult">
+                        <p id="result"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col-md-12" style="background-color: blue"></div>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>

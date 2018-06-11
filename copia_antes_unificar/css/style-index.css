@@ -1,0 +1,18 @@
+.thumbnail{
+    padding:15px;
+    float:left;
+    border: none;
+}
+
+hr{
+    width: 70%;
+    align-items: center;
+}
+
+.imag{
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	overflow:hidden;
+   
+}

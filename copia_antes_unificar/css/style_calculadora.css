@@ -1,0 +1,38 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css);
+
+.cuadroOption{
+    margin: 10px;
+    width: 25%;
+    padding: 10px;
+    text-align: justify;
+
+    font-size: 16px;
+}
+
+.cuadroResult{
+    width: 30%;
+}
+
+.inp{
+    width:90px;
+}
+
+select{
+    width: 90px;
+}
+
+.fondo{
+    padding-top: 15px;
+}
+.texto{
+    margin: 10px;
+    border-right: 0.5px solid black;
+    text-align: justify;
+}
+.image{
+    float:right;
+}
+.btn{
+    width: 100px;
+    margin-bottom: 10px;
+}
