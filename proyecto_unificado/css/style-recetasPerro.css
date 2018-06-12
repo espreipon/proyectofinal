@@ -1,0 +1,25 @@
+.thumbnail{
+    height: 400px;
+}
+.texto{
+    text-align: center;
+    font-size: 30px;
+}
+
+h3 + p{
+   font-size:  12px;
+}
+
+.li{
+    text-align: left;
+}
+
+.linea{
+     border-right: 1px solid black;   
+    padding: 10px;
+}
+
+
+.imag{
+    padding-left: 100px;
+}

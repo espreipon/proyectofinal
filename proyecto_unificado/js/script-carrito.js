@@ -24,7 +24,9 @@ function renderProductos(typeId) {
                     "        <h3 id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "-" + productos[i].precio + "€</h3>"+productos[i].descripcionCorta+"\n" +
                     "        <p>\n";
                 if (data.loggedin == true) {
-                    html += "         <input type='button' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>";
+                    html += "         <input type='button' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>"+
+                    
+                            "         <input type='button' value='Ver detalle'/>";
                 }
                 html += "        </p>\n" +
                     "      </div>\n" +
