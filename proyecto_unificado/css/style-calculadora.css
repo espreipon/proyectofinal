@@ -1,21 +1,23 @@
 .cuadroOption{
     margin: 10px;
-    width: 25%;
+    width: 15%;
     padding: 10px;
     text-align: justify;
     font-size: 16px;
+    
 }
 
 .cuadroResult{
-    width: 30%;
+    padding-top: 10px;
+    width: 35%;
 }
 
 .inp{
-    width:90px;
+    width:150px;
 }
 
 select{
-    width: 90px;
+    width: 150px;
 }
 
 .fondo{

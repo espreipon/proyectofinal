@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style_calculadora.css">
+    <link rel="stylesheet" href="./css/style-calculadora.css">
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/script-calculadora.js"></script>
@@ -29,10 +29,11 @@
             <hr>
             <div class="row">
                 <h2>Calcula la cantidad de comida para tu peludo!</h2>
-
             </div>
             <div class="row">
-                <div class="col-md-6 texto">
+               <div class="col-md-12">
+                                 
+                <div class="col-md-5 texto " >
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea enim illo optio praesentium
                         sed sint tempora voluptatum.Aliquam animi consequuntur eaque eveniet exercitationem ipsam libero
                         quia quis quos! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, corporis ea
@@ -43,10 +44,8 @@
                         adipisicing elit. Consectetur, corporis ea enim illo optio praesentium sed sint tempora voluptatum.Aliquam
                         animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</p>
                 </div>
-                <div class="col-md-6 cuadroOption">
-                    <div id="form">
-                        <div class="col-md-12">
-                            
+                <div class="col-md-2 cuadroOption">
+                    <div id="form">                    
                             <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
                             <input type="radio" class="pet" id="cat" name="pet" value="cat">
@@ -56,9 +55,9 @@
                             <buttom class="btn btn-default btnn">Perro</buttom>
                             <buttom class="btn btn-default btnn">Gato</buttom>
                             -->
-                        </div>
-                        <div>
-                            <label>Edad </label>
+               
+                    <div>
+                            <label>Edad </label><br>
                             <select id="age" name="age">
                                 <option value="2">2 meses</option>
                                 <option value="3">3 meses</option>
@@ -75,7 +74,7 @@
                             </select>
                         </div>
                         <div>
-                            <label>Peso </label>
+                            <label>Peso </label><br>
                             <input class="inp" type="number" id="weigth" name="weigth" value="5" />
                         </div>
                         <div class="actividad">
@@ -84,23 +83,24 @@
                         <div>
                             <input type="radio" class="pet" id="low" name="activity" value="low">
                             <label>Baja</label>
-                            <br>
+                            
                             <input type="radio" class="pet" id="medium" name="activity" value="medium" checked>
                             <label id>Media</label>
-                            <br>
+                            
                             <input type="radio" class="pet" id="high" name="activity" value="high">
                             <label>Alta</label>
                         </div>
                         <input type="button" value="Calcular" onclick="loadDoc()" />
                     </div>
                 </div>
-                <div class="col-md-6 cuadroResult">
+                <div class="col-md-3 cuadroResult" >
                     <p id="result"></p>
                 </div>
             </div>
+               </div>
         </main>
         <footer></footer>
-    </div>
+  
     </div>
 </body>
 
