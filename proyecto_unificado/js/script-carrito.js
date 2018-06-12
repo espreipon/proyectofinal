@@ -19,7 +19,7 @@ function renderProductos(typeId) {
                 html +=
                     "  <div class=\"col-md-4\" id=\"caja\">\n" +
                     "    <div class=\"thumbnail\" >\n" +
-                    //"      <img data-src="+productos[i].image+" alt=\"...\">\n" +
+                    "      <img src='"+productos[i].image+"' width='210'>\n" +
                     "      <div class=\"caption\">\n" +
                     "        <h3 id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "-" + productos[i].precio + "€</h3>"+productos[i].descripcionCorta+"\n" +
                     "        <p>\n";
