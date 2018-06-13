@@ -22,14 +22,14 @@ function rationCat(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
     $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "----Ración diaria de comida: ".$cantidad ." gr----<br>";
+    echo "<strong>Ración diaria de comida: ".$cantidad ." gr</strong><br>";
     echo $cantidad*0.4 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
     echo $cantidad*0.2 . " gr corazón<br>";
     echo $cantidad*0.1 . " gr Hígado<br>";
     echo $cantidad*0.1 . " gr otras vísceras<br>";
     echo $cantidad*0.05 . " gr máximo de verduras (opcional)<br>";
-    echo "<br>----Cantidad mensual de comida: ".$cantidadMes ." kg----<br>";
+    echo "<br><strong>Cantidad mensual de comida: ".$cantidadMes ." kg</strong><br>";
     echo $cantidadMes*0.4 . " kg  Hueso carnoso<br>";
     echo $cantidadMes*0.2 . " kg carne<br>";
     echo $cantidadMes*0.2 . " kg corazón<br>";
@@ -43,13 +43,13 @@ function rationDog(){
     global $weigth, $percent;
     $cantidad = $weigth*$percent*1000;
     $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "----Ración diaria de comida: ".$cantidad ." gr----<br>";
+    echo "<strong>Ración diaria de comida: ".$cantidad ." gr</strong><br>";
     echo $cantidad*0.6 . " gr  Hueso carnoso<br>";
     echo $cantidad*0.2 . " gr carne<br>";
     echo $cantidad*0.05 . " gr Hígado<br>";
     echo $cantidad*0.05 . " gr otras vísceras<br>";
     echo $cantidad*0.1 . " gr verduras<br>";
-    echo "<br>----Cantidad mensual de comida: ".$cantidadMes ." kg----<br>";
+    echo "<br><strong>Cantidad mensual de comida: ".$cantidadMes ." kg</strong><br>";
     echo $cantidadMes*0.6 . " kg  Hueso carnoso<br>";
     echo $cantidadMes*0.2 . " kg carne<br>";
     echo $cantidadMes*0.05 . " kg Hígado<br>";
@@ -66,16 +66,16 @@ function activity(){
             switch ($activity) {
                 case "low":
                     $percent = $percent - 0.005;
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationDog(); //REVISAR TAMBIÉN PARA GATO
                     break;
                 case "medium":
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationDog(); //REVISAR TAMBIÉN PARA GATO
                     break;
                 case "high":
                     $percent = $percent + 0.005;
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationDog(); //REVISAR TAMBIÉN PARA GATO
                     break;
             }
@@ -85,16 +85,16 @@ function activity(){
             switch ($activity){
                 case "low":
                     $percent = $percent - 0.01;
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationCat(); //REVISAR TAMBIÉN PARA GATO
                     break;
                 case "medium":
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationCat(); //REVISAR TAMBIÉN PARA GATO
                     break;
                 case "high":
                     $percent = $percent + 0.01;
-                    echo $percent*100 ."% del peso";
+                    //echo $percent*100 ."% del peso";
                     rationCat(); //REVISAR TAMBIÉN PARA GATO
                     break;
             }

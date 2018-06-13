@@ -45,12 +45,23 @@
                         animi consequuntur eaque eveniet exercitationem ipsam libero quia quis quos!</p>
                 </div>
                 <div class="col-md-2 cuadroOption">
-                    <div id="form">                    
+                    <div id="form">  
+                          
+                          <input type="radio" name="pet" id="dog" class="input-hidden" value="dog"/>
+                            <label for="dog">
+                              <img src="images/caraperro.png" width="50"/>
+                            </label>
+
+                            <input type="radio" name="pet" id="cat" class="input-hidden" value="cat"/>
+                            <label for="cat">
+                              <img src="images/caragato.png" width="50"/>
+                            </label>
+                           <!--                  
                             <input type="radio" class="pet" id="dog" name="pet" value="dog" checked>
                             <label>Perro</label>
                             <input type="radio" class="pet" id="cat" name="pet" value="cat">
                             <label>Gato</label>
-                            
+                            -->
                             <!--
                             <buttom class="btn btn-default btnn">Perro</buttom>
                             <buttom class="btn btn-default btnn">Gato</buttom>
@@ -81,16 +92,16 @@
                             <label>Actividad:</label>
                         </div>
                         <div>
-                            <input type="radio" class="pet" id="low" name="activity" value="low">
-                            <label>Baja</label>
+                            <input type="radio" class="input-hidden pet" id="low" name="activity" value="low">
+                            <label for="low">Baja</label>
                             
-                            <input type="radio" class="pet" id="medium" name="activity" value="medium" checked>
-                            <label id>Media</label>
+                            <input type="radio" class="input-hidden pet" id="medium" name="activity" value="medium" checked>
+                            <label for="medium">Media</label>
                             
-                            <input type="radio" class="pet" id="high" name="activity" value="high">
-                            <label>Alta</label>
+                            <input type="radio" class="input-hidden pet" id="high" name="activity" value="high">
+                            <label for="high">Alta</label>
                         </div>
-                        <input type="button" value="Calcular" onclick="loadDoc()" />
+                        <input type="button" class="btn" value="Calcular" onclick="loadDoc()" />
                     </div>
                 </div>
                 <div class="col-md-3 cuadroResult" >
@@ -103,5 +114,4 @@
   
     </div>
 </body>
-
 </html>
