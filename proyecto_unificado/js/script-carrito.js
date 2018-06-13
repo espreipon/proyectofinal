@@ -17,16 +17,17 @@ function renderProductos(typeId) {
             for (var i = 0, iLen = productos.length; i < iLen; i++) {
                 //alert(productos[i].image);
                 html +=
-                    "  <div class=\"col-md-4\" id=\"caja\">\n" +
+                    "  <div class=\"col-md-3\" id=\"caja\">\n" +
                     "    <div class=\"thumbnail\" >\n" +
-                    "      <img src='"+productos[i].image+"' width='210'>\n" +
+                    "      <img src='"+productos[i].image+"' width='120'>" +
                     "      <div class=\"caption\">\n" +
-                    "        <h3 id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "-" + productos[i].precio + "€</h3>"+productos[i].descripcionCorta+"\n" +
+                    "        <h3 class='titulo' id='prod_\"+productos[i].id+\"'>" + productos[i].nombre + "</h3>"+"<p class='descripcion'>"+productos[i].descripcionCorta+"</p>\n" +
+                    "          <br><label class='precio'>"+ productos[i].precio+"</label>"+
                     "        <p>\n";
                 if (data.loggedin == true) {
-                    html += "         <input type='button' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>"+
+                    html += "         <input type='button' class='btn btnn' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>"+
                     
-                            "         <input type='button' value='Ver detalle'/>";
+                            "         <input type='button'class='btn btnn' value='Ver detalle'/>";
                 }
                 html += "        </p>\n" +
                     "      </div>\n" +

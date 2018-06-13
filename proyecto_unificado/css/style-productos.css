@@ -1,0 +1,22 @@
+.thumbnail{
+    height: 400px;
+}
+
+.precio{
+   
+    margin-left:170px ;
+    font-size: 30px;
+    color: cadetblue;
+}
+
+.titulo{
+    height: 50px;
+}
+
+.descripcion{
+    height: 55px;
+}
+
+.btnn{
+    background-color: blanchedalmond;
+}
