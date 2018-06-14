@@ -15,7 +15,7 @@ header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
 $myObj->loggedin = isset($_SESSION['loggedin']);
 $myObj->list = array();
-if(isset($_GET['typeId'])) {
+if($myObj->loggedin && isset($_GET['typeId'])) {
     $typeId = $_GET['typeId'];
     $consulta= 'SELECT * FROM productos WHERE type_id = '.$typeId;
     if ($resultado = $conn->query($consulta)) {
@@ -23,8 +23,7 @@ if(isset($_GET['typeId'])) {
         while($row = $resultado->fetch_assoc()) {
             $myObj->list[] = $row;
         }
-        echo json_encode($myObj);
     }
-    $resultado->close();
 }
+echo json_encode($myObj);
 $conn->close();

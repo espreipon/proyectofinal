@@ -92,9 +92,9 @@ function renderCarrito() {
                         "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
 
                     //var btn = document.createElement('button').button.onclick = deleteProducto(carrito[i].id);
-                    total += parseInt(carrito[i].total);
+                    total += parseFloat(carrito[i].total);
                 }
-                html += "<li class='total'><b>Total</b>: " + total + "€</li>";
+                html += "<li class='total'><b>Total</b>: " + (Math.round(total * 100) / 100) + "€</li>";
                 document.getElementById('carrito').innerHTML = html;
             }
         }
@@ -106,11 +106,11 @@ function anadirProducto(id) {
     xmlhttp = getXMLRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (parseInt(this.response) === 1) {
+            var data = JSON.parse(this.response);
+            if (data.loggedin && data.affected_rows === 1) {
                 console.log('El producto se ha añadido al carrito correctamente.');
                 renderCarrito();
-            }
-            else {
+            } else {
                 alert('Error');
             }
         }
@@ -122,11 +122,11 @@ function deleteProducto(id) {
     xmlhttp = getXMLRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            if (parseInt(this.response) === 1) {
+            var data = JSON.parse(this.response);
+            if (data.loggedin && data.affected_rows === 1) {
                 console.log('El producto se ha eliminado del carrito correctamente.');
                 renderCarrito();
-            }
-            else {
+            } else {
                 alert('Error');
             }
         }

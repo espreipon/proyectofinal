@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -12,25 +13,28 @@ require_once('../conexion.php');
 header('Content-Type: text/json');
 header("Cache-Control: no-cache, must-revalidate");
 
-$idProducto = $_GET["id"];
-
-$cantidad=null;
-$consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto;
-$resultado = $conn->query($consulta);
-if($conn->affected_rows == 1)
-{
-    $cantidad = $resultado->fetch_assoc()["cantidad"];
+$myObj = new stdClass();
+$myObj->loggedin = isset($_SESSION['loggedin']);
+$myObj->affected_rows = 0;
+if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
+    $idProducto = $_GET["id"];
+    $userId = $_SESSION['userId'];
+    $cantidad=null;
+    $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+    $resultado = $conn->query($consulta);
+    // echo "SELECT: ".$conn->affected_rows;
+    if($conn->affected_rows == 1) {
+        $cantidad = $resultado->fetch_assoc()["cantidad"];
+        // echo "CANTIDAD: ".$cantidad;
+        if($cantidad != null && $cantidad > 1) {
+            $consulta = 'UPDATE carrito SET cantidad = cantidad - 1 WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+        } else {
+            $consulta = 'DELETE FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+        }
+        $conn->query($consulta);
+        // echo "DELETE/UPDATE: ".$conn->affected_rows;
+        $myObj->affected_rows = $conn->affected_rows;
+    }
 }
-$resultado->close();
-$consulta = '';
-if($cantidad != null && $cantidad > 1)
-{
-    $consulta = 'UPDATE carrito SET cantidad = '.($cantidad-1).' WHERE producto_id = '.$idProducto;
-}
-else
-{
-    $consulta = 'DELETE FROM carrito WHERE producto_id = '.$idProducto;
-}
-$conn->query($consulta);
-echo $conn->affected_rows;
+echo json_encode($myObj);
 $conn->close();

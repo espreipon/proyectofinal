@@ -13,29 +13,26 @@ require_once('../conexion.php');
 header('Content-Type: text/json');
 header("Cache-Control: no-cache, must-revalidate");
 
-$idProducto = $_GET["id"];
-//$userId =  recoger aquí el valor del id del usuario que esta logado
-$userId = $_SESSION['userId'];
-
-$cantidad=null;
-$consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' and user_id = '.$userId;
-$resultado = $conn->query($consulta);
-if($conn->affected_rows == 1)
-{
-    $cantidad = $resultado->fetch_assoc()["cantidad"];
+$myObj = new stdClass();
+$myObj->loggedin = isset($_SESSION['loggedin']);
+$myObj->affected_rows = 0;
+if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
+    $idProducto = $_GET["id"];
+    $userId = $_SESSION['userId'];
+    $cantidad=null;
+    $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+    $conn->query($consulta);
+    if($conn->affected_rows == 1)
+    {
+        $consulta = 'UPDATE carrito SET cantidad = cantidad + 1 WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+        $conn->query($consulta);
+    }
+    else
+    {
+        $consulta = 'INSERT INTO carrito (producto_id, cantidad, user_id) VALUES ('.$idProducto.', 1,'.$userId.')';
+        $conn->query($consulta);
+    }
+    $myObj->affected_rows = $conn->affected_rows;
 }
-$resultado->close();
-$consulta = '';
-if($cantidad != null)
-{
-    $consulta = 'UPDATE carrito SET cantidad = '.($cantidad+1).' WHERE producto_id = '.$idProducto.' and user_id = '.$userId;
-    $resultado = $conn->query($consulta);
-}
-else
-{
-    $consulta = 'INSERT INTO carrito (producto_id, cantidad, user_id) VALUES('.$idProducto.', 1,'.$userId.')';
-    $resultado = $conn->query($consulta);
-}
-$conn->query($consulta);
-echo $conn->affected_rows;
+echo json_encode($myObj);
 $conn->close();
