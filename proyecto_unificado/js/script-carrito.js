@@ -89,12 +89,12 @@ function renderCarrito() {
                 html += "<h1>Carrito</h1><br>";
                 for (var i = 0, iLen = carrito.length; i < iLen; i++) {
                     html +=
-                        "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
-
+                       // "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
+                    "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + "<br> cantidad: " + carrito[i].cantidad + "<br> precioTotal: " + carrito[i].total + "€<br>    <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
                     //var btn = document.createElement('button').button.onclick = deleteProducto(carrito[i].id);
                     total += parseFloat(carrito[i].total);
                 }
-                html += "<li class='total'><b>Total</b>: " + (Math.round(total * 100) / 100) + "€</li>";
+                html += "<br><li class='total'><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
                 document.getElementById('carrito').innerHTML = html;
             }
         }
