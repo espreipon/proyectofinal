@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6764b50f-3b95-4aad-ad62-bb3e7e04b56f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/mail.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,52 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script-carrito.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
+      <file leaf-file-name="pdf.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/pdf.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-              <folding>
-                <marker date="1528963060652" expanded="true" signature="285:2396" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="430:2258" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="488:2252" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="674:2164" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="1614:1637" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="1808:2148" ph="/*...*/" />
-                <marker date="1528963060652" expanded="true" signature="2398:2810" ph="/*...*/" />
-                <marker date="1528963060652" expanded="true" signature="2840:4093" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="2973:3979" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="3031:3973" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="3114:3963" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="3337:3801" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4123:4650" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4201:4521" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4259:4515" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4308:4440" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4458:4505" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4816:5075" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="4865:5000" ph="{...}" />
-                <marker date="1528963060652" expanded="true" signature="5018:5065" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alimentosCrudos.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-238">
-              <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style-productos.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="61">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -114,12 +75,13 @@
         <option value="$PROJECT_DIR$/css/style-index.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/views/inicio.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
         <option value="$PROJECT_DIR$/proyecto_unificado/css/style-crudos.css" />
         <option value="$PROJECT_DIR$/tienda-11.6.sql" />
         <option value="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
         <option value="$PROJECT_DIR$/tienda-14.6.sql" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/mail.php" />
       </list>
     </option>
   </component>
@@ -153,7 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -171,31 +132,13 @@
               <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="carrito" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,17 +229,17 @@
       <workItem from="1528643507603" duration="3469000" />
       <workItem from="1528743997919" duration="2040000" />
       <workItem from="1528963268763" duration="1097000" />
+      <workItem from="1528964660474" duration="2219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63906000" />
+    <option name="totallyTimeSpent" value="66125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -327,8 +270,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bootstrap-3.3.7-dist/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/Calculadora_proyecto/index.html" />
     <entry file="file://$PROJECT_DIR$/views/consejos.html" />
     <entry file="file://$PROJECT_DIR$/views/recetario.html" />
     <entry file="file://$PROJECT_DIR$/views/quienesSomos.html" />
@@ -412,35 +353,6 @@
     <entry file="file://$PROJECT_DIR$/css/style-index.css" />
     <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/views/inicio.html" />
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding>
-            <marker date="1528963060652" expanded="true" signature="285:2396" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="430:2258" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="488:2252" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="674:2164" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="1614:1637" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="1808:2148" ph="/*...*/" />
-            <marker date="1528963060652" expanded="true" signature="2398:2810" ph="/*...*/" />
-            <marker date="1528963060652" expanded="true" signature="2840:4093" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="2973:3979" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="3031:3973" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="3114:3963" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="3337:3801" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4123:4650" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4201:4521" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4259:4515" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4308:4440" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4458:4505" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4816:5075" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="4865:5000" ph="{...}" />
-            <marker date="1528963060652" expanded="true" signature="5018:5065" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/tienda (1).sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -455,27 +367,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-crudos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-crudos.css" />
     <entry file="file://$PROJECT_DIR$/tienda-12.6.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="16" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -483,14 +379,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="82" lean-forward="false" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
+          <folding>
+            <marker date="1528965041154" expanded="true" signature="1615:1638" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7660.39343/fpdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1734">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/pdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
           <folding />
         </state>
       </provider>
