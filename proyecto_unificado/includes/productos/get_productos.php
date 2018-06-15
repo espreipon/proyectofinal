@@ -13,9 +13,8 @@ require_once('../conexion.php');
 header('Content-Type: text/json');
 header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
-$myObj->loggedin = isset($_SESSION['loggedin']);
 $myObj->list = array();
-if($myObj->loggedin && isset($_GET['typeId'])) {
+if(isset($_GET['typeId'])) {
     $typeId = $_GET['typeId'];
     $consulta= 'SELECT * FROM productos WHERE type_id = '.$typeId;
     if ($resultado = $conn->query($consulta)) {
