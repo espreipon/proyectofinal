@@ -19,20 +19,34 @@ $myObj->affected_rows = 0;
 if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
     $idProducto = $_GET["id"];
     $userId = $_SESSION['userId'];
-    $cantidad=null;
-    $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
-    $conn->query($consulta);
-    if($conn->affected_rows == 1)
-    {
-        $consulta = 'UPDATE carrito SET cantidad = cantidad + 1 WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+
+    $query = 'SELECT unidades FROM productos WHERE id = '.$idProducto;
+    $result = $conn->query($query);
+    if($result > 1){
+        //////
+        
+        $cantidad=null;
+        $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
         $conn->query($consulta);
+        if($conn->affected_rows == 1)
+        {
+            $consulta = 'UPDATE carrito SET cantidad = cantidad + 1 WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+            $conn->query($consulta);
+        }
+        else
+        {
+            $consulta = 'INSERT INTO carrito (producto_id, cantidad, user_id) VALUES ('.$idProducto.', 1,'.$userId.')';
+            $conn->query($consulta);
+        }
+        $myObj->affected_rows = $conn->affected_rows;
+        ////
+    }else{
+        echo "No quedan unidades";
     }
-    else
-    {
-        $consulta = 'INSERT INTO carrito (producto_id, cantidad, user_id) VALUES ('.$idProducto.', 1,'.$userId.')';
-        $conn->query($consulta);
-    }
-    $myObj->affected_rows = $conn->affected_rows;
+
+
+
+
 }
 echo json_encode($myObj);
 $conn->close();

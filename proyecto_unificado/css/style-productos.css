@@ -3,7 +3,6 @@
 }
 
 .precio{
-   
     margin-left:150px ;
     font-size: 30px;
     color: cadetblue;
@@ -11,6 +10,7 @@
 
 .titulo{
     height: 70px;
+
 }
 
 .descripcion{
@@ -19,4 +19,12 @@
 
 .btnn{
     background-color: blanchedalmond;
+}
+
+#carrito{
+    list-style: none;
+}
+
+.producto{
+    font-weight: bold;
 }
