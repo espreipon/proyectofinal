@@ -19,10 +19,11 @@ $myObj->affected_rows = 0;
 if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
     $idProducto = $_GET["id"];
     $userId = $_SESSION['userId'];
-
+/*
     $query = 'SELECT unidades FROM productos WHERE id = '.$idProducto;
     $result = $conn->query($query);
     if($result > 1){
+        */
         //////
         
         $cantidad=null;
@@ -40,9 +41,11 @@ if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
         }
         $myObj->affected_rows = $conn->affected_rows;
         ////
+        /*
     }else{
         echo "No quedan unidades";
     }
+    */
 
 
 
