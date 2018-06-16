@@ -1,4 +1,5 @@
 <?php
+/*
 // AUTHOR: webreunidos.es
 
 // Primero definimos la conexión a la base de datos
@@ -10,16 +11,18 @@ define('NAME_DB', 'tienda'); //Nombre de la bbdd
 // Definimos la conexión
 function conectar(){
 	global $conexion;  //Definición global para poder utilizar en todo el contexto
-	$conexion = mysql_connect(HOST_DB, USER_DB, PASS_DB)
-	or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS');
-	mysql_select_db(NAME_DB)
+	$conexion = mysqli_connect(HOST_DB, USER_DB, PASS_DB, NAME_DB)
+	or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS')
 	or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 }
+*/
+require_once('conexion.php');
+/*
 function desconectar(){
 	global $conexion;
-	mysql_close($conexion);
+	mysqli_close($conexion);
 }
-
+*/
 //Variable que contendrá el resultado de la búsqueda
 $texto = '';
 //Variable que contendrá el número de resgistros encontrados
@@ -34,27 +37,27 @@ if($_POST){
         $texto = 'Búsqueda sin resultados';
     }else{
         // Si hay información para buscar, abrimos la conexión
-        conectar();
-        mysql_set_charset('utf8');  // mostramos la información en utf-8
+      //  conectar();
+        //mysql_set_charset('utf8');  // mostramos la información en utf-8
         
-        //Contulta para la base de datos, se utiliza un comparador LIKE para acceder a todo lo que contenga la cadena a buscar
-        $sql = "SELECT * FROM suplementos WHERE Nombre LIKE '%" .$busqueda. "%' ORDER BY Nombre";
+        //Contulta para la base de datos, se utiliza un comparador LIKE para acceder a tod lo que contenga la cadena a buscar
+        $sql = "SELECT * FROM productos WHERE nombre LIKE '%" .$busqueda. "%' ORDER BY nombre";
         
-        $resultado = mysql_query($sql); //Ejecución de la consulta
+        $resultado = $conn->query($sql); //Ejecución de la consulta
         //Si hay resultados...
-        if (mysql_num_rows($resultado) > 0){ 
+        if (mysqli_num_rows($resultado) > 0){
             // Se recoge el número de resultados
-            $registros = '<p>HEMOS ENCONTRADO ' . mysql_num_rows($resultado) . ' registros </p>';
+            $registros = '<p>HEMOS ENCONTRADO ' . mysqli_num_rows($resultado) . ' registros </p>';
             // Se almacenan las cadenas de resultado
-            while($fila = mysql_fetch_assoc($resultado)){ 
-                $texto .= $fila['Nombre']. " " .$fila['Descripcion']. " " .$fila['Precio']. " €" . '<br />';
+            while($fila = mysqli_fetch_assoc($resultado)){
+                $texto .= $fila['nombre']. " " .$fila['descripcionCorta']. " " .$fila['precio']. " €" . '<br />';
                 }
         
         }else{
                 $texto = "NO HAY RESULTADOS EN LA BBDD";	
         }
         // Cerramos la conexión (por seguridad, no dejar conexiones abiertas)
-        mysql_close($conexion);
+       // mysqli_close($conexion);
     }
 }
 ?>

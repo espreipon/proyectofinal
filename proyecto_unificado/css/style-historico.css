@@ -1,0 +1,109 @@
+#carrito{
+    list-style: none;
+
+}
+
+.producto{
+    width: 100%;
+}
+
+.headCarrito{
+    width: 100%;
+    list-style:none;
+    text-align: start;
+    font-weight: inherit;
+
+}
+
+.imagen{
+    visibility: hidden;
+
+    width: 200px;
+
+    float:left;
+}
+.nombre{
+    width: 400px;
+
+    float:left;
+    text-align: center;
+}
+.precio{
+
+    width: 150px;
+
+    float:left;
+    text-align: center;
+}
+.cant{
+
+    width: 100px;
+
+    float:left;
+    text-align: center;
+}
+.fecha{
+
+    width: 100px;
+
+    float:left;
+    text-align: center;
+}
+.aniadir{
+    visibility: hidden;
+    width: 100px;
+
+    float:left;
+}
+
+.imagenCart{
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    float:left;
+}
+.nombreCart{
+    padding-top: 40px;
+    width: 400px;
+    float:left;
+    text-align: center;
+}
+.precioCart{
+    padding-top: 40px;
+    width: 150px;
+    float:left;
+    text-align: center;
+}
+.cantCart{
+    padding-top: 40px;
+    width: 100px;
+    float:left;
+    text-align: center;
+}
+.fechaCart{
+    padding-top: 30px;
+    width: 100px;
+    float:left;
+}
+.aniadirCart{
+    padding-top: 30px;
+    width: 100px;
+    float:left;
+}
+
+.bodyCarrito {
+}
+.bodyCarrito:nth-child(odd) {
+}
+.bodyCarrito:nth-child(even) {
+    background-color: #deffbc;
+}
+
+.bodyCarrito{
+
+    height: 100px;
+}
+
+.total{
+    font-size:20px;
+}

@@ -117,8 +117,8 @@ function renderCarrito() {
                         "   <li class='bodyCarrito' id='prod_\" + carrito[i].id + \"'>" +
                         "       <div class='imagenCart' ><img src='"+carrito[i].image+"' width='90'alt=''></div>" +
                         "       <div class='nombreCart' >"+carrito[i].nombre+"</div>" +
-                        "       <div class='precioCart'>"+carrito[i].cantidad+"</div>" +
-                        "       <div class='cantCart'>"+carrito[i].total+"€</div>" +
+                        "       <div class='precioCart'>"+carrito[i].total+"€</div>" +
+                        "       <div class='cantCart'>"+carrito[i].cantidad+"</div>" +
                         "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/></div>" +
                         "   </li>";
                         total += parseFloat(+carrito[i].total);
