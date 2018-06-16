@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6764b50f-3b95-4aad-ad62-bb3e7e04b56f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/images/carrito/3.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/carrito.html" afterPath="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/header.html" afterPath="$PROJECT_DIR$/proyecto_unificado/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/suplementos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/suplementos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/verduras.html" afterPath="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,30 +26,44 @@
       <file leaf-file-name="script-carrito.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+            <state relative-caret-position="833">
+              <caret line="142" column="101" lean-forward="false" selection-start-line="142" selection-start-column="101" selection-end-line="142" selection-end-column="101" />
               <folding>
-                <marker date="1529079230943" expanded="true" signature="3900:3906" ph=" " />
+                <marker date="1529151581393" expanded="true" signature="1327:1337" ph="..." />
+                <marker date="1529151581393" expanded="true" signature="1537:1550" ph="..." />
+                <marker date="1529151581393" expanded="true" signature="1694:1706" ph="..." />
+                <marker date="1529151581393" expanded="true" signature="5451:5457" ph=" " />
+                <marker date="1529151581393" expanded="true" signature="6613:6619" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/header.html">
+      <file leaf-file-name="style-carrito.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2771">
-              <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+            <state relative-caret-position="1615">
+              <caret line="95" column="15" lean-forward="false" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="alimentosCrudos.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
+      <file leaf-file-name="carrito.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/carrito.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="153">
+              <caret line="9" column="58" lean-forward="false" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -49,8 +72,8 @@
       <file leaf-file-name="style-productos.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -59,8 +82,8 @@
       <file leaf-file-name="suplementos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyecto_unificado/suplementos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="459">
+              <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -69,20 +92,23 @@
       <file leaf-file-name="verduras.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyecto_unificado/verduras.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+            <state relative-caret-position="459">
+              <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="get_productos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php">
+      <file leaf-file-name="add_producto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="357">
+              <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
               <folding>
-                <marker date="1529007341671" expanded="true" signature="661:701" ph="SELECT * FRO... productos" />
+                <marker date="1529080843374" expanded="true" signature="670:712" ph="SELECT unida... productos" />
+                <marker date="1529080843374" expanded="true" signature="863:942" ph="SELECT canti... carrito" />
+                <marker date="1529080843374" expanded="true" signature="1059:1152" ph="UPDATE carri... " />
+                <marker date="1529080843374" expanded="true" signature="1258:1350" ph="INSERT INTO carrito... " />
               </folding>
             </state>
           </provider>
@@ -143,12 +169,19 @@
         <option value="$PROJECT_DIR$/tienda-14.6.sql" />
         <option value="$PROJECT_DIR$/proyecto_unificado/includes/mail.php" />
         <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/index.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/header.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/suplementos.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css" />
         <option value="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/footer.html" />
       </list>
     </option>
   </component>
@@ -182,7 +215,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,6 +237,19 @@
               <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="carrito" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -220,11 +265,18 @@
               <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,18 +369,20 @@
       <workItem from="1528963268763" duration="1097000" />
       <workItem from="1528964660474" duration="2219000" />
       <workItem from="1529005904009" duration="4540000" />
-      <workItem from="1529078299333" duration="744000" />
+      <workItem from="1529078299333" duration="4488000" />
+      <workItem from="1529134622478" duration="15447000" />
+      <workItem from="1529151741168" duration="35000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71409000" />
+    <option name="totallyTimeSpent" value="90635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1172466" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22012103" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -359,18 +413,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Login_proyecto/checklogin.php" />
-    <entry file="file://$PROJECT_DIR$/Login_proyecto/login.html" />
-    <entry file="file://$PROJECT_DIR$/images/logo.png" />
-    <entry file="file://$PROJECT_DIR$/backups/Carrito/includes/get_productos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local_storage_proyecto/localstorage/main.js" />
-    <entry file="file://$PROJECT_DIR$/local_storage_proyecto/library/functions.js" />
     <entry file="file://$PROJECT_DIR$/prueba_formulario/accion.php" />
     <entry file="file://$PROJECT_DIR$/prueba_formulario/inicio.html" />
     <entry file="file://$PROJECT_DIR$/views/carrito.html" />
@@ -466,87 +508,133 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa7660.39343/fpdf.php" />
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1529005990816" expanded="true" signature="582:775" ph="SELECT p.id,... carrito" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/carrito.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/pdf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding>
-            <marker date="1529007341671" expanded="true" signature="661:701" ph="SELECT * FRO... productos" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/verduras.html">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="-466">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/suplementos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        <state relative-caret-position="459">
+          <caret line="27" column="49" lean-forward="false" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/verduras.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="45" lean-forward="false" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2886">
+          <caret line="182" column="22" lean-forward="false" selection-start-line="182" selection-start-column="22" selection-end-line="182" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="40" lean-forward="false" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="153">
+          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="22" lean-forward="false" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="442">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="54" column="145" lean-forward="false" selection-start-line="54" selection-start-column="145" selection-end-line="54" selection-end-column="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/carrito.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="58" lean-forward="false" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="2" lean-forward="false" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <marker date="1529080843374" expanded="true" signature="670:712" ph="SELECT unida... productos" />
+            <marker date="1529080843374" expanded="true" signature="863:942" ph="SELECT canti... carrito" />
+            <marker date="1529080843374" expanded="true" signature="1059:1152" ph="UPDATE carri... " />
+            <marker date="1529080843374" expanded="true" signature="1258:1350" ph="INSERT INTO carrito... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="84" lean-forward="false" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="95" column="15" lean-forward="false" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="30" lean-forward="false" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        <state relative-caret-position="833">
+          <caret line="142" column="101" lean-forward="false" selection-start-line="142" selection-start-column="101" selection-end-line="142" selection-end-column="101" />
           <folding>
-            <marker date="1529079230943" expanded="true" signature="3900:3906" ph=" " />
+            <marker date="1529151581393" expanded="true" signature="1327:1337" ph="..." />
+            <marker date="1529151581393" expanded="true" signature="1537:1550" ph="..." />
+            <marker date="1529151581393" expanded="true" signature="1694:1706" ph="..." />
+            <marker date="1529151581393" expanded="true" signature="5451:5457" ph=" " />
+            <marker date="1529151581393" expanded="true" signature="6613:6619" ph=" " />
           </folding>
         </state>
       </provider>
