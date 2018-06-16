@@ -10,11 +10,10 @@
 
 .titulo{
     height: 70px;
-
 }
 
 .descripcion{
-    height: 55px;
+    height: 60px;
 }
 
 .btnn{
@@ -28,3 +27,10 @@
 .producto{
     font-weight: bold;
 }
+
+.unidades{
+    font-size:25px;
+    position: absolute;
+    top: 330px;
+}
+

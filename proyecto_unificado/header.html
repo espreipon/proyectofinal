@@ -1,3 +1,4 @@
+
 <!-- Slide -->
 <!--
 <div class="bs-example">
@@ -52,16 +53,14 @@
 
 -->
 
-<div class="row">
-    <div class="col-md-12">
-        <div class="col-md-10">
 
-        </div>
-        <div class="col-md-2">
+<div class="row">
+    <div class="pull-right">
+
             <div id="loginContainer">
                 <a href="login.html"><button class="btn boton" type="button">Acceder a mi cuenta</button></a>
             </div>
-        </div>
+
     </div>
 </div>
 
@@ -169,10 +168,21 @@
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
             if(data.loggedin === true) {
-                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido '+data.username+'</span> <a href="includes/login/logout.php">Logout</a>');
+                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido '+data.username+'</span> <a href="includes/login/logout.php">Logout</a>&nbsp;' +
+                   '<a href="carrito.html" class="btn  carrito  glyphicon glyphicon-shopping-cart" role="button"></a>');
             }
         }
     }
     xmlhttp.open('GET', './includes/login/getLoginState.php?sid=' + Math.random(), true);
     xmlhttp.send();
 </script>
+<style>
+    .carrito{
+        border:none;
+        font-size:30px;
+        color: #848484;
+    }
+    .carrito:hover{
+        background-color: #ebebeb;
+    }
+</style>
