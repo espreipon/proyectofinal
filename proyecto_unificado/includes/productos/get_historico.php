@@ -17,13 +17,19 @@ $myObj->loggedin = isset($_SESSION['loggedin']);
 $myObj->list = array();
 if($myObj->loggedin) {
     $userId = $_SESSION['userId'];
-    $consulta= 'SELECT p.id, p.nombre, p.descripcion, c.cantidad, p.precio, ROUND((p.precio*c.cantidad),2) AS total FROM tienda.carrito c INNER JOIN tienda.productos p ON c.producto_id = p.id WHERE c.user_id ='.$userId;
+    $consulta= 'SELECT p.id, p.nombre, p.image, h.cantidad, h.precio_ud, h.fecha FROM tienda.historico h INNER JOIN tienda.productos p ON h.producto_id = p.id WHERE h.user_id ='.$userId;
     if ($resultado = $conn->query($consulta)) {
         while($row = $resultado->fetch_assoc()) {
             $myObj->list[] = $row;
         }
     }
 }
+if(!isset($_SESSION['loggedin'])){
+    alert("Debe iniciar sesion para acceder a esta página");
+}
 echo json_encode($myObj);
 $conn->close();
 ?>
+
+
+
