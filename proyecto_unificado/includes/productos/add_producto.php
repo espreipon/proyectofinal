@@ -19,14 +19,12 @@ $myObj->affected_rows = 0;
 if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
     $idProducto = $_GET["id"];
     $userId = $_SESSION['userId'];
-/*
-    $query = 'SELECT unidades FROM productos WHERE id = '.$idProducto;
-    $result = $conn->query($query);
-    if($result > 1){
-        */
-        //////
-        
-        $cantidad=null;
+
+    $sql = 'SELECT unidades FROM productos WHERE id = '.$idProducto;
+    $resultado = $conn->query($sql);
+    $unidades = $resultado->fetch_assoc()["unidades"];
+
+    if($unidades > 0){
         $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
         $conn->query($consulta);
         if($conn->affected_rows == 1)
@@ -40,16 +38,8 @@ if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
             $conn->query($consulta);
         }
         $myObj->affected_rows = $conn->affected_rows;
-        ////
-        /*
-    }else{
-        echo "No quedan unidades";
     }
-    */
-
-
-
-
 }
+
 echo json_encode($myObj);
 $conn->close();
