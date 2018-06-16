@@ -25,7 +25,7 @@ if($myObj->loggedin) {
     }
 }
 if(!isset($_SESSION['loggedin'])){
-    alert("Debe iniciar sesion para acceder a esta página");
+    echo "Debe iniciar sesion para acceder a esta página";
 }
 echo json_encode($myObj);
 $conn->close();
