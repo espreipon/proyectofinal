@@ -1,0 +1,30 @@
+.reveal-if-active {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  transform: scale(0.8);
+  transition: 0.5s;
+}
+
+.reveal-if-active label {
+  display: block;
+  margin: 0 0 3px 0;
+}
+.reveal-if-active input[type=text] {
+  width: 100%;
+}
+  
+.reveal-if-active.active {
+  opacity: 1;
+  height: auto;
+  padding: 10px 20px;
+  transform: scale(1);
+  overflow: visible;
+}
+body {
+  font-size: 20px;
+}
+* {
+  box-sizing: border-box;
+}

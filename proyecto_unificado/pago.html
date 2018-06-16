@@ -9,6 +9,7 @@
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-pago.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/favicon.gif" />
     <script> 
@@ -17,70 +18,23 @@
             $("footer").load("footer.html");
         });
     </script>
-    <script> 
-        var username, password, password2, firstname, lastname1, lastname2, phone, email, address;
-        function valida() {
-            username = document.getElementById("username").value;
-            password = document.getElementById("password").value;
-            password2 = document.getElementById("password2").value;
-
-            firstname = document.getElementById("firstname").value;
-            lastname1 = document.getElementById("lastname1").value;
-            lastname2 = document.getElementById("lastname2").value;
-            phone = document.getElementById("phone").value;
-            email = document.getElementById("email").value;
-            address = document.getElementById("address").value;
-
-            var regExpUser = /^[a-z\d_]{4,15}$/i,
-                regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
-                regExpPhone = /^[9|6|7][0-9]{8}$/,
-                regExpEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
-
-            if (regExpUser.test(username)) {
-                if (regExpPass.test(password)) {
-                    if (password == password2) {
-                        if (regExpEmail.test(email)) {
-                            if (phone != "") {
-                                if (regExpPhone.test(phone)) {
-                                    registro();
-                                } else {
-                                    alert("El campo teléfono no es correcto. Debe comenzar por 9, 7 o 6. La lóngitud máxima son 9 dígitos");
-                                }
-                            } else {
-                                registro();
-                            }
-                        } else {
-                            alert("El campo email no es correcto");
-                        }
-                    } else {
-                        alert("Las contraseñas no coinciden");
-                    }
-                } else {
-                    alert("La contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula, un numero y un caracter especial. Longitud de 8 a 20 caracteres");
-                }
+    <script>
+        var FormStuff = {
+            init: function () {
+                this.bindUIActions();
+            },
+            bindUIActions: function () {
+                $("input[type='radio'].check-reveal").on("change", this.applyConditionalRequired);
+            },
+            applyConditionalRequired: function (e) {
+                $(".reveal-if-active.active").removeClass('active');
+                $($(this).data("require-pair")).addClass('active');
             }
-            else {
-                alert("El nombre de usuario no es adecuado. Tan solo están permitidos números y letras. Longitud de 4 a 15 caracteres");
-            }
-        }
-
-        function registro() {
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "includes/login/registry.php", true);
-            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("result").innerHTML = this.responseText;
-                }
-            };
-            xhttp.send('username=' + username + '&password=' + password + '&firstname=' + firstname + '&lastname1=' + lastname1 + '&lastname2=' + lastname2 + '&phone=' + phone + '&email=' + email + '&address=' + address);
-        }
-
+        };
     </script>
 </head>
 
-<body>
+<body onload="FormStuff.init();">
     <div class="container">
         <header></header>
         <main>
@@ -88,19 +42,32 @@
 
                 <fieldset>
                     <legend>Informacion de contacto</legend>
-                    <label>Email:</label><input id="email" name="email" type="text">
-                </fieldset><br><br>
+                    <label>Email:</label>
+                    <input id="email" name="email" type="text">
+                </fieldset>
+                <br>
+                <br>
 
                 <fieldset>
                     <legend>Dirección de envío</legend>
-                    <label>Nombre:</label> <input id="firstname" name="firstname" type="text" maxlength="50" required>
-                    <label>Apellidos:</label><input id="lastname1" name="lastname1" type="text" maxlength="50" required><br>
-                    <label>Dirección:</label><input id="address" name="address" type="text" maxlength="150" required><br>
-                    <label>Número, piso, letra:</label><input id="number" name="number" type="text" maxlength="50" required><br>
-                    <label>Ciudad:</label><input id="city" name="city" type="text" maxlength="50" required><br>
-                    <label>Provincia: </label><select required>
+                    <label>Nombre:</label>
+                    <input id="firstname" name="firstname" type="text" maxlength="50" required>
+                    <label>Apellidos:</label>
+                    <input id="lastname1" name="lastname1" type="text" maxlength="50" required>
+                    <br>
+                    <label>Dirección:</label>
+                    <input id="address" name="address" type="text" maxlength="150" required>
+                    <br>
+                    <label>Número, piso, letra:</label>
+                    <input id="number" name="number" type="text" maxlength="50" required>
+                    <br>
+                    <label>Ciudad:</label>
+                    <input id="city" name="city" type="text" maxlength="50" required>
+                    <br>
+                    <label>Provincia: </label>
+                    <select required>
                         <option selected="selected" disabled>Seleciona...</option>
-                        <option >A Coruña</option>
+                        <option>A Coruña</option>
                         <option>Álava</option>
                         <option>Albacete</option>
                         <option>Alicante</option>
@@ -153,52 +120,56 @@
                         <option>Zamora</option>
                         <option>Zaragoza</option>
                     </select>
-                    <label>Código Postal:</label><input id="postal" name="postal" type="text" maxlength="5" required><br>
-                </fieldset><br><br>
+                    <label>Código Postal:</label>
+                    <input id="postal" name="postal" type="text" maxlength="5" required>
+                    <br>
+                </fieldset>
+                <br>
+                <br>
 
                 <fieldset>
                     <legend>Envíos</legend>
-                    <input type="radio" class="tipo_envio" name="tipo_envio" checked="checked"/>Envío con Correos Express 24 horas<br>
-                    <input type="radio" class="tipo_envio" name="tipo_envio"/>Envío con Seur Estándar24 horas
+                    <input type="radio" class="tipo_envio" name="tipo_envio" checked="checked" />Envío con Correos Express 24 horas
+                    <br>
+                    <input type="radio" class="tipo_envio" name="tipo_envio" />Envío con Seur Estándar24 horas
                 </fieldset>
-            
+
+                <fieldset>
+                    <legend>Facturacion y Pagos</legend>
+                    <input type="radio" class="tipo_envio" name="tipo_pago" checked="checked" />Envío con Correos Express 24 horas
+                    <br>
+                    <input type="radio" class="tipo_envio" name="tipo_pago" />Envío con Seur Estándar24 horas
+                </fieldset>
+
                 <fieldset>
                     <legend></legend>
                 </fieldset>
-                <fieldset>
-                    <legend></legend>
-                </fieldset>
+
+                <submi></submi>
             </form>
-            <form action="checklogin" method="POST">
-                <label>Nombre de usuario*:</label>
-                <br>
-                <input id="username" name="username" type="text" value="espe3" maxlength="20" required>
-                <br>
-                <br>
+            <form method="post" action="#">
 
-                <label>Password*:</label>
-                <br>
-                <input id="password" name="password" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
+                <h4>Test</h4>
+                <div>
+                    <div>
+                        <input type="radio" name="choice-option" id="choice-option-1" class="check-reveal" data-require-pair="#choice-option-1-body">
+                        <label for="choice-option-1">Option 1</label>
 
-                <label>Confirmar password*:</label>
-                <br>
-                <input id="password2" name="password2" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
+                        <div class="reveal-if-active" id="choice-option-1-body">
+                            Option 1 Body
+                        </div>
+                    </div>
 
-                
+                    <div>
+                        <input type="radio" name="choice-option" id="choice-option-2" class="check-reveal" data-require-pair="#choice-option-2-body">
+                        <label for="choice-option-2">Option 2</label>
 
-
-                <input type="button" name="button" value="ENVIAR" onclick="valida()">
-
+                        <div class="reveal-if-active" id="choice-option-2-body">
+                            Option 2 Body
+                        </div>
+                    </div>
+                </div>
             </form>
-            <p>*Campos obligatorios</p>
-            <hr/>
-            <div id="result">
-
-            </div>
         </main>
         <footer></footer>
     </div>
