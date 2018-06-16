@@ -134,7 +134,7 @@ function renderCarrito() {
                 }
                 html +=  "</ul>";
                 html += "<br><li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
-                html += "<br><br><input class='btn pull-right' type='button' value='Aceptar y pagar'>"
+                html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' onclick='saveCart()' value='Aceptar y pagar'></a>"
                 document.getElementById('carrito').innerHTML = html;
             }
         }
@@ -159,6 +159,23 @@ function anadirProducto(id) {
     xmlhttp.send();
 };
 function deleteProducto(id) {
+    xmlhttp = getXMLRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = JSON.parse(this.response);
+            if (data.loggedin && data.affected_rows === 1) {
+                console.log('El producto se ha eliminado del carrito correctamente.');
+                renderCarrito();
+            } else {
+                alert('Error');
+            }
+        }
+    }
+    xmlhttp.open('GET', './includes/productos/delete_producto.php?id=' + id + '&sid=' + Math.random(), true);
+    xmlhttp.send();
+};
+
+function saveCart(){
     xmlhttp = getXMLRequest();
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
