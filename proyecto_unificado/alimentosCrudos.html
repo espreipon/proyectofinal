@@ -11,6 +11,7 @@
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/script-carrito.js"></script>
+    <script type="text/javascript" src="./js/script-buscador.js"></script>
     <link rel="icon" type="image/png" href="images/favicon.gif" />
     <script> 
         $(function () {
@@ -18,46 +19,26 @@
             $("footer").load("footer.html");
         });
     </script>
-    <script>
-        
-function func() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("result").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("POST", "includes/buscador.php", true);
-  xhttp.send();
-}
-    </script>
 </head>
 
 <body>
     <div class="container">
         <header></header>
         <main>
-           <!-- BUSCADOR -->
-<h1>Ejemplo de buscado</h1> 
-<form id="buscador" name="buscador" method="post" action="includes/buscador.php"> 
-    <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
-    <input type="submit" name="buscador" class="boton peque aceptar" onclick="func()" value="buscar">
-    <label id="result"></label>
-</form>
-            <!-- PRODUCTOS -->
+        <!-- BUSCADOR -->
+        <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
+        <input type="button" name="buscador" class="boton peque aceptar" onclick="search(1)" value="buscar">
+        <input type="button" name="limpiar" class="boton2" onclick="limpiar(1)" value="limpiar">
+        <label id="result"></label>
 
-            <body onload="renderProductos(1);">
-
-                <h1>Productos</h1>
-                <div class="row" id="productosContenedor">
-
-                </div>
-
-                
-            </body>
-        </main>
-        <footer></footer>
-    </div>
+        <!-- PRODUCTOS -->
+        <body onload="renderProductos(1);">
+            <h1>Productos</h1>
+            <div class="row" id="productosContenedor">
+            </div>
+        </body>
+    </main>
+    <footer></footer>
+</div>
 </body>
-
 </html>

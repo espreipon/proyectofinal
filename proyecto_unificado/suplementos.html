@@ -11,6 +11,8 @@
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/script-carrito.js"></script>
+    <script type="text/javascript" src="./js/script-buscador.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.gif" />
     <script> 
         $(function () {
             $("header").load("header.html");
@@ -20,23 +22,24 @@
 </head>
 
 <body>
+    <div class="container">
+    <header></header>
+    <main>
+        <!-- BUSCADOR -->
+        <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
+        <input type="button" name="buscador" class="boton peque aceptar" onclick="search(3)" value="buscar">
+        <input type="button" name="limpiar" class="boton2" onclick="limpiar(3)" value="limpiar">
+        <label id="result"></label>
+
         <div class="container">
-            <header></header>
-            <main>
-                <!-- PRODUCTOS -->
-    
-                <body onload="renderProductos(3);">
-
-                    <h1>Productos</h1>
-                    <div class="row" id="productosContenedor">
-    
-                    </div>
-    
-
-                </body>
-            </main>
-            <footer></footer>
-        </div>
-    </body>
-
+        <!-- PRODUCTOS -->
+        <body onload="renderProductos(3);">
+            <h1>Productos</h1>
+            <div class="row" id="productosContenedor">
+            </div>
+        </body>
+    </main>
+    <footer></footer>
+</div>
+</body>
 </html>
