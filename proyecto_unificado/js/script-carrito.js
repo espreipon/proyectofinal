@@ -63,11 +63,8 @@ function renderProductos(typeId) {
                 <img data-src="+productos[i].image+" alt=\"...\">\n" +
 
                 */
-
-
             }
             document.getElementById('productosContenedor').innerHTML = html;
-
         }
     }
     xmlhttp.open('GET', './includes/productos/get_productos.php?typeId=' + typeId + '&sid=' + Math.random(), true);
@@ -157,7 +154,7 @@ function anadirProducto(id) {
                 console.log('El producto se ha añadido al carrito correctamente.');
                 renderCarrito();
             } else {
-                alert('Error');
+                alert('No existen unidades disponibles');
             }
         }
     }
