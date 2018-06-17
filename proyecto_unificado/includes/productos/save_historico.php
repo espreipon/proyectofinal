@@ -46,9 +46,9 @@ if($myObj->loggedin) {
 
 
     }
-
+    header("Location: ../../finCompra.html");
 }
-header("Location: ../../finCompra.html");
-echo json_encode($myObj);
+
+//echo json_encode($myObj);
 $conn->close();
 ?>

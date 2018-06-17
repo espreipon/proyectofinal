@@ -40,6 +40,8 @@
   margin-bottom: 30px;
   box-shadow: 3px 3px 10px grey;
 }
-
+.errorForm {
+  border: 1px solid red;
+}
 
 

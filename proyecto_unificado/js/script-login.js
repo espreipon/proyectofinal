@@ -13,7 +13,7 @@ function loadDoc() {
                 //redireccionar a index
                 window.location.href = "index.html";
             } else {
-                document.getElementById("result").innerHTML = data.error;
+               alert(data.error);
             }
 
         }

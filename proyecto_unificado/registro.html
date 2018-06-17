@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-registro.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./images/favicon.gif" />
+    <script type="text/javascript" src="./js/script-registro.js"></script>
     <script> 
         $(function () {
             $("header").load("header.html");
@@ -18,61 +19,7 @@
         });
     </script>
     <script> 
-        var username, password, password2, firstname, lastname, phone, email;
-        function valida() {
-            username = document.getElementById("username").value;
-            password = document.getElementById("password").value;
-            password2 = document.getElementById("password2").value;
-            firstname = document.getElementById("firstname").value;
-            lastname = document.getElementById("lastname").value;
-            phone = document.getElementById("phone").value;
-            email = document.getElementById("email").value;
 
-            var regExpUser = /^[a-z\d_]{4,15}$/i,
-                regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
-                regExpPhone = /^[9|6|7][0-9]{8}$/,
-                regExpEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
-
-            if (regExpUser.test(username)) {
-                if (regExpPass.test(password)) {
-                    if (password == password2) {
-                        if (regExpEmail.test(email)) {
-                            if (phone != "") {
-                                if (regExpPhone.test(phone)) {
-                                    registro();
-                                } else {
-                                    alert("El campo teléfono no es correcto. Debe comenzar por 9, 7 o 6. La lóngitud máxima son 9 dígitos");
-                                }
-                            } else {
-                                registro();
-                            }
-                        } else {
-                            alert("El campo email no es correcto");
-                        }
-                    } else {
-                        alert("Las contraseñas no coinciden");
-                    }
-                } else {
-                    alert("La contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula, un numero y un caracter especial. Longitud de 8 a 20 caracteres");
-                }
-            }
-            else {
-                alert("El nombre de usuario no es adecuado. Tan solo están permitidos números y letras. Longitud de 4 a 15 caracteres");
-            }
-        }
-
-        function registro() {
-
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "includes/login/registry.php", true);
-            xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("result").innerHTML = this.responseText;
-                }
-            };
-            xhttp.send('username=' + username + '&password=' + password + '&firstname=' + firstname + '&lastname=' + lastname + '&phone=' + phone + '&email=' + email);
-        }
 
     </script>
 </head>
@@ -81,61 +28,41 @@
     <div class="container">
         <header></header>
         <main>
-            <h1>Login de Usuarios</h1>
-            <hr/>
-
-            <form action="checklogin" method="POST">
-                <label>Nombre de usuario*:</label>
-                <br>
-                <input id="username" name="username" type="text" value="espe3" maxlength="20" required>
-                <br>
-                <br>
-
-                <label>Password*:</label>
-                <br>
-                <input id="password" name="password" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
-
-                <label>Confirmar password*:</label>
-                <br>
-                <input id="password2" name="password2" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
-
-                <label>Nombre*:</label>
-                <br>
-                <input id="firstname" name="firstname" type="text" value="espe" maxlength="50" required>
-                <br>
-                <br>
-
-                <label>Apellidos*:</label>
-                <br>
-                <input id="lastname" name="lastname" type="text" value="rei" maxlength="50" required>
-                <br>
-                <br>
-
-                <label>Teléfono:</label>
-                <br>
-                <input id="phone" name="phone" type="text" maxlength="9">
-                <br>
-                <br>
-
-                <label>Email*:</label>
-                <br>
-                <input id="email" name="email" type="text" value="esperanza@hotmail.com" maxlength="150" required>
-                <br>
-                <br>
-
-
-                <input type="button" name="button" value="ENVIAR" onclick="valida()">
+            <h1>Registro de Usuarios</h1>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="col-md-4"></div>
+                    <div class="col-md-4 login">
+            <form action="checklogin" class="form-group" method="POST">
+                <p>Nombre de usuario*:</p>
+                <input id="username" class="form-control" name="username" type="text" maxlength="20" required>
+                <hr>
+                <p>Password*:</p>
+                <input id="password" class="form-control" name="password" type="password"  maxlength="100" required>
+                <hr>
+                <p>Confirmar password*:</p>
+                <input id="password2" class="form-control" name="password2" type="password"  maxlength="100" required>
+                <hr>
+                <p>Nombre*:</p>
+                <input id="firstname" class="form-control" name="firstname" type="text"  maxlength="50" required>
+                <hr>
+                <p>Apellidos*:</p>
+                <input id="lastname" class="form-control" name="lastname" type="text"  maxlength="50" required>
+                <hr>
+                <p>Teléfono:</p>
+                <input id="phone" class="form-control" name="phone" type="text" maxlength="9">
+                <hr>
+                <p>Email*:</p>
+                <input id="email" class="form-control" name="email" type="text"  maxlength="150" required>
+                <hr>
+                <input type="button"class="btn log" name="button" value="ENVIAR" onclick="valida()">
 
             </form>
-            <p>*Campos obligatorios</p>
-            <hr/>
-            <div id="result">
-
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
             </div>
+            <p>*Campos obligatorios</p>
         </main>
         <footer></footer>
     </div>

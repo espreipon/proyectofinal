@@ -38,13 +38,9 @@ function renderProductos(typeId) {
 
                 if (data.loggedin == true) {
                     if(productos[i].unidades>=1){
-                        html += "         <input type='button' class='btn btnn' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>"+
-
-                            "         <input type='button'class='btn btnn' value='Ver detalle'/>";
+                        html += "         <input type='button' class='btn btnn' onClick='anadirProducto(" + productos[i].id + ")' value='Añadir'/>";
                     }else{
-                        html += "         <input type='button' class='btn btnn' onClick='anadirProducto(" + productos[i].id + ")' disabled value='Añadir'/>"+
-
-                            "         <input type='button'class='btn btnn' value='Ver detalle'/>";
+                        html += "         <input type='button' class='btn btnn' onClick='anadirProducto(" + productos[i].id + ")' disabled value='Añadir'/>";
                     }
 
                 }
@@ -95,48 +91,56 @@ function renderCarrito() {
     xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
-            if (data.loggedin) {
-                var carrito = data.list,
-                    html = "",
-                    total = 0;
-                html += "<h1>Carrito</h1><br>";
-                html +=
-                    "<ul class='fondo'>" +
-                    "   <li class='headCarrito'>" +
-                    "       <div class='imagen' >Imagen</div>" +
-                    "       <div class='nombre'>NOMBRE</div>" +
-                    "       <div class='precio'>PRECIO</div>" +
-                    "       <div class='cant'>CANTIDAD</div>" +
-                    "       <div class='aniadir'>AÑADIR</div>" +
-                    "   </li>" +
-                    "</ul><br>";
-                html +=                       "<ul>";
-                for (var i = 0, iLen = carrito.length; i < iLen; i++) {
+            if(data.list.length == 0){
+                alert("Tu carrito está vacío");
+                window.location.href="index.html";
+            }else{
+                if (data.loggedin) {
+                    var carrito = data.list,
+                        html = "",
+                        total = 0;
+                    html += "<h1>Carrito</h1><br>";
                     html +=
+                        "<ul class='fondo'>" +
+                        "   <li class='headCarrito'>" +
+                        "       <div class='imagen' >Imagen</div>" +
+                        "       <div class='nombre'>NOMBRE</div>" +
+                        "       <div class='precio'>PRECIO</div>" +
+                        "       <div class='cant'>CANTIDAD</div>" +
+                        "       <div class='aniadir'>AÑADIR</div>" +
+                        "   </li>" +
+                        "</ul><br>";
+                    html +=                       "<ul>";
+                    for (var i = 0, iLen = carrito.length; i < iLen; i++) {
+                        html +=
 
-                        "   <li class='bodyCarrito' id='prod_\" + carrito[i].id + \"'>" +
-                        "       <div class='imagenCart' ><img src='"+carrito[i].image+"' width='90'alt=''></div>" +
-                        "       <div class='nombreCart' >"+carrito[i].nombre+"</div>" +
-                        "       <div class='precioCart'>"+carrito[i].total+"€</div>" +
-                        "       <div class='cantCart'>"+carrito[i].cantidad+"</div>" +
-                        "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/></div>" +
-                        "   </li>";
+                            "   <li class='bodyCarrito' id='prod_\" + carrito[i].id + \"'>" +
+                            "       <div class='imagenCart' ><img src='"+carrito[i].image+"' width='90'alt=''></div>" +
+                            "       <div class='nombreCart' >"+carrito[i].nombre+"</div>" +
+                            "       <div class='precioCart'>"+carrito[i].total+"€</div>" +
+                            "       <div class='cantCart'>"+carrito[i].cantidad+"</div>" +
+                            "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/></div>" +
+                            "   </li>";
                         total += parseFloat(+carrito[i].total);
 
-                   // html+= "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
-                    /*
-                    html +=
-                        // "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
-                     "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
-                     //var btn = document.createElement('button').button.onclick = deleteProducto(carrito[i].id);
-                     total += parseFloat(carrito[i].total);
-                    */
+                        // html+= "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
+                        /*
+                        html +=
+                            // "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
+                         "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
+                         //var btn = document.createElement('button').button.onclick = deleteProducto(carrito[i].id);
+                         total += parseFloat(carrito[i].total);
+                        */
+                    }
+                    html +=  "</ul>";
+                    html += "<br><li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
+                    html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' onclick='saveCart()' value='Aceptar y pagar'></a>"
+                    document.getElementById('carrito').innerHTML = html;
+                }else{
+                    alert("Inicia sesion");
                 }
-                html +=  "</ul>";
-                html += "<br><li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
-                html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' onclick='saveCart()' value='Aceptar y pagar'></a>"
-                document.getElementById('carrito').innerHTML = html;
             }
+
         }
     }
     xmlhttp.open('GET', './includes/productos/get_carrito.php?sid=' + Math.random(), true);
