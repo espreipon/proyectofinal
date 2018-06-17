@@ -14,11 +14,9 @@ if ($conexion->connect_error) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 $firstname = $_POST['firstname'];
-$lastname1 = $_POST['lastname1'];
-$lastname2 = $_POST['lastname2'];
+$lastname = $_POST['lastname'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-$address = $_POST['address'];
 
 //Comprobar si el nombre de usuario ya existe.
 $sql = "SELECT * FROM $tbl_name WHERE username = '$username';";
@@ -29,7 +27,7 @@ if ($result->num_rows > 0) {
 }
 else{
     $hash = password_hash($password, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO `$tbl_name` (`username`, `password`, `firstname`, `lastname1`, `lastname2`, `phone`, `email`, `address`) VALUES ('$username','$hash','$firstname','$lastname1','$lastname2','$phone','$email','$address');";
+    $sql = "INSERT INTO `$tbl_name` (`username`, `password`, `firstname`, `lastname`, `phone`, `email`) VALUES ('$username','$hash','$firstname','$lastname','$phone','$email');";
     if($conexion->query($sql)){
     echo "Registro realizado con exito";
     }
