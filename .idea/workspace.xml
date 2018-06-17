@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6764b50f-3b95-4aad-ad62-bb3e7e04b56f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-pago.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/calculadora.html" afterPath="$PROJECT_DIR$/proyecto_unificado/calculadora.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/carrito.html" afterPath="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" afterPath="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/header.html" afterPath="$PROJECT_DIR$/proyecto_unificado/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/login.html" afterPath="$PROJECT_DIR$/proyecto_unificado/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/pago.html" afterPath="$PROJECT_DIR$/proyecto_unificado/pago.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html" afterPath="$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/perfil_usuario.html" afterPath="$PROJECT_DIR$/proyecto_unificado/perfil_usuario.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/queEs.html" afterPath="$PROJECT_DIR$/proyecto_unificado/queEs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/quienesSomos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/quienesSomos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_a.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_a.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_b.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_c.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_c.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_d.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_d.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_e.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_e.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_a.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_a.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_b.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_b.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_c.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_c.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_d.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_d.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_e.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_e.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/recetasGato.html" afterPath="$PROJECT_DIR$/proyecto_unificado/recetasGato.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/recetasPerro.html" afterPath="$PROJECT_DIR$/proyecto_unificado/recetasPerro.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/registro.html" afterPath="$PROJECT_DIR$/proyecto_unificado/registro.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tienda-17.6.sql" afterPath="$PROJECT_DIR$/tienda-17.6.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/footer.html" afterPath="$PROJECT_DIR$/proyecto_unificado/footer.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,7 +14,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="sitemap.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/sitemap.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1530">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,7 +85,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/buscador.php" />
         <option value="$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css" />
         <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/historico.php" />
         <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php" />
@@ -101,7 +106,6 @@
         <option value="$PROJECT_DIR$/proyecto_unificado/css/style-registro.css" />
         <option value="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" />
         <option value="$PROJECT_DIR$/proyecto_unificado/login.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
         <option value="$PROJECT_DIR$/proyecto_unificado/calendario.html" />
         <option value="$PROJECT_DIR$/copia_antes_unificar/Calendario_proyecto/public_html/js/index.js" />
         <option value="$PROJECT_DIR$/proyecto_unificado/js/script-calendario.js" />
@@ -130,6 +134,8 @@
         <option value="$PROJECT_DIR$/proyecto_unificado/registro.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/footer.html" />
       </list>
     </option>
   </component>
@@ -175,6 +181,12 @@
               <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proyectoFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="proyecto_unificado" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="proyectoFinal" type="b2602c69:ProjectViewProjectNode" />
@@ -287,17 +299,18 @@
       <workItem from="1529151741168" duration="6412000" />
       <workItem from="1529162893963" duration="9990000" />
       <workItem from="1529222508307" duration="17147000" />
-      <workItem from="1529244518620" duration="16182000" />
+      <workItem from="1529244518620" duration="17317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140331000" />
+    <option name="totallyTimeSpent" value="141466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1785174" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1785174" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -328,22 +341,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-pago.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -691,14 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/historico.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -763,6 +752,33 @@
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="73" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1530">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" lean-forward="false" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
