@@ -36,6 +36,12 @@ if($myObj->loggedin) {
             $myObj->list[] = $row;
             $ins = 'INSERT INTO historico(producto_id, user_id, cantidad, precio_ud) VALUES ('.$prod_Id.','.$user_Id.','.$cantidad.','.$precio.')';
             $conn->query($ins);
+
+            $updt = "UPDATE productos SET unidades = unidades - ".$cantidad." WHERE id = ".$prod_Id;
+            $conn->query($updt);
+
+            $del = "DELETE FROM carrito WHERE user_id = ".$user_Id;
+            $conn->query($del);
         }
     }
 }
