@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-index.css">
     <link rel="stylesheet" href="./css/style-pago.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="../images/favicon.gif"/>
+    <link rel="icon" type="image/png" href="./images/favicon.gif"/>
     <script>
         $(function () {
             $("header").load("header.html");
@@ -31,6 +30,17 @@
                 $($(this).data("require-pair")).addClass('active');
             }
         };
+
+        function valida(){
+            var expresion = document.getElementById("tarjeta").value;
+            var expReg = /^((67\\d{2})|(4\\d{3})|(5[1-5]\\d{2})|(6011))(-?\\s?\\d{4}){3}|(3[4,7])\\ d{2}-?\\s?\\d{6}-?\\s?\\d{5}$/;
+            if(expReg.test(expresion)){
+
+              //  window.location.href = 'finCompra.html';
+            }else{
+                alert("Introduce una tarjeta de crédito correcta");
+            }
+        }
     </script>
 </head>
 
@@ -38,184 +48,152 @@
 <div class="container">
     <header></header>
     <main>
-        <form action="includes/productos/save_historico.php" method="POST">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 login">
+            <form action="includes/productos/save_historico.php" class="form-group" method="POST" >
+                    <h3>Informacion de contacto</h3>
+                    <p>Email:</p>
+                    <input id="email" placeholder="example@example.com" class="form-control" name="email" type="text">
+                <hr>
+                    <h3>Dirección de envío</h3>
+                    <p>Nombre:</p>
+                    <input id="firstname" class="form-control" name="firstname" type="text" maxlength="50" required>
+                    <p>Apellidos:</p>
+                    <input id="lastname1" class="form-control" name="lastname1" type="text" maxlength="50" required>
+                    <p>Dirección:</p>
+                    <input id="address" class="form-control" name="address" type="text" maxlength="150" required>
+                <div class="col-md-12">
+                <div class="col-md-4">
+                    <p>Número</p>
+                    <input id="number1" class="form-control" name="number" type="text" maxlength="50" required>
+                </div>
+                <div class="col-md-4">
+                    <p>Piso</p>
+                    <input id="number2" class="form-control" name="number" type="text" maxlength="50" required>
+                </div>
+                <div class="col-md-4">
+                    <p>Letra</p>
+                    <input id="number3" class="form-control" name="number" type="text" maxlength="50" required>
+                </div>
+                </div>
+                    <p>Ciudad:</p>
+                    <input id="city" class="form-control" name="city" type="text" maxlength="50" required>
+                    <p>Provincia: </p>
+                    <select class="form-control" required>
+                        <option selected="selected" disabled>Seleciona...</option>
+                        <option>A Coruña</option>
+                        <option>Álava</option>
+                        <option>Albacete</option>
+                        <option>Alicante</option>
+                        <option>Almería</option>
+                        <option>Asturias</option>
+                        <option>Ávila</option>
+                        <option>Badajoz</option>
+                        <option>Balears</option>
+                        <option>Barcelona</option>
+                        <option>Burgos</option>
+                        <option>Cáceres</option>
+                        <option>Cádiz</option>
+                        <option>Cantabria</option>
+                        <option>Castellón</option>
+                        <option>Ceuta</option>
+                        <option>Ciudad Real</option>
+                        <option>Córdoba</option>
+                        <option>Cuenca</option>
+                        <option>Córdoba</option>
+                        <option>Cuenca</option>
+                        <option>Girona</option>
+                        <option>Granada</option>
+                        <option>Guadalajara</option>
+                        <option>Guipúzcoa</option>
+                        <option>Huelva</option>
+                        <option>Jaén</option>
+                        <option>La Rioja</option>
+                        <option>Las Palmas</option>
+                        <option>León</option>
+                        <option>Lleida</option>
+                        <option>Lugo</option>
+                        <option>Madrid</option>
+                        <option>Málaga</option>
+                        <option>Murcia</option>
+                        <option>Navarra</option>
+                        <option>Ourense</option>
+                        <option>Palencia</option>
+                        <option>Pontevedra</option>
+                        <option>Salamanca</option>
+                        <option>Santa Cruz de Tenerife</option>
+                        <option>Segovia</option>
+                        <option>Sevilla</option>
+                        <option>Soria</option>
+                        <option>Tarragona</option>
+                        <option>Teruel</option>
+                        <option>Toledo</option>
+                        <option>Valencia</option>
+                        <option>Valladolid</option>
+                        <option>Vizcaya</option>
+                        <option>Zamora</option>
+                        <option>Zaragoza</option>
+                    </select>
+                    <p>Código Postal:</p>
+                    <input  id="postal" class="form-control cp" name="postal" type="text" maxlength="5" required>
+                <hr>
+                    <h3>Envíos</h3>
+                    <input type="radio" class="tipo_envio" name="tipo_envio" checked="checked"/><label>&nbsp;Envío con Correos Express 24 horas</label>
+                <br>
+                    <input type="radio" class="tipo_envio" name="tipo_envio"/><label>&nbsp;Envío con Seur Estándar 24 horas</label>
+                <hr>
 
-            <fieldset>
-                <legend>Informacion de contacto</legend>
-                <label>Email:</label>
-                <input id="email" name="email" type="text">
-            </fieldset>
-            <br>
-            <br>
-
-            <fieldset>
-                <legend>Dirección de envío</legend>
-                <label>Nombre:</label>
-                <input id="firstname" name="firstname" type="text" maxlength="50" required>
-                <label>Apellidos:</label>
-                <input id="lastname1" name="lastname1" type="text" maxlength="50" required>
-                <br>
-                <label>Dirección:</label>
-                <input id="address" name="address" type="text" maxlength="150" required>
-                <br>
-                <label>Número, piso, letra:</label>
-                <input id="number" name="number" type="text" maxlength="50" required>
-                <br>
-                <label>Ciudad:</label>
-                <input id="city" name="city" type="text" maxlength="50" required>
-                <br>
-                <label>Provincia: </label>
-                <select required>
-                    <option selected="selected" disabled>Seleciona...</option>
-                    <option>A Coruña</option>
-                    <option>Álava</option>
-                    <option>Albacete</option>
-                    <option>Alicante</option>
-                    <option>Almería</option>
-                    <option>Asturias</option>
-                    <option>Ávila</option>
-                    <option>Badajoz</option>
-                    <option>Balears</option>
-                    <option>Barcelona</option>
-                    <option>Burgos</option>
-                    <option>Cáceres</option>
-                    <option>Cádiz</option>
-                    <option>Cantabria</option>
-                    <option>Castellón</option>
-                    <option>Ceuta</option>
-                    <option>Ciudad Real</option>
-                    <option>Córdoba</option>
-                    <option>Cuenca</option>
-                    <option>Córdoba</option>
-                    <option>Cuenca</option>
-                    <option>Girona</option>
-                    <option>Granada</option>
-                    <option>Guadalajara</option>
-                    <option>Guipúzcoa</option>
-                    <option>Huelva</option>
-                    <option>Jaén</option>
-                    <option>La Rioja</option>
-                    <option>Las Palmas</option>
-                    <option>León</option>
-                    <option>Lleida</option>
-                    <option>Lugo</option>
-                    <option>Madrid</option>
-                    <option>Málaga</option>
-                    <option>Murcia</option>
-                    <option>Navarra</option>
-                    <option>Ourense</option>
-                    <option>Palencia</option>
-                    <option>Pontevedra</option>
-                    <option>Salamanca</option>
-                    <option>Santa Cruz de Tenerife</option>
-                    <option>Segovia</option>
-                    <option>Sevilla</option>
-                    <option>Soria</option>
-                    <option>Tarragona</option>
-                    <option>Teruel</option>
-                    <option>Toledo</option>
-                    <option>Valencia</option>
-                    <option>Valladolid</option>
-                    <option>Vizcaya</option>
-                    <option>Zamora</option>
-                    <option>Zaragoza</option>
-                </select>
-                <label>Código Postal:</label>
-                <input id="postal" name="postal" type="text" maxlength="5" required>
-                <br>
-            </fieldset>
-            <br>
-            <br>
-
-            <fieldset>
-                <legend>Envíos</legend>
-                <input type="radio" class="tipo_envio" name="tipo_envio" checked="checked"/>Envío con Correos Express 24
-                horas
-                <br>
-                <input type="radio" class="tipo_envio" name="tipo_envio"/>Envío con Seur Estándar24 horas
-            </fieldset>
-
-            <fieldset>
-                <legend>Facturacion y Pagos</legend>
-                <div>
-                    <input type="radio" name="choice-option" id="choice-otion-1" class="check-reveal"
-                           data-require-pair="#choice-option-1-body">
-                    <label for="choice-option-1">Tarjeta de crédito</label>
-                    <div class="row">
-                        <div class="reveal-if-active form-group" id="choice-option-1-body">
-                            <div class="col-md-12">
-                                <div class="col-md-7">
-                                    <input type="text" class="form-control " placeholder="Número de tarjeta">
+                    <h3>Facturacion y Pagos</h3>
+                    <div>
+                        <input type="radio" name="choice-option" id="choice-otion-1" class="check-reveal"
+                               data-require-pair="#choice-option-1-body" >
+                        <label for="choice-option-1">Tarjeta de crédito</label>
+                        <div class="row">
+                            <div class="reveal-if-active form-group" id="choice-option-1-body">
+                                <div class="col-md-12">
+                                        <input type="text" id="tarjeta"class="form-control " placeholder="Número de tarjeta">
                                 </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="col-md-3">
+                                <div class="col-md-12">
                                     <input type="text" class="form-control"
                                            placeholder="Nombre del titular de la tarjeta">
                                 </div>
-                                <div class="col-md-2">
-                                    <input type="text" class="form-control" placeholder="MM / AA">
-                                </div>
-                                <div class="col-md-2">
-                                    <input type="text" class="form-control" placeholder="CSV">
-                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="MM / AA">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control" placeholder="CSV">
+                                    </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div>
-                    <input type="radio" name="choice-option" id="choice-otion-2" class="check-reveal"
-                           data-require-pair="#choice-option-2-body">
-                    <label for="choice-option-2">PayPal</label>
-                    <div class="reveal-if-active" id="choice-option-2-body">
-                        <input type="text" placeholder="Número de tarjeta">
-                    </div>
-
-                </div>
-                <br>
-                <div>
-                    <input type="radio" name="choice-option" id="choice-otion-3" class="check-reveal"
-                           data-require-pair="#choice-option-3-body">
-                    <label for="choice-option-1">Transferencia bancaria</label>
-                    <div class="reveal-if-active" id="choice-option-3-body">
-                        <input type="text" placeholder="Número de tarjeta">
-                    </div>
-
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend></legend>
-            </fieldset>
-            <input type="submit" onclick="window.location.href = 'finCompra.html';" class="btn" name="button" value="PAGAR"/>
-        </form>
-        <!--<input type="button" class="btn" name="button" value="PAGAR"/>-->
-
-        <!--<a href="finCompra.html"></a>-->
-        <!--            <form method="post" action="#">
-
-                        <h4>Test</h                           <div><!--
-                            <div>
-                                <input type="radio" name="choice-option" id="choice-otion-1" class="check-reveal" data-require-pair="#choice-option-1-body">
-                                <label for="choice-option-1">Option 1</label>
-
-                                <div class="reveal-if-active" id="choie-option-1-body">
-                                    Option 1 Body
-                                </div>
-                            </div>
-
-                            <div>
-                                <input type="radio" name="choice-option" id="choic-option-2" class="check-reveal" data-require-pair="#choice-option-2-body">
-                                <label for="choice-option-2">Option 2</label>
-
-                                <div class="reveal-if-active" id="choice-option-2-body">
-                                    Option 2 Body
                                 </div>
                             </div>
                         </div>
-                    </form>-->
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="choice-option" id="choice-otion-2" class="check-reveal"
+                               data-require-pair="#choice-option-2-body">
+                        <label for="choice-option-2">PayPal</label>
+                        <div class="reveal-if-active" id="choice-option-2-body">
+                            <a href="https://www.paypal.com/es/home"><img src="images/paypal.png" width="90" alt=""></a>
+                        </div>
+
+                    </div>
+                    <br>
+                    <div>
+                        <input type="radio" name="choice-option" id="choice-otion-3" class="check-reveal"
+                               data-require-pair="#choice-option-3-body">
+                        <label for="choice-option-1">Transferencia bancaria</label>
+                        <div class="reveal-if-active" id="choice-option-3-body">
+                            <p>Por favor usa la referencia de tu pedido como referencia de pago. El pedido no será enviado hasta que el importe completo haya sido recibido en nuestra cuenta (BARF Pet Food España S.L., Banco Sabadell, IBAN: ES44 4444 4444 4444 4444 4444) o hasta que hayamos recibido un justificante de pago en nuestro correo electrónico <strong>barmania.prueba@gmail.es</strong> .</p>
+                        </div>
+
+                    </div>
+                <hr>
+                <input type="submit" onclick="valida()" class="btn log" name="button" value="PAGAR" />
+            </form>
+        </div>
+        <div class="col-md-4"></div>
     </main>
     <footer></footer>
 </div>
