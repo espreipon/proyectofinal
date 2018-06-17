@@ -43,8 +43,12 @@ if($myObj->loggedin) {
             $del = "DELETE FROM carrito WHERE user_id = ".$user_Id;
             $conn->query($del);
         }
+
+
     }
+
 }
+header("Location: ../../finCompra.html");
 echo json_encode($myObj);
 $conn->close();
 ?>
