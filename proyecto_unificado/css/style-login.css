@@ -1,0 +1,13 @@
+.btn{
+    margin-bottom: 10px;
+}
+.log{
+    width: 100%;
+}
+
+.login{
+    padding: 10px;
+    background-color: #e3e2df;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 10px grey;
+}
