@@ -68,12 +68,8 @@ function valida() {
                 return;
             }
             if(data.listNotBought.length > 0) {
-                var text = 'No se han podido realizar la compra por falta de stock en algunos productos: ';
-                for(var i = 0, iLen = data.listNotBought.length; i < iLen; i++) {
-                    text += '['+data.listNotBought[i].nombre + ' - Cantidad Deseada: ' + data.listNotBought[i].cantidad + ' - Max. Stock: ' + data.listNotBought[i].unidades+']';
-                }
-                alert(text);
-                return;
+                alert('No se han podido realizar la compra por falta de stock en algunos productos. Revisa el carrito y el stock.');
+                window.location.href = 'carrito.html';
             } else {
                 window.location.href = 'finCompra.html';
             }

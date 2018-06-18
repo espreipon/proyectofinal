@@ -58,9 +58,14 @@ function registro() {
     xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            var data = this.responseText;
-            alert(data);
-            window.location.href = "login.html";
+            var data = JSON.parse(this.response);
+            if(data.userExists == true) {
+                alert("El nombre de usuario ya existe, debe elegir otro");
+            } else {
+                alert("Registro realizado con exito. Volviendo a la pantalla de login.");
+                window.location.href = "login.html";
+            }
+            
 
 
         }

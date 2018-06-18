@@ -1,6 +1,6 @@
 #carrito {
     list-style: none;
-
+    position: relative;
 }
 
 .producto {
@@ -12,7 +12,8 @@
     list-style: none;
     text-align: start;
     font-weight: inherit;
-
+    height: 30px;
+    line-height: 30px;
 }
 
 .imagen {
@@ -24,7 +25,7 @@
 }
 
 .nombre {
-    width: 500px;
+    width: 400px;
 
     float: left;
     text-align: center;
@@ -46,6 +47,13 @@
     text-align: center;
 }
 
+.stock {
+    width: 100px;
+
+    float: left;
+    text-align: center;
+}
+
 .aniadir {
     visibility: hidden;
     width: 100px;
@@ -61,21 +69,29 @@
 }
 
 .nombreCart {
-    padding-top: 40px;
-    width: 500px;
+    line-height: 100px;
+    width: 400px;
     float: left;
     text-align: center;
 }
 
 .precioCart {
-    padding-top: 40px;
+    line-height: 100px;
     width: 150px;
     float: left;
     text-align: center;
 }
 
 .cantCart {
-    padding-top: 40px;
+    line-height: 100px;
+    width: 100px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.stockCart {
+    line-height: 100px;
     width: 100px;
     float: left;
     text-align: center;
@@ -104,12 +120,30 @@
 
 .total {
     font-size: 20px;
+    margin-right: 20px;
 }
 
 .botonn {
     color: black;
 }
 .carritoContainer{
-    max-height: 300px;
+    max-height: 200px;
     overflow-y: scroll;
+}
+.noStock{
+    color: red;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: absolute;
+    bottom: 40px;
+    right: -31px;
+    border: 1px solid red;
+    height: 20px;
+    line-height: 10px;
+    padding: 5px;
+}
+.fondo{
+    border-bottom: 1px solid #a8c5c5;
 }

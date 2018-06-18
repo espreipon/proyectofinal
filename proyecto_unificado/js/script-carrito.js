@@ -75,7 +75,6 @@ function renderCarrito() {
                     var carrito = data.list,
                         html = "",
                         total = 0;
-                    html += "<h1>Carrito</h1><br>";
                     html +=
                         "<ul class='fondo'>" +
                         "   <li class='headCarrito'>" +
@@ -83,9 +82,10 @@ function renderCarrito() {
                         "       <div class='nombre'>NOMBRE</div>" +
                         "       <div class='precio'>PRECIO</div>" +
                         "       <div class='cant'>CANTIDAD</div>" +
+                        "       <div class='stock'>STOCK</div>" +
                         "       <div class='aniadir'>AÑADIR</div>" +
                         "   </li>" +
-                        "</ul><br>";
+                        "</ul>";
                     html += "<ul class='carritoContainer'>";
                     for (var i = 0, iLen = carrito.length; i < iLen; i++) {
                         html +=
@@ -94,14 +94,19 @@ function renderCarrito() {
                             "       <div class='imagenCart' ><img src='" + carrito[i].image + "' width='90'alt=''></div>" +
                             "       <div class='nombreCart' >" + carrito[i].nombre + "</div>" +
                             "       <div class='precioCart'>" + carrito[i].total + "€</div>" +
-                            "       <div class='cantCart'>" + carrito[i].cantidad + "</div>" +
+                            "       <div class='cantCart'>" + carrito[i].cantidad;
+                        if(parseInt(carrito[i].cantidad) > parseInt(carrito[i].unidades)) {
+                            html += "<div class='noStock'>no stock</div>";
+                        }
+                        html += "</div>" +
+                            "       <div class='stockCart'>" + carrito[i].unidades + "</div>" +
                             "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" + carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/></div>" +
                             "   </li>";
                         total += parseFloat(+carrito[i].total);
                     }
                     html += "</ul>";
-                    html += "<br><li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
-                    html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' value='Aceptar y pagar'></a>"
+                    html += "<a href='pago.html'><input class='btn botonn pull-right' type='button' value='Aceptar y pagar'></a>"
+                    html += "<li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
                     document.getElementById('carrito').innerHTML = html;
                     $('.carritoContainer').scrollTop(lastTopScroll);
                 } else {
@@ -124,6 +129,8 @@ function anadirProducto(id) {
                 console.log('El producto se ha añadido al carrito correctamente.');
                 if($('#carrito').length > 0) {
                     renderCarrito();
+                } else {
+                    showSnackbar('El producto se ha añadido al carrito correctamente.');
                 }
             } else {
                 alert('No existen unidades disponibles');
