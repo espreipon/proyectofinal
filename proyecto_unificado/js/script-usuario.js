@@ -1,4 +1,5 @@
 var username, password, password2, firstname, lastname, phone, email;
+
 function valida() {
     username = document.getElementById("username").value;
     password = document.getElementById("password").value;

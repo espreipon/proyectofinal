@@ -1,47 +1,51 @@
 .reveal-if-active {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  font-size: 16px;
-  transform: scale(0.8);
-  transition: 0.5s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 16px;
+    transform: scale(0.8);
+    transition: 0.5s;
 }
 
 .reveal-if-active label {
-  display: block;
-  margin: 0 0 3px 0;
+    display: block;
+    margin: 0 0 3px 0;
 }
+
 .reveal-if-active input[type=text] {
-  width: 100%;
+    width: 100%;
 }
 
 .reveal-if-active.active {
-  opacity: 1;
-  height: auto;
-  padding: 10px 20px;
-  transform: scale(1);
-  overflow: visible;
+    opacity: 1;
+    height: auto;
+    padding: 10px 20px;
+    transform: scale(1);
+    overflow: visible;
 }
 
-.cp{
-  width: 40%;
-}
-.btn{
-  margin-bottom: 10px;
-}
-.log{
-  width: 100%;
-  background-color: #ffc236;
+.cp {
+    width: 40%;
 }
 
-.login{
-  padding: 10px;
-  background-color: #e3e2df;
-  margin-bottom: 30px;
-  box-shadow: 3px 3px 10px grey;
+.btn {
+    margin-bottom: 10px;
 }
+
+.log {
+    width: 100%;
+    background-color: #ffc236;
+}
+
+.login {
+    padding: 10px;
+    background-color: #e3e2df;
+    margin-bottom: 30px;
+    box-shadow: 3px 3px 10px grey;
+}
+
 .errorForm {
-  border: 1px solid red;
+    border: 1px solid red;
 }
 
 

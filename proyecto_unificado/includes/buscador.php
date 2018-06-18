@@ -17,14 +17,13 @@ header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
 $myObj->list = array();
 $myObj->loggedin = isset($_SESSION['loggedin']);
-if(isset($_GET['typeId'])) {//si se pone $myObj->loggedin cuando no esta logeado no salen los articulos
+if(isset($_GET['typeId'])) {
     $typeId = $_GET['typeId'];
     if($_GET){
         $busqueda = trim($_GET['buscar']);
         if (!empty($busqueda)){
             $sql = "SELECT * FROM productos WHERE nombre LIKE '%$busqueda%' AND type_id = $typeId ORDER BY nombre";
             if ($resultado = $conn->query($sql)){
-                // $registros = '<p>HEMOS ENCONTRADO ' . mysqli_num_rows($resultado) . ' registros </p>';
                 while($row = $resultado->fetch_assoc()) {
                     $myObj->list[] = $row;
                 }

@@ -1,128 +1,121 @@
 /* HEADER */
 
-.boton{
+.boton {
     background-color: #009997;
     font-size: 14px;
     color: white;
     font-weight: bold;
-    padding:  10px;
+    padding: 10px;
     border-radius: 0px;
 }
-.boton:hover{
-    color:#ffc236;
+
+.boton:hover {
+    color: #ffc236;
 }
-p{
-    font-size: 16px;
-    text-align: justify;
-}
-ol{
+
+p {
     font-size: 16px;
     text-align: justify;
 }
 
+ol {
+    font-size: 16px;
+    text-align: justify;
+}
 
 /* NAV */
-.menu{
+.menu {
     border-bottom: 2px solid #009997;
     border-top: 2px solid #009997;
 }
-.navbar-default{
+
+.navbar-default {
     background: none;
     border: none;
 
 }
-ul{
-    list-style:none;
+
+ul {
+    list-style: none;
     text-align: center;
     font-weight: bold;
 }
 
-.nav li a{
-    color:black;
-    text-decoration:none;
+.nav li a {
+    color: black;
+    text-decoration: none;
     min-width: 145px;
     font-size: 16px;
 
 }
 
 .nav:hover li a:hover {
-    color:#009997;
+    color: #009997;
 
 }
 
-.nav li ul{
+.nav li ul {
     display: none;
     position: absolute;
     min-width: 100px;
     border-radius: 8px;
 }
+
 .dropdown:hover .dropdown-menu {
     display: block;
     margin-top: 0;
 }
 
-
-/* SLIDE */
-
-.carousel{
-    background: #2f4357;
-    margin-top: 20px;
-}
-.carousel .item{
-    min-height: 280px;
-}
-.carousel .item img{
-    margin: 0 auto;
-}
-.bs-example{
-    margin: 20px;
-}
-
 /* BANNER */
 
-.img-fluid{
+.img-fluid {
     max-width: 100%;
     height: auto;
 }
 
 /* BREADCRUMB */
 
-.breadcrumb{
+.breadcrumb {
     background: none;
 }
 
 /* HR */
 
-hr{
+hr {
     width: 70%;
     align-items: center;
 }
 
 /* FOOTER */
-.redes{
-    color:white;
-    padding-top: 20px;
-    font-size: 20px;
-}
-.red{
+.redes {
     color: white;
-}
-.red:hover{
-    color:#ffc236;
-}
-i{
-    padding: 5px;
-}
-.pie{
-    background-color: #615a53;
-    height: 100%;
-}
-.licencia{
-    color:white;
     padding-top: 20px;
     font-size: 20px;
 }
 
-.btn{
+.red {
+    color: white;
+}
+
+.red:hover {
+    color: #ffc236;
+}
+
+i {
+    padding: 5px;
+}
+
+.pie {
+    background-color: #615a53;
+    height: 100%;
+}
+
+.licencia {
+    color: white;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.btn {
     margin-bottom: 10px;
 }

@@ -13,18 +13,18 @@ var FormStuff = {
     }
 };
 
-function valida(){
+function valida() {
     var regExpEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
     var email = document.getElementById("email").value;
-    if(!regExpEmail.test(email)){
+    if (!regExpEmail.test(email)) {
         alert("Introduce email correcto");
-        email.addEventListener("focus", document.getElementById("email").style.border = "1px solid red", true );
+        email.addEventListener("focus", document.getElementById("email").style.border = "1px solid red", true);
         return;
     }
     var error = 0;
-    $(':input[required]').each(function(){
+    $(':input[required]').each(function () {
         var el = $(this);
-        if(
+        if (
             (
                 el.data("require-pair") == undefined ||
                 $(el.data("require-pair"))[0].checked == true
@@ -33,27 +33,26 @@ function valida(){
                 el.val() == undefined ||
                 el.val().trim() == ""
             )
-        )
-        {
+        ) {
             error++;
-            el.addClass('errorForm').on('click', function() {
+            el.addClass('errorForm').on('click', function () {
                 $(this).removeClass('errorForm');
                 $(this).unbind();
             });
         }
     });
-    if(error > 0) {
+    if (error > 0) {
         alert("Completa todos los campos obligatorios");
         return;
     }
-    if(metodoActivo == 'choice-option-1') {
+    if (metodoActivo == 'choice-option-1') {
         var tarjeta = document.getElementById("tarjeta").value;
         var fecha = document.getElementById("fecha").value;
         var titular = document.getElementById("titular").value;
         var csv = document.getElementById("csv").value;
         var expTarjeta = /^4\d{3}-?\d{4}-?\d{4}-?\d{4}$/;
-        var expFecha =  /\b(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})\b/;
-        if(!expTarjeta.test(tarjeta) && !expFecha.test(fecha) && tarjeta == "" && fecha == "" == titular == "" ){
+        var expFecha = /\b(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})\b/;
+        if (!expTarjeta.test(tarjeta) && !expFecha.test(fecha) && tarjeta == "" && fecha == "" == titular == "") {
             alert("Introduce datos correcto de la tarjeta de crédito");
             return;
         }

@@ -1,92 +1,129 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>Calendario</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/style-calendario.css" rel="stylesheet" type="text/css"/>
-        <script src="js/script-calendario.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div class="anioContainer">
-            <div id="izqAnio" class="arrow-left"></div>
-            <label id="anioActual"></label> <!--Aqui tiene que mostrarse el mes y año? actual en el que me encuentro-->
-            <div id="derechaAnio" class="arrow-right"></div>
-        </div>
-        <div class="mesContainer">
-            <div id="izqMes" class="arrow-left"></div>
-            <label id="mesActual"></label> <!--Aqui tiene que mostrarse el mes y año? actual en el que me encuentro-->
-            <div id="derechaMes" class="arrow-right"></div>
-        </div>
-        <table id="calendario" border="1" style="border-collapse: collapse;">
-            <tr><!--Esta fila nombrara el día de los nombres de la semana-->
-                <th>Lun</th>
-                <th>Mar</th>
-                <th>Mier</th>
-                <th>Jue</th>
-                <th>Vie</th>
-                <th>Sab</th>
-                <th>Dom</th>
-            </tr>
-            <tr><!-- Primera fila-->
-                <td id="d1"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d2"/></td>
-                <td id="d3"/></td>
-                <td id="d4"/></td>
-                <td id="d5"/></td>
-                <td id="d6"/></td>
-                <td id="d7"/></td>
-            </tr>
-            <tr><!-- Segunda fila-->
-                <td id="d8"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d9"/></td>
-                <td id="d10"/></td>  
-                <td id="d11"/></td>
-                <td id="d12"/></td>
-                <td id="d13"/></td>
-                <td id="d14"/></td>
-            </tr>
-            <tr><!-- Tercera fila-->
-                <td id="d15"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d16"/></td>
-                <td id="d17"/></td>
-                <td id="d18"/></td>
-                <td id="d19"/></td>
-                <td id="d20"/></td>
-                <td id="d21"/></td>
-            </tr>
-            <tr><!-- Cuarta fila-->
-                <td id="d22"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d23"/></td>
-                <td id="d24"/></td>
-                <td id="d25"/></td>
-                <td id="d26"/></td>
-                <td id="d27"/></td>
-                <td id="d28"/></td>
-            </tr>
-            <tr><!-- Quinta fila-->
-                <td id="d29"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d30"/></td>
-                <td id="d31"/></td>
-                <td id="d32"/></td>
-                <td id="d33"/></td>
-                <td id="d34"/></td>
-                <td id="d35"/></td>
-            </tr>
-            <tr><!-- Sexta fila-->
-                <td id="d36"/></td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
-                <td id="d37"/></td>
-                <td id="d38"/></td>
-                <td id="d39"/></td>
-                <td id="d40"/></td>
-                <td id="d41"/></td>
-                <td id="d42"/></td>
-            </tr>
-        </table>
-    </body>
+<head>
+    <title>Calendario</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style-calendario.css" rel="stylesheet" type="text/css"/>
+    <script src="js/script-calendario.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="anioContainer">
+    <div id="izqAnio" class="arrow-left"></div>
+    <label id="anioActual"></label> <!--Aqui tiene que mostrarse el mes y año actual en el que me encuentro-->
+    <div id="derechaAnio" class="arrow-right"></div>
+</div>
+<div class="mesContainer">
+    <div id="izqMes" class="arrow-left"></div>
+    <label id="mesActual"></label> <!--Aqui tiene que mostrarse el mes y año? actual en el que me encuentro-->
+    <div id="derechaMes" class="arrow-right"></div>
+</div>
+<table id="calendario" border="1" style="border-collapse: collapse;">
+    <tr><!--Esta fila nombrara el día de los nombres de la semana-->
+        <th>Lun</th>
+        <th>Mar</th>
+        <th>Mier</th>
+        <th>Jue</th>
+        <th>Vie</th>
+        <th>Sab</th>
+        <th>Dom</th>
+    </tr>
+    <tr><!-- Primera fila-->
+        <td id="d1"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d2"/>
+        </td>
+        <td id="d3"/>
+        </td>
+        <td id="d4"/>
+        </td>
+        <td id="d5"/>
+        </td>
+        <td id="d6"/>
+        </td>
+        <td id="d7"/>
+        </td>
+    </tr>
+    <tr><!-- Segunda fila-->
+        <td id="d8"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d9"/>
+        </td>
+        <td id="d10"/>
+        </td>
+        <td id="d11"/>
+        </td>
+        <td id="d12"/>
+        </td>
+        <td id="d13"/>
+        </td>
+        <td id="d14"/>
+        </td>
+    </tr>
+    <tr><!-- Tercera fila-->
+        <td id="d15"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d16"/>
+        </td>
+        <td id="d17"/>
+        </td>
+        <td id="d18"/>
+        </td>
+        <td id="d19"/>
+        </td>
+        <td id="d20"/>
+        </td>
+        <td id="d21"/>
+        </td>
+    </tr>
+    <tr><!-- Cuarta fila-->
+        <td id="d22"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d23"/>
+        </td>
+        <td id="d24"/>
+        </td>
+        <td id="d25"/>
+        </td>
+        <td id="d26"/>
+        </td>
+        <td id="d27"/>
+        </td>
+        <td id="d28"/>
+        </td>
+    </tr>
+    <tr><!-- Quinta fila-->
+        <td id="d29"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d30"/>
+        </td>
+        <td id="d31"/>
+        </td>
+        <td id="d32"/>
+        </td>
+        <td id="d33"/>
+        </td>
+        <td id="d34"/>
+        </td>
+        <td id="d35"/>
+        </td>
+    </tr>
+    <tr><!-- Sexta fila-->
+        <td id="d36"/>
+        </td> <!--Esto corresponde a cada dia de la semana, asi que hay 7 celdillas-->
+        <td id="d37"/>
+        </td>
+        <td id="d38"/>
+        </td>
+        <td id="d39"/>
+        </td>
+        <td id="d40"/>
+        </td>
+        <td id="d41"/>
+        </td>
+        <td id="d42"/>
+        </td>
+    </tr>
+</table>
+</body>
 </html>

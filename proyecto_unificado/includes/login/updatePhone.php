@@ -30,6 +30,5 @@ if ($resultado = $conn->query($sql)) {
 } else {
     echo "El teléfono no ha sido actualizado";
 }
-
 mysqli_close($conn);
 ?>  

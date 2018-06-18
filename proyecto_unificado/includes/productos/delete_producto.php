@@ -5,7 +5,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 // Esto le dice a PHP que usaremos cadenas UTF-8 hasta el final
-mb_internal_encoding('UTF-8'); 
+mb_internal_encoding('UTF-8');
 // Esto le dice a PHP que generaremos cadenas UTF-8
 mb_http_output('UTF-8');
 
@@ -16,23 +16,20 @@ header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
 $myObj->loggedin = isset($_SESSION['loggedin']);
 $myObj->affected_rows = 0;
-if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
+if ($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
     $idProducto = $_GET["id"];
     $userId = $_SESSION['userId'];
-    $cantidad=null;
-    $consulta= 'SELECT cantidad FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+    $cantidad = null;
+    $consulta = 'SELECT cantidad FROM carrito WHERE producto_id = ' . $idProducto . ' AND user_id = ' . $userId;
     $resultado = $conn->query($consulta);
-    // echo "SELECT: ".$conn->affected_rows;
-    if($conn->affected_rows == 1) {
+    if ($conn->affected_rows == 1) {
         $cantidad = $resultado->fetch_assoc()["cantidad"];
-        // echo "CANTIDAD: ".$cantidad;
-        if($cantidad != null && $cantidad > 1) {
-            $consulta = 'UPDATE carrito SET cantidad = cantidad - 1 WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+        if ($cantidad != null && $cantidad > 1) {
+            $consulta = 'UPDATE carrito SET cantidad = cantidad - 1 WHERE producto_id = ' . $idProducto . ' AND user_id = ' . $userId;
         } else {
-            $consulta = 'DELETE FROM carrito WHERE producto_id = '.$idProducto.' AND user_id = '.$userId;
+            $consulta = 'DELETE FROM carrito WHERE producto_id = ' . $idProducto . ' AND user_id = ' . $userId;
         }
         $conn->query($consulta);
-        // echo "DELETE/UPDATE: ".$conn->affected_rows;
         $myObj->affected_rows = $conn->affected_rows;
     }
 }

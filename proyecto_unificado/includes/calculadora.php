@@ -5,10 +5,9 @@ $agetext = $_POST['ageText'];
 $weigth = $_POST['weigthValue'];
 $activity = $_POST['actValue'];
 $percent;
-/*echo "pet: ".$pet."<br>peso: ".$weigth." kilos"."<br>edad: ".$agetext."<br>actividad: ".$activity."<br><br>Porcentaje recomendado: ";
-*/
-if($pet != "" && $age != "" && $agetext != "" && $weigth != "" && $activity != ""){
-    switch($pet){
+
+if ($pet != "" && $age != "" && $agetext != "" && $weigth != "" && $activity != "") {
+    switch ($pet) {
         case "dog":
             calculationDog();
             break;
@@ -16,55 +15,58 @@ if($pet != "" && $age != "" && $agetext != "" && $weigth != "" && $activity != "
             calculationCat();
             break;
     }
-}else {
+} else {
     echo "<strong>Completa todos los campos</strong>";
 }
 
 
 //PERRO - Calcular cantidad de comida en base al peso
-function rationCat(){
+function rationCat()
+{
     global $weigth, $percent;
-    $cantidad = $weigth*$percent*1000;
-    $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "<strong>Ración diaria de comida: ".$cantidad ." gr</strong><br>";
-    echo $cantidad*0.4 . " gr  Hueso carnoso<br>";
-    echo $cantidad*0.2 . " gr carne<br>";
-    echo $cantidad*0.2 . " gr corazón<br>";
-    echo $cantidad*0.1 . " gr Hígado<br>";
-    echo $cantidad*0.1 . " gr otras vísceras<br>";
-    echo $cantidad*0.05 . " gr máximo de verduras (opcional)<br>";
-    echo "<br><strong>Cantidad mensual de comida: ".$cantidadMes ." kg</strong><br>";
-    echo $cantidadMes*0.4 . " kg  Hueso carnoso<br>";
-    echo $cantidadMes*0.2 . " kg carne<br>";
-    echo $cantidadMes*0.2 . " kg corazón<br>";
-    echo $cantidadMes*0.1 . " kg Hígado<br>";
-    echo $cantidadMes*0.1 . " kg otras vísceras<br>";
-    echo $cantidadMes*0.05 . " gr máximo de verduras (opcional)<br>";
+    $cantidad = $weigth * $percent * 1000;
+    $cantidadMes = $cantidad * 31 / 1000; //TRUNCAR 2 DECIMALES
+    echo "<strong>Ración diaria de comida: " . $cantidad . " gr</strong><br>";
+    echo $cantidad * 0.4 . " gr  Hueso carnoso<br>";
+    echo $cantidad * 0.2 . " gr carne<br>";
+    echo $cantidad * 0.2 . " gr corazón<br>";
+    echo $cantidad * 0.1 . " gr Hígado<br>";
+    echo $cantidad * 0.1 . " gr otras vísceras<br>";
+    echo $cantidad * 0.05 . " gr máximo de verduras (opcional)<br>";
+    echo "<br><strong>Cantidad mensual de comida: " . $cantidadMes . " kg</strong><br>";
+    echo $cantidadMes * 0.4 . " kg  Hueso carnoso<br>";
+    echo $cantidadMes * 0.2 . " kg carne<br>";
+    echo $cantidadMes * 0.2 . " kg corazón<br>";
+    echo $cantidadMes * 0.1 . " kg Hígado<br>";
+    echo $cantidadMes * 0.1 . " kg otras vísceras<br>";
+    echo $cantidadMes * 0.05 . " gr máximo de verduras (opcional)<br>";
 }
 
 //PERRO - Calcular cantidad de comida en base al peso
-function rationDog(){
+function rationDog()
+{
     global $weigth, $percent;
-    $cantidad = $weigth*$percent*1000;
-    $cantidadMes = $cantidad*31/1000; //TRUNCAR 2 DECIMALES
-    echo "<strong>Ración diaria de comida: ".$cantidad ." gr</strong><br>";
-    echo $cantidad*0.6 . " gr  Hueso carnoso<br>";
-    echo $cantidad*0.2 . " gr carne<br>";
-    echo $cantidad*0.05 . " gr Hígado<br>";
-    echo $cantidad*0.05 . " gr otras vísceras<br>";
-    echo $cantidad*0.1 . " gr verduras<br>";
-    echo "<br><strong>Cantidad mensual de comida: ".$cantidadMes ." kg</strong><br>";
-    echo $cantidadMes*0.6 . " kg  Hueso carnoso<br>";
-    echo $cantidadMes*0.2 . " kg carne<br>";
-    echo $cantidadMes*0.05 . " kg Hígado<br>";
-    echo $cantidadMes*0.05 . " kg otras vísceras<br>";
-    echo $cantidadMes*0.1 . " kg verduras";
+    $cantidad = $weigth * $percent * 1000;
+    $cantidadMes = $cantidad * 31 / 1000; //TRUNCAR 2 DECIMALES
+    echo "<strong>Ración diaria de comida: " . $cantidad . " gr</strong><br>";
+    echo $cantidad * 0.6 . " gr  Hueso carnoso<br>";
+    echo $cantidad * 0.2 . " gr carne<br>";
+    echo $cantidad * 0.05 . " gr Hígado<br>";
+    echo $cantidad * 0.05 . " gr otras vísceras<br>";
+    echo $cantidad * 0.1 . " gr verduras<br>";
+    echo "<br><strong>Cantidad mensual de comida: " . $cantidadMes . " kg</strong><br>";
+    echo $cantidadMes * 0.6 . " kg  Hueso carnoso<br>";
+    echo $cantidadMes * 0.2 . " kg carne<br>";
+    echo $cantidadMes * 0.05 . " kg Hígado<br>";
+    echo $cantidadMes * 0.05 . " kg otras vísceras<br>";
+    echo $cantidadMes * 0.1 . " kg verduras";
 }
 
 //Modificación del % en función de la actividad. Si es cachorro obviar esta parte.
-function activity(){
+function activity()
+{
     global $percent, $activity, $pet;
-    switch($pet){
+    switch ($pet) {
         //% Actividad Perro
         case "dog":
             switch ($activity) {
@@ -83,10 +85,10 @@ function activity(){
                     rationDog(); //REVISAR TAMBIÉN PARA GATO
                     break;
             }
-        break;
+            break;
         //% Actividad Gato
         case "cat";
-            switch ($activity){
+            switch ($activity) {
                 case "low":
                     $percent = $percent - 0.01;
                     //echo $percent*100 ."% del peso";
@@ -102,12 +104,13 @@ function activity(){
                     rationCat(); //REVISAR TAMBIÉN PARA GATO
                     break;
             }
-        break;
-    }   
+            break;
+    }
 }
 
 //GATO - Calculo del % en función de la edad
-function calculationCat(){
+function calculationCat()
+{
     global $age, $percent;
     switch ($age) {
         case 2:
@@ -174,7 +177,8 @@ function calculationCat(){
 }
 
 //PERRO - Calculo del % en función de la edad
-function calculationDog(){
+function calculationDog()
+{
     global $age, $percent;
     switch ($age) {
         case 2:
@@ -237,7 +241,7 @@ function calculationDog(){
             // echo "3% peso";
             activity();
             break;
-    } 
+    }
 }
 
 

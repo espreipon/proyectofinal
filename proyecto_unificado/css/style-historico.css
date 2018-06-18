@@ -1,109 +1,120 @@
-#carrito{
+#carrito {
     list-style: none;
-
 }
 
-.producto{
+.producto {
     width: 100%;
 }
 
-.headCarrito{
+.headCarrito {
     width: 100%;
-    list-style:none;
+    list-style: none;
     text-align: start;
     font-weight: inherit;
 
 }
 
-.imagen{
+.imagen {
     visibility: hidden;
 
     width: 200px;
 
-    float:left;
+    float: left;
 }
-.nombre{
+
+.nombre {
     width: 400px;
 
-    float:left;
+    float: left;
     text-align: center;
 }
-.precio{
+
+.precio {
 
     width: 150px;
 
-    float:left;
+    float: left;
     text-align: center;
 }
-.cant{
+
+.cant {
 
     width: 100px;
 
-    float:left;
+    float: left;
     text-align: center;
 }
-.fecha{
+
+.fecha {
 
     width: 100px;
 
-    float:left;
+    float: left;
     text-align: center;
 }
-.aniadir{
+
+.aniadir {
     visibility: hidden;
     width: 100px;
 
-    float:left;
+    float: left;
 }
 
-.imagenCart{
+.imagenCart {
     background-color: white;
     height: 100px;
     width: 200px;
-    float:left;
+    float: left;
 }
-.nombreCart{
+
+.nombreCart {
     padding-top: 40px;
     width: 400px;
-    float:left;
+    float: left;
     text-align: center;
 }
-.precioCart{
+
+.precioCart {
     padding-top: 40px;
     width: 150px;
-    float:left;
+    float: left;
     text-align: center;
 }
-.cantCart{
+
+.cantCart {
     padding-top: 40px;
     width: 100px;
-    float:left;
+    float: left;
     text-align: center;
 }
-.fechaCart{
+
+.fechaCart {
     padding-top: 30px;
     width: 100px;
-    float:left;
+    float: left;
 }
-.aniadirCart{
+
+.aniadirCart {
     padding-top: 30px;
     width: 100px;
-    float:left;
+    float: left;
 }
 
 .bodyCarrito {
 }
+
 .bodyCarrito:nth-child(odd) {
 }
+
 .bodyCarrito:nth-child(even) {
     background-color: #deffbc;
 }
 
-.bodyCarrito{
+.bodyCarrito {
 
     height: 100px;
 }
 
-.total{
-    font-size:20px;
+.total {
+    font-size: 20px;
 }

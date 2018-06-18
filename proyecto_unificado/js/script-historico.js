@@ -28,34 +28,20 @@ function renderHistorico() {
                     "       <div class='aniadir'>AÑADIR</div>" +
                     "   </li>" +
                     "</ul><br>";
-                html +=                       "<ul>";
-                for (var i = 0, iLen = historico.length; i < iLen; i++)
-                {
+                html += "<ul>";
+                for (var i = 0, iLen = historico.length; i < iLen; i++) {
                     html +=
 
                         "   <li class='bodyCarrito' id='prod_" + historico[i].id + "'>" +
-                        "       <div class='imagenCart' ><img src='"+historico[i].image+"' width='90'alt=''></div>" +
-                        "       <div class='nombreCart' >"+historico[i].nombre+"</div>" +
-                        "       <div class='precioCart'>"+historico[i].precio_ud+"€</div>" +
-                        "       <div class='cantCart'>"+historico[i].cantidad+"</div>" +
-                        "       <div class='fechaCart'>"+historico[i].fecha+"</div>" +
-                        "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" +historico[i].id + ")' value='Añadir'/></div>" +
+                        "       <div class='imagenCart' ><img src='" + historico[i].image + "' width='90'alt=''></div>" +
+                        "       <div class='nombreCart' >" + historico[i].nombre + "</div>" +
+                        "       <div class='precioCart'>" + historico[i].precio_ud + "€</div>" +
+                        "       <div class='cantCart'>" + historico[i].cantidad + "</div>" +
+                        "       <div class='fechaCart'>" + historico[i].fecha + "</div>" +
+                        "       <div class='aniadirCart'><input type='button' class='btn' onClick='anadirProducto(" + historico[i].id + ")' value='Añadir'/></div>" +
                         "   </li>";
-
-                    // html+= "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
-                    /*
-                    html +=
-                        // "<li id='prod_" + carrito[i].id + "'><input type='button' onClick='deleteProducto(" + carrito[i].id + ")' value='x'/>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + " precioTotal: " + carrito[i].total + "€";
-                     "<li class='producto' id='prod_" + carrito[i].id + "'>" + carrito[i].nombre + " cantidad: " + carrito[i].cantidad + "precioTotal: " + carrito[i].total + "€ <input type='button' class='btn' onClick='anadirProducto(" +carrito[i].id + ")' value='+'/>&nbsp;<input type='button' class='btn' onClick='deleteProducto(" + carrito[i].id + ")' value='-'/><br><br>";
-                     //var btn = document.createElement('button').button.onclick = deleteProducto(carrito[i].id);
-                     total += parseFloat(carrito[i].total);
-                    */
-                    /*
-                    html +=
-                        "<li class='producto' id='prod_" + historico[i].id + "'>" + "<img src='"+historico[i].image+"' width='90'/>" +historico[i].nombre + " <input type='button' class='btn' onClick='anadirProducto(" + historico[i].id + ")' value='Añadir'/> <br> cantidad: " + historico[i].cantidad + "<br> precio unidad: " + historico[i].precio_ud + "€ &nbsp;<br><br>";
-                    */
                 }
-                html +=  "</ul>";
+                html += "</ul>";
                 document.getElementById('historico').innerHTML = html;
             }
         }

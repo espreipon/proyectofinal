@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <title>Login</title>
-
     <meta charset="utf-8">
-
     <script src="./libs/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
@@ -20,11 +16,8 @@
             $("header").load("header.html");
             $("footer").load("footer.html");
         });
-
     </script>
-
 </head>
-
 <body>
 <div class="container">
     <header>
@@ -41,8 +34,9 @@
             <div class="col-md-4 login">
                 <form action="includes/login/checklogin.php" class="form-group" method="POST">
                     <div class="col-md-12 ">
-                        <p >Nombre Usuario:</p>
-                        <input id="username" class="form-control celdas" name="username" type="text" placeholder="Example"
+                        <p>Nombre Usuario:</p>
+                        <input id="username" class="form-control celdas" name="username" type="text"
+                               placeholder="Example"
                                required>
                     </div>
                     <br>
@@ -61,7 +55,6 @@
                     <div class="col-md-12">
                         <input type="button" name="button" class="btn log" value="LOGIN" onclick="loadDoc()">
                         <a href="registro.html" class="pull-right">Registrarme</a>
-                        <!--<input type="button" name="button" class="btn" value="REGISTRARME" onclick="registro()">-->
                     </div>
                 </form>
             </div>

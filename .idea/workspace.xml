@@ -2,11 +2,87 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6764b50f-3b95-4aad-ad62-bb3e7e04b56f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/.~lock.Memoria del proyecto.odt#" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/Memoria del proyecto.odt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/buscador-copia.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/beneficios.html" afterPath="$PROJECT_DIR$/proyecto_unificado/beneficios.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/calculadora.html" afterPath="$PROJECT_DIR$/proyecto_unificado/calculadora.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/calendario.html" afterPath="$PROJECT_DIR$/proyecto_unificado/calendario.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/carrito.html" afterPath="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" afterPath="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-beneficios.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-beneficios.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-calculadora.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-calculadora.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-calendario.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-calendario.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-contacto.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-contacto.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-header.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-header.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-historico.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-historico.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-index.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-login.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-recetasPerro.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-recetasPerro.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-registro.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-registro.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/css/style.css" afterPath="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/finCompra.html" afterPath="$PROJECT_DIR$/proyecto_unificado/finCompra.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/footer.html" afterPath="$PROJECT_DIR$/proyecto_unificado/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/header.html" afterPath="$PROJECT_DIR$/proyecto_unificado/header.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/historico.html" afterPath="$PROJECT_DIR$/proyecto_unificado/historico.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/buscador.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/buscador.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/calculadora.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/calculadora.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/conexion.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/conexion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/checklogin.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/checklogin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/getLoginState.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/getLoginState.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/registry.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/registry.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/updateEmail.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/updateEmail.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePass.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePhone.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePhone.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/pdf.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/pdf.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/clases.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/clases.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/delete_producto.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/delete_producto.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php" afterPath="$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/index.html" afterPath="$PROJECT_DIR$/proyecto_unificado/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-aceptarPago.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-aceptarPago.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-buscador.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-buscador.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-calculadora.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-calculadora.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-calendario-index.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-calendario-index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-calendario.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-calendario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-header.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-historico.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-historico.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-modificar.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-modificar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-registro.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-registro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/js/script-usuario.js" afterPath="$PROJECT_DIR$/proyecto_unificado/js/script-usuario.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/login.html" afterPath="$PROJECT_DIR$/proyecto_unificado/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/pago.html" afterPath="$PROJECT_DIR$/proyecto_unificado/pago.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html" afterPath="$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/perfil_usuario.html" afterPath="$PROJECT_DIR$/proyecto_unificado/perfil_usuario.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/queEs.html" afterPath="$PROJECT_DIR$/proyecto_unificado/queEs.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/quienesSomos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/quienesSomos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_a.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_b.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_c.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_d.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_gato_e.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_gato_e.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_a.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_a.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_b.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_b.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_c.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_c.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_d.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_d.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/receta_perro_e.html" afterPath="$PROJECT_DIR$/proyecto_unificado/receta_perro_e.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/recetasGato.html" afterPath="$PROJECT_DIR$/proyecto_unificado/recetasGato.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/recetasPerro.html" afterPath="$PROJECT_DIR$/proyecto_unificado/recetasPerro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/registro.html" afterPath="$PROJECT_DIR$/proyecto_unificado/registro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/sitemap.html" afterPath="$PROJECT_DIR$/proyecto_unificado/sitemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/suplementos.html" afterPath="$PROJECT_DIR$/proyecto_unificado/suplementos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proyecto_unificado/verduras.html" afterPath="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,57 +136,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-usuario.js" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/footer.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/calculadora.php" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/buscador.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/suplementos.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/beneficios.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/queEs.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_gato_a.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_gato_b.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_gato_c.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_gato_d.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_gato_e.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_perro_a.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_perro_b.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_perro_c.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_perro_d.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/receta_perro_e.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/recetasGato.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/recetasPerro.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/calculadora.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/quienesSomos.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/registro.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/login.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/carrito.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/sitemap.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/suplementos.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/verduras.html" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-buscador.js" />
         <option value="$PROJECT_DIR$/proyecto_unificado/js/script-aceptarPago.js" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/perfil_usuario.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/finCompra.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-header.js" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/calendario.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/pago.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-header.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/index.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/header.html" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/registry.php" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-registro.js" />
-        <option value="$USER_HOME$/Downloads/tienda 18-06-18.sql" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/includes/pdf.php" />
-        <option value="$PROJECT_DIR$/proyecto_unificado/historico.html" />
         <option value="$PROJECT_DIR$/proyecto_unificado/js/script-calculadora.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-calendario.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-calendario-index.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-header.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-historico.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-login.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-modificar.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-registro.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/js/script-usuario.js" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-beneficios.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-calculadora.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-calendario.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-contacto.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-header.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-historico.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-index.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-login.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-pago.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-productos.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-recetasPerro.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-registro.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/buscador.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/calculadora.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/buscador-copia.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/conexion.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/pdf.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/clases.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/delete_producto.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/checklogin.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/getLoginState.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/registry.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/updateEmail.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePass.php" />
+        <option value="$PROJECT_DIR$/proyecto_unificado/includes/login/updatePhone.php" />
       </list>
     </option>
   </component>
@@ -145,8 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,17 +343,18 @@
       <workItem from="1529333357785" duration="3530000" />
       <workItem from="1529337111324" duration="960000" />
       <workItem from="1529341244309" duration="7000" />
-      <workItem from="1529341459320" duration="1836000" />
+      <workItem from="1529341459320" duration="2037000" />
+      <workItem from="1529343627754" duration="1562000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161936000" />
+    <option name="totallyTimeSpent" value="163699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23524962" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903178" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -308,340 +385,54 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/registro.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="44" column="15" lean-forward="true" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="15" />
+        <state relative-caret-position="95">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-header.js">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/sitemap.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="15" lean-forward="false" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/beneficios.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-344">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="32" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/calculadora.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="31" column="91" lean-forward="true" selection-start-line="31" selection-start-column="91" selection-end-line="31" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/calendario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/carrito.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="82" lean-forward="false" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/comoEmpezar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1092">
-          <caret line="29" column="87" lean-forward="false" selection-start-line="29" selection-start-column="87" selection-end-line="29" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/pago.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-historico.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-973">
+        <state relative-caret-position="-500">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/buscador.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/buscador-copia.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/checklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/getLoginState.php">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/suplementos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/logout.php">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/verduras.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-buscador.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="404">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding>
+            <marker date="1529344183429" expanded="true" signature="1464:1474" ph="..." />
+            <marker date="1529344183429" expanded="true" signature="1685:1698" ph="..." />
+            <marker date="1529344183429" expanded="true" signature="1852:1864" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-modificar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1262">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/perfil_modificar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="99" lean-forward="false" selection-start-line="68" selection-start-column="99" selection-end-line="68" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="52" lean-forward="false" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/registro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="34" column="21" lean-forward="true" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-beneficios.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-calculadora.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-789">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-calendario.css">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-aceptarPago.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-653">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-contacto.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-historico.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1401">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-pago.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-recetasPerro.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-registro.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/copia_antes_unificar/views/inicio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/libs/bootstrap-3.3.7-dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5764" column="49" lean-forward="false" selection-start-line="5764" selection-start-column="41" selection-end-line="5764" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-633">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-786">
-          <caret line="79" column="8" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-registro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tienda-17.6.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/tienda 18-06-18.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="11" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="52" lean-forward="false" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="136" lean-forward="false" selection-start-line="23" selection-start-column="125" selection-end-line="23" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/alimentosCrudos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/pdf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -649,24 +440,406 @@
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-calculadora.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="84" lean-forward="false" selection-start-line="17" selection-start-column="84" selection-end-line="17" selection-end-column="84" />
+          <caret line="17" column="76" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-calendario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2016">
+          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-calendario-index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-carrito.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="98" column="63" lean-forward="false" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+          <folding>
+            <marker date="1529344389709" expanded="true" signature="1297:1307" ph="..." />
+            <marker date="1529344389709" expanded="true" signature="1511:1524" ph="..." />
+            <marker date="1529344389709" expanded="true" signature="1573:1579" ph=" " />
+            <marker date="1529344389709" expanded="true" signature="1608:1614" ph=" " />
+            <marker date="1529344389709" expanded="true" signature="1772:1784" ph="..." />
+            <marker date="1529344389709" expanded="true" signature="4813:4819" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <marker date="1529344389798" expanded="true" signature="670:676" ph=" " />
+            <marker date="1529344389798" expanded="true" signature="720:726" ph=" " />
+            <marker date="1529344389798" expanded="true" signature="727:733" ph=" " />
+            <marker date="1529344389798" expanded="true" signature="799:805" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-historico.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-modificar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1211">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-registro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="62" column="14" lean-forward="false" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/js/script-usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-beneficios.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-calculadora.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-823">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-calendario.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-carrito.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1435">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-contacto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-historico.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-modificarPerfil.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-pago.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-productos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-recetasPerro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-registro.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/css/style-usuario.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/buscador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="49" lean-forward="false" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
+          <folding>
+            <marker date="1529344894294" expanded="true" signature="677:770" ph="SELECT * FRO... productos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/calculadora.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3560">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/buscador-copia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/pdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/add_producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529345052745" expanded="true" signature="667:709" ph="SELECT unida... productos" />
+            <marker date="1529345052745" expanded="true" signature="865:948" ph="SELECT canti... carrito" />
+            <marker date="1529345052745" expanded="true" signature="1060:1157" ph="UPDATE carri... " />
+            <marker date="1529345052745" expanded="true" signature="1249:1349" ph="INSERT INTO carrito... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/clases.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/delete_producto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <marker date="1529345052922" expanded="true" signature="692:775" ph="SELECT canti... carrito" />
+            <marker date="1529345052922" expanded="true" signature="1001:1098" ph="UPDATE carri... " />
+            <marker date="1529345052922" expanded="true" signature="1153:1227" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_carrito.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529345053030" expanded="true" signature="583:770" ph="SELECT p.id,... carrito" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_productos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
+          <folding>
+            <marker date="1529345052573" expanded="true" signature="662:702" ph="SELECT * FRO... productos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/get_historico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529345052836" expanded="true" signature="583:743" ph="SELECT p.id,... historico" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/productos/save_historico.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="35" column="9" lean-forward="false" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <marker date="1529345084142" expanded="true" signature="583:682" ph="SELECT c.*, carrito" />
+            <marker date="1529345084142" expanded="true" signature="1013:1154" ph="INSERT INTO historico... " />
+            <marker date="1529345084142" expanded="true" signature="1211:1283" ph="UPDATE produ... " />
+            <marker date="1529345084142" expanded="true" signature="1351:1387" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/checklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <marker date="1529345084056" expanded="true" signature="711:763" ph="SELECT * FRO... ${$tbl_name}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/getLoginState.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/registry.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529345163267" expanded="true" signature="507:559" ph="SELECT * FRO... ${$tbl_name}" />
+            <marker date="1529345163267" expanded="true" signature="765:928" ph="INSERT INTO `${$tbl_name}`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proyecto_unificado/historico.html">
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/updateEmail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="76" lean-forward="false" selection-start-line="28" selection-start-column="76" selection-end-line="28" selection-end-column="76" />
-          <folding />
+        <state relative-caret-position="231">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <marker date="1529345162951" expanded="true" signature="671:736" ph="UPDATE usuar... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/updatePass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="94" lean-forward="false" selection-start-line="34" selection-start-column="94" selection-end-line="34" selection-end-column="94" />
+          <folding>
+            <marker date="1529345162858" expanded="true" signature="710:768" ph="SELECT passw... usuarios" />
+            <marker date="1529345162858" expanded="true" signature="1025:1099" ph="UPDATE usuar... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto_unificado/includes/login/updatePhone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding>
+            <marker date="1529345163034" expanded="true" signature="678:743" ph="UPDATE usuar... " />
+          </folding>
         </state>
       </provider>
     </entry>

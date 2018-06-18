@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Registro</title>
     <meta charset="utf-8">
@@ -10,74 +9,76 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-modificarPerfil.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/favicon.gif" />
+    <link rel="icon" type="image/png" href="images/favicon.gif"/>
     <script type="text/javascript" src="./js/script-modificar.js"></script>
-    <script> 
+    <script>
         $(function () {
             $("header").load("header.html");
             $("footer").load("footer.html");
         });
     </script>
-
 </head>
-
 <body>
-    <div class="container">
-        <header></header>
-        <main>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="perfil_usuario.html">Perfil</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Modificar perfil</li>
-                </ol>
-            </nav>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 login">
-                        <h2>Perfil de usuario</h2>
-                        <hr/>
-                        <h3>Actualiza Password</h3>
-                        <form method="POST" class="form-group">
-                            <p>Password Antigua:</p>
-                            <input id="oldPass" class="form-control" name="oldPass" type="password" required>
-                            <p>Password Nueva</p>
+<div class="container">
+    <header></header>
+    <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="perfil_usuario.html">Perfil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Modificar perfil</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 login">
+                    <h2>Perfil de usuario</h2>
+                    <hr/>
+                    <h3>Actualiza Password</h3>
+                    <form method="POST" class="form-group">
+                        <p>Password Antigua:</p>
+                        <input id="oldPass" class="form-control" name="oldPass" type="password" required>
+                        <p>Password Nueva</p>
 
-                            <input id="newPass" class="form-control" name="newPass" type="password" required>
+                        <input id="newPass" class="form-control" name="newPass" type="password" required>
 
-                            <p>Confirmar password Nueva:</p>
+                        <p>Confirmar password Nueva:</p>
 
-                            <input id="newPass2" class="form-control" name="newPass2" type="password"required>
-                            <br>
-                            <br>
-                            <input class="log form-control" type="button" name="button" value="Actualiza Password" onclick="validaPassword()">
-                        </form>
-                        <hr>
-                        <h3>Actualiza Teléfono</h3>
-                        <form class="form-group">
-                            <p>Teléfono:</p>
-                            <input id="phone" class="form-control"  name="phone" type="text" maxlength="9">
-                            <br>
-                            <br>
-                            <input type="button"class="form-control log" name="button" value="Actualiza Teléfono" onclick="validaPhone()">
-                        </form>
-                        <hr>
-                        <h3>Actualiza Email</h3>
-                        <form class="form-group">
-                            <p>Email:</p>
-                            <input id="email" class="form-control" placeholder="example@example.com" name="email" type="text" required>
-                            <br>
-                            <br>
-                            <input type="button" class="log form-control"  name="button" value="Actualiza Email" onclick="validaEmail()">
-                        </form></div>
-                    <div class="col-md-4"></div>
+                        <input id="newPass2" class="form-control" name="newPass2" type="password" required>
+                        <br>
+                        <br>
+                        <input class="log form-control" type="button" name="button" value="Actualiza Password"
+                               onclick="validaPassword()">
+                    </form>
+                    <hr>
+                    <h3>Actualiza Teléfono</h3>
+                    <form class="form-group">
+                        <p>Teléfono:</p>
+                        <input id="phone" class="form-control" name="phone" type="text" maxlength="9">
+                        <br>
+                        <br>
+                        <input type="button" class="form-control log" name="button" value="Actualiza Teléfono"
+                               onclick="validaPhone()">
+                    </form>
+                    <hr>
+                    <h3>Actualiza Email</h3>
+                    <form class="form-group">
+                        <p>Email:</p>
+                        <input id="email" class="form-control" placeholder="example@example.com" name="email"
+                               type="text" required>
+                        <br>
+                        <br>
+                        <input type="button" class="log form-control" name="button" value="Actualiza Email"
+                               onclick="validaEmail()">
+                    </form>
                 </div>
+                <div class="col-md-4"></div>
             </div>
+        </div>
 
-        </main>
-        <footer></footer>
-    </div>
+    </main>
+    <footer></footer>
+</div>
 </body>
-
 </html>

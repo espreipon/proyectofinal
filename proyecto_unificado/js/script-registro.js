@@ -1,4 +1,5 @@
 var username, password, password2, firstname, lastname, phone, email;
+
 function valida() {
     username = document.getElementById("username").value;
     password = document.getElementById("password").value;
@@ -12,13 +13,13 @@ function valida() {
         regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
         regExpPhone = /^[9|6|7][0-9]{8}$/,
         regExpEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
-        regExpName = /^([A-Z]{1}[a-zñ]+[\s]*)+$/;
+    regExpName = /^([A-Z]{1}[a-zñ]+[\s]*)+$/;
 
     if (regExpUser.test(username)) {
         if (regExpPass.test(password)) {
             if (password == password2) {
-                if(firstname != "" && lastname != ""){
-                    if(regExpName.test(firstname) && regExpName.test(lastname)){
+                if (firstname != "" && lastname != "") {
+                    if (regExpName.test(firstname) && regExpName.test(lastname)) {
                         if (regExpEmail.test(email)) {
                             if (phone != "") {
                                 if (regExpPhone.test(phone)) {
@@ -35,7 +36,7 @@ function valida() {
                     } else {
                         alert("Nombre y Apellido debe comenzar con mayúsculas. No se permiten números o caracteres extraños");
                     }
-                }else{
+                } else {
                     alert("El campo Nombre y Apellido deben estar completos");
                 }
             } else {

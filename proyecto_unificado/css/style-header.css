@@ -1,24 +1,24 @@
-.carrito{
-    border:none;
-    font-size:30px;
+.carrito {
+    border: none;
+    font-size: 30px;
     color: #848484;
 }
-.carrito:hover{
+
+.carrito:hover {
     background-color: #ebebeb;
 }
 
-/*botón up*/
-.boton-subir{
+.boton-subir {
     display: none;
     border: thin solid #fff;
     border-radius: 3px;
     position: fixed;
     right: 15px;
-    bottom:2px;
+    bottom: 2px;
     z-index: 999999999;
 }
-/*estilos para el tag i*/
-.boton-subir i{
+
+.boton-subir i {
     color: #009997;
     font-size: 50px;
     padding: 10px 10px 10px 7px;

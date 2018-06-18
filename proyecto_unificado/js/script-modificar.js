@@ -1,7 +1,5 @@
 var oldPass, newPass, newPass2, phone, email, regExpPass, regExpPhone, regExpEmail, respondePass;
 
-//VALIDACIONES
-
 //Valida Password
 function validaPassword() {
     oldPass = document.getElementById("oldPass").value,
@@ -9,8 +7,8 @@ function validaPassword() {
         newPass2 = document.getElementById("newPass2").value,
         regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 
-    if(oldPass != "" && newPass != "" && newPass2 != "") {
-        if (regExpPass.test(newPass) ) {
+    if (oldPass != "" && newPass != "" && newPass2 != "") {
+        if (regExpPass.test(newPass)) {
             if (newPass == newPass2) {
                 updatePassword();
             } else {
@@ -19,7 +17,7 @@ function validaPassword() {
         } else {
             alert("La contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula y un numero. Longitud de 8 a 20 caracteres");
         }
-    }else{
+    } else {
         alert("Los campos contraseña no pueden estar vacios");
     }
 }

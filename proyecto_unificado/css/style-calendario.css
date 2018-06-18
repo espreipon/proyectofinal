@@ -1,26 +1,31 @@
 .anioContainer,
-.mesContainer{
+.mesContainer {
     width: 100%;
     height: 20px;
     position: relative;
 }
+
 .anioContainer *,
-.mesContainer *{
+.mesContainer * {
     float: left;
 }
-.mesContainer{
+
+.mesContainer {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-label{
+
+label {
     width: 75%;
     text-align: center;
     font-weight: bold;
 }
-#calendario td, #calendario th{
+
+#calendario td, #calendario th {
     width: 32px;
 }
-#calendario td{
+
+#calendario td {
     height: 20px;
     text-align: center;
     line-height: 20px;
@@ -28,13 +33,13 @@ label{
 }
 
 .arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #717171;
-  background: white;
-  cursor: pointer;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #717171;
+    background: white;
+    cursor: pointer;
 }
 
 .arrow-left {

@@ -1,37 +1,35 @@
-
-
-  .thumbnail{
+.thumbnail {
     height: 420px;
 }
 
-.precio{
-    margin-left:150px ;
+.precio {
+    margin-left: 150px;
     font-size: 30px;
     color: cadetblue;
 }
 
-.titulo{
+.titulo {
     height: 70px;
 }
 
-.descripcion{
+.descripcion {
     height: 60px;
 }
 
-.btnn{
+.btnn {
     background-color: blanchedalmond;
 }
 
-#carrito{
+#carrito {
     list-style: none;
 }
 
-.producto{
+.producto {
     font-weight: bold;
 }
 
-.unidades{
-    font-size:25px;
+.unidades {
+    font-size: 25px;
     position: absolute;
     top: 330px;
 }

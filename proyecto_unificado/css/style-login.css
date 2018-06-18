@@ -1,12 +1,13 @@
-.btn{
+.btn {
     margin-bottom: 10px;
 }
-.log{
+
+.log {
     width: 100%;
     background-color: #ffc236;
 }
 
-.login{
+.login {
     padding: 10px;
     background-color: #e3e2df;
     margin-bottom: 30px;
