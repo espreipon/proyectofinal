@@ -30,12 +30,19 @@
 <div class="container">
     <header></header>
     <main>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="carrito.html">Carrito</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pago</li>
+            </ol>
+        </nav>
         <div class="col-md-4"></div>
         <div class="col-md-4 login">
             <form id="form" action="" method="POST"  class="form-group">
                     <h3>Informacion de contacto</h3>
                     <p>Email:</p>
-                    <input id="email" placeholder="example@example.com" class="form-control" name="email" type="text" required>
+                    <input id="email" placeholder="example@example.com" class="form-control" id="email" name="email" type="text" required>
                 <hr>
                     <h3>Dirección de envío</h3>
                     <p>Nombre:</p>
@@ -133,21 +140,21 @@
                         <div class="row">
                             <div class="reveal-if-active form-group active" id="choice-option-1-body">
                                 <div class="col-md-12">
-                                        <input type="text" id="tarjeta" class="form-control" placeholder="Número de tarjeta" required
+                                        <input type="text" id="tarjeta" class="form-control" placeholder="Número de tarjeta"
                                                data-require-pair="#choice-option-1">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Nombre del titular de la tarjeta" required
-                                           data-require-pair="#choice-option-1">
+                                    <input type="text" class="form-control" placeholder="Nombre del titular de la tarjeta"
+                                           data-require-pair="#choice-option-1" id="titular">
                                 </div>
                                 <div class="col-md-12">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" id="fecha" placeholder="MM/AA" required
+                                        <input type="text" class="form-control" id="fecha" placeholder="MM/AA"
                                                data-require-pair="#choice-option-1">
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" maxlength="3" placeholder="CSV" required
-                                               data-require-pair="#choice-option-1">
+                                        <input type="text" class="form-control" maxlength="3" placeholder="CSV"
+                                               data-require-pair="#choice-option-1" id="csv">
                                     </div>
 
                                 </div>
@@ -175,13 +182,15 @@
 
                     </div>
                 <hr>
+
                 <fieldset id="caja">
                     <legend>Escoja fecha de entrega</legend>
                     <input type="text" id="fechaCal" disabled/>
                     <img id='botonCalendar' src="images/calendar.png" width="40" alt="calendar" />
                 </fieldset>
+
                 <hr>
-                <input type="submit" onclick="valida()" class="btn log" name="button" value="PAGAR" />
+                <input type="button" onclick="valida()" class="btn log" name="button" value="PAGAR" />
             </form>
         </div>
         <div class="col-md-4"></div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-usuario.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.gif" />
     <script type="text/javascript" src="./js/script-usuario.js"></script>
@@ -27,61 +27,24 @@
     <div class="container">
         <header></header>
         <main>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Perfil</li>
+                </ol>
+            </nav>
             <h1>Login de Usuarios</h1>
-            <hr/>
-
-            <form action="checklogin" method="POST">
-                <label>Nombre de usuario*:</label>
-                <br>
-                <input id="username" name="username" type="text" value="espe3" maxlength="20" required>
-                <br>
-                <br>
-
-                <label>Password*:</label>
-                <br>
-                <input id="password" name="password" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
-
-                <label>Confirmar password*:</label>
-                <br>
-                <input id="password2" name="password2" type="password" value="Ma00000." maxlength="100" required>
-                <br>
-                <br>
-
-                <label>Nombre*:</label>
-                <br>
-                <input id="firstname" name="firstname" type="text" value="espe" maxlength="50" required>
-                <br>
-                <br>
-
-                <label>Apellidos*:</label>
-                <br>
-                <input id="lastname" name="lastname" type="text" value="rei" maxlength="50" required>
-                <br>
-                <br>
-
-                <label>Teléfono:</label>
-                <br>
-                <input id="phone" name="phone" type="text" maxlength="9">
-                <br>
-                <br>
-
-                <label>Email*:</label>
-                <br>
-                <input id="email" name="email" type="text" value="esperanza@hotmail.com" maxlength="150" required>
-                <br>
-                <br>
-
-
-                <input type="button" name="button" value="ENVIAR" onclick="valida()">
-
-            </form>
-            <p>*Campos obligatorios</p>
-            <hr/>
-            <div id="result">
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <a href="perfil_modificar.html" class="btn btn-info botonUs" >Modificar perfil</a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="historico.html" class="btn btn-info botonUs" >Ver historico</a>
+                    </div>
+                </div>
             </div>
+
         </main>
         <footer></footer>
     </div>

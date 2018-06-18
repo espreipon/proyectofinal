@@ -14,6 +14,13 @@ var FormStuff = {
 };
 
 function valida(){
+    var regExpEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
+    var email = document.getElementById("email").value;
+    if(!regExpEmail.test(email)){
+        alert("Introduce email correcto");
+        email.addEventListener("focus", document.getElementById("email").style.border = "1px solid red", true );
+        return;
+    }
     var error = 0;
     $(':input[required]').each(function(){
         var el = $(this);
@@ -42,9 +49,11 @@ function valida(){
     if(metodoActivo == 'choice-option-1') {
         var tarjeta = document.getElementById("tarjeta").value;
         var fecha = document.getElementById("fecha").value;
+        var titular = document.getElementById("titular").value;
+        var csv = document.getElementById("csv").value;
         var expTarjeta = /^4\d{3}-?\d{4}-?\d{4}-?\d{4}$/;
         var expFecha =  /\b(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})\b/;
-        if(!expTarjeta.test(tarjeta) || !expFecha.test(fecha)){
+        if(!expTarjeta.test(tarjeta) && !expFecha.test(fecha) && tarjeta == "" && fecha == "" == titular == "" ){
             alert("Introduce datos correcto de la tarjeta de crédito");
             return;
         }
@@ -55,13 +64,9 @@ function valida(){
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
-            if (data.loggedin) {
 
-            }else{
-                alert("Inicia sesion");
-            }
-            window.location.href = 'finCompra.html';
         }
     };
+    window.location.href = 'finCompra.html';
     xhttp.send();
 }

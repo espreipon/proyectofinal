@@ -192,7 +192,7 @@
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
             if(data.loggedin === true) {
-                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido <strong>'+data.username+ '</strong>&nbsp;<a href="perfil_modificar.html">Modificar Perfil</a>&nbsp;|&nbsp;'+'</span> <a href="includes/login/logout.php">Desconectarse</a>&nbsp;'
+                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido <strong>'+data.username+ '</strong>&nbsp;<a href="perfil_usuario.html">Ver Perfil</a>&nbsp;|&nbsp;'+'</span> <a href="includes/login/logout.php">Desconectarse</a>&nbsp;'
                  + '<a href="carrito.html" class="btn  carrito  glyphicon glyphicon-shopping-cart" role="button"></a>');
             }
         }

@@ -26,13 +26,24 @@
     <div class="container">
         <header></header>
         <main>
-        <!-- BUSCADOR -->
             <div class="row">
                 <div class="col-md-12">
-                    <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
-                    <input type="button" name="buscador" class="btn" onclick="search(1)" value="Buscar">
-                    <input type="button" name="limpiar" class="btn" onclick="limpiar(1)" value="Limpiar">
-                    <label id="result"></label>
+                    <div class="col-md-6">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="alimentosCrudos.html">Alimentación</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Carnes y Pescados</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <!-- BUSCADOR -->
+                    <div class="pull-right">
+                        <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus>
+                        <input type="button" name="buscador" class="btn" onclick="search(2)" value="Buscar">
+                        <input type="button" name="limpiar" class="btn" onclick="limpiar(2)" value="Limpiar">
+                        <label id="result"></label>
+                    </div>
                 </div>
             </div>
         <!-- PRODUCTOS -->
