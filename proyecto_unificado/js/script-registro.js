@@ -58,6 +58,7 @@ function registro() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             alert(this.responseText);
+            window.location.href = "login.html";
         }
     };
     xhttp.send('username=' + username + '&password=' + password + '&firstname=' + firstname + '&lastname=' + lastname + '&phone=' + phone + '&email=' + email);
