@@ -122,7 +122,9 @@ function anadirProducto(id) {
             var data = JSON.parse(this.response);
             if (data.loggedin && data.affected_rows === 1) {
                 console.log('El producto se ha añadido al carrito correctamente.');
-                renderCarrito();
+                if($('#carrito').length > 0) {
+                    renderCarrito();
+                }
             } else {
                 alert('No existen unidades disponibles');
             }
@@ -139,24 +141,9 @@ function deleteProducto(id) {
             var data = JSON.parse(this.response);
             if (data.loggedin && data.affected_rows === 1) {
                 console.log('El producto se ha eliminado del carrito correctamente.');
-                renderCarrito();
-            } else {
-                alert('Error');
-            }
-        }
-    }
-    xmlhttp.open('GET', './includes/productos/delete_producto.php?id=' + id + '&sid=' + Math.random(), true);
-    xmlhttp.send();
-};
-
-function saveCart() {
-    xmlhttp = getXMLRequest();
-    xmlhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            var data = JSON.parse(this.response);
-            if (data.loggedin && data.affected_rows === 1) {
-                console.log('El producto se ha eliminado del carrito correctamente.');
-                renderCarrito();
+                if($('#carrito').length > 0) {
+                    renderCarrito();
+                }
             } else {
                 alert('Error');
             }
