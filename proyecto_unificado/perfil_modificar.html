@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.css">
     <script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/style-modificarPerfil.css">
     <link href="./libs/fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.gif" />
     <script type="text/javascript" src="./js/script-modificar.js"></script>
@@ -32,49 +32,49 @@
                     <li class="breadcrumb-item active" aria-current="page">Modificar perfil</li>
                 </ol>
             </nav>
-            <h1>Perfil de usuario</h1>
-            <hr/>
-            <h2>Actualiza Password</h2>
-            <hr/>
-            <form method="POST">
-                <label>Password Antigua:</label>
-                <br>
-                <input id="oldPass" name="oldPass" type="password" maxlength="100" required>
-                <br>
-               <label>Password Nueva</label>
-                <br>
-                <input id="newPass" name="newPass" type="password" maxlength="100" required>
-                <br>
-                
-                <label>Confirmar password Nueva:</label>
-                <br>
-                <input id="newPass2" name="newPass2" type="password" maxlength="100" required>
-                <input type="button" name="button" value="Actualiza Password" onclick="validaPassword()">
-                <br>
-                <br>
-            </form>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 login">
+                        <h2>Perfil de usuario</h2>
+                        <hr/>
+                        <h3>Actualiza Password</h3>
+                        <form method="POST" class="form-group">
+                            <p>Password Antigua:</p>
+                            <input id="oldPass" class="form-control" name="oldPass" type="password" required>
+                            <p>Password Nueva</p>
 
-            <h2>Actualiza Teléfono</h2>
-            <hr/>
-            <form>
-                <label>Teléfono:</label>
-                <br>
-                <input id="phone" name="phone" type="text" maxlength="9">
-                <input type="button" name="button" value="Actualiza Teléfono" onclick="validaPhone()">
-                <br>
-                <br>
-            </form>
+                            <input id="newPass" class="form-control" name="newPass" type="password" required>
 
-            <h2>Actualiza Email</h2>
-            <hr/>
-            <form>
-                <label>Email:</label>
-                <br>
-                <input id="email" name="email" type="text" value="esperanza@hotmail.com" maxlength="150" required>
-                <input type="button" name="button" value="Actualiza Email" onclick="validaEmail()">
-                <br>
-                <br>
-            </form>
+                            <p>Confirmar password Nueva:</p>
+
+                            <input id="newPass2" class="form-control" name="newPass2" type="password"required>
+                            <br>
+                            <br>
+                            <input class="log form-control" type="button" name="button" value="Actualiza Password" onclick="validaPassword()">
+                        </form>
+                        <hr>
+                        <h3>Actualiza Teléfono</h3>
+                        <form class="form-group">
+                            <p>Teléfono:</p>
+                            <input id="phone" class="form-control"  name="phone" type="text" maxlength="9">
+                            <br>
+                            <br>
+                            <input type="button"class="form-control log" name="button" value="Actualiza Teléfono" onclick="validaPhone()">
+                        </form>
+                        <hr>
+                        <h3>Actualiza Email</h3>
+                        <form class="form-group">
+                            <p>Email:</p>
+                            <input id="email" class="form-control" placeholder="example@example.com" name="email" type="text" required>
+                            <br>
+                            <br>
+                            <input type="button" class="log form-control"  name="button" value="Actualiza Email" onclick="validaEmail()">
+                        </form></div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
         </main>
         <footer></footer>
     </div>
