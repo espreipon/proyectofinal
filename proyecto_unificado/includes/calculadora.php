@@ -7,15 +7,19 @@ $activity = $_POST['actValue'];
 $percent;
 /*echo "pet: ".$pet."<br>peso: ".$weigth." kilos"."<br>edad: ".$agetext."<br>actividad: ".$activity."<br><br>Porcentaje recomendado: ";
 */
-
-switch($pet){
-    case "dog":
-        calculationDog();
-        break;
-    case "cat":
-        calculationCat();
-        break;
+if($pet != "" && $age != "" && $agetext != "" && $weigth != "" && $activity != ""){
+    switch($pet){
+        case "dog":
+            calculationDog();
+            break;
+        case "cat":
+            calculationCat();
+            break;
+    }
+}else {
+    echo "<strong>Completa todos los campos</strong>";
 }
+
 
 //PERRO - Calcular cantidad de comida en base al peso
 function rationCat(){

@@ -17,6 +17,7 @@
         $(function () {
             $("header").load("header.html");
             $("footer").load("footer.html");
+            $("#buscador").load("buscador.html");
         });
     </script>
 </head>
@@ -26,14 +27,17 @@
         <header></header>
         <main>
         <!-- BUSCADOR -->
-        <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
-        <input type="button" name="buscador" class="boton peque aceptar" onclick="search(1)" value="buscar">
-        <input type="button" name="limpiar" class="boton2" onclick="limpiar(1)" value="limpiar">
-        <label id="result"></label>
-
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
+                    <input type="button" name="buscador" class="btn" onclick="search(1)" value="Buscar">
+                    <input type="button" name="limpiar" class="btn" onclick="limpiar(1)" value="Limpiar">
+                    <label id="result"></label>
+                </div>
+            </div>
         <!-- PRODUCTOS -->
         <body onload="renderProductos(1);">
-            <h1>Productos</h1>
+            <h1>Carnes y Pescados</h1>
             <div class="row" id="productosContenedor">
             </div>
         </body>

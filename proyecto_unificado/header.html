@@ -68,6 +68,7 @@
 
 <!-- LOGO -->
 <div class="row">
+
     <div class="col-md-2">
         <a href="index.html">
             <img src="./images/logo.png" height="100" alt="">
@@ -150,6 +151,7 @@
         </nav>
     </div>
 
+
 </div>
 <!-- BANNER -->
 <div class="row">
@@ -160,7 +162,29 @@
     </div>
 </div>
 <br>
+<a href="#" id="js_up" class="boton-subir">
+    <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+    <i class="fas fa-angle-double-up"></i>
+</a>
+<script>
+    //invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+            $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+        }else{ // si no
+            $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+        }
+    });
 
+    //creamos una función accediendo a la etiqueta i en su evento click
+    $("#js_up i").on('click', function (e) {
+        e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+        $("body,html").animate({ // aplicamos la función animate a los tags body y html
+            scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+        },700); //el valor 700 indica que lo ara en 700 mili segundos
+        return false; //rompe el bucle
+    });
+</script>
 
 <script>
     var xmlhttp = new XMLHttpRequest();
@@ -168,7 +192,7 @@
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
             if(data.loggedin === true) {
-                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido <strong>'+data.username+ '</strong>&nbsp;<a href="perfil_modificar.html">Modificar Perfil</a>&nbsp;|&nbsp;'+'</span> <a href="includes/login/logout.php">Logout</a>&nbsp;'
+                $('#loginContainer').html('<span href="" userId="'+data.userId+'">Bienvenido <strong>'+data.username+ '</strong>&nbsp;<a href="perfil_modificar.html">Modificar Perfil</a>&nbsp;|&nbsp;'+'</span> <a href="includes/login/logout.php">Desconectarse</a>&nbsp;'
                  + '<a href="carrito.html" class="btn  carrito  glyphicon glyphicon-shopping-cart" role="button"></a>');
             }
         }
@@ -185,4 +209,22 @@
     .carrito:hover{
         background-color: #ebebeb;
     }
+
+    /*botón up*/
+    .boton-subir{
+        display: none;
+        border: thin solid #fff;
+        border-radius: 3px;
+        position: fixed;
+        right: 15px;
+        bottom:2px;
+        z-index: 999999999;
+    }
+    /*estilos para el tag i*/
+    .boton-subir i{
+        color: #009997;
+        font-size: 50px;
+        padding: 10px 10px 10px 7px;
+    }
+
 </style>

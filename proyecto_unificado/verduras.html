@@ -26,15 +26,17 @@
     <header></header>
     <main>
         <!-- BUSCADOR -->
-        <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
-        <input type="button" name="buscador" class="boton1" onclick="search(2)" value="buscar">
-        <input type="button" name="limpiar" class="boton2" onclick="limpiar(2)" value="limpiar">
-
-        <label id="result"></label>
-        <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <input id="buscar" name="buscar" type="search" placeholder="Buscar aquí..." autofocus >
+                <input type="button" name="buscador" class="btn" onclick="search(2)" value="Buscar">
+                <input type="button" name="limpiar" class="btn" onclick="limpiar(2)" value="Limpiar">
+                <label id="result"></label>
+            </div>
+        </div>
         <!-- PRODUCTOS -->
         <body onload="renderProductos(2);">
-            <h1>Productos</h1>
+            <h1>Vegetales</h1>
             <div class="row" id="productosContenedor">
             </div>
         </body>

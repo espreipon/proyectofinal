@@ -8,6 +8,9 @@
     padding:  10px;
     border-radius: 0px;
 }
+.boton:hover{
+    color:#ffc236;
+}
 p{
     font-size: 16px;
     text-align: justify;
@@ -100,6 +103,12 @@ hr{
     color:white;
     padding-top: 20px;
     font-size: 20px;
+}
+.red{
+    color: white;
+}
+.red:hover{
+    color:#ffc236;
 }
 i{
     padding: 5px;

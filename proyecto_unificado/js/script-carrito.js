@@ -25,8 +25,11 @@ function renderProductos(typeId) {
                 if(productos[i].unidades<1){
                     html += "<i class='fas fa-battery-empty unidades' title='Producto agotado' style='color: red'></i>";
 
-                }else if(productos[i].unidades >= 1 && productos[i].unidades <50 ){
-                    html += "<i class='fas fa-battery-half unidades' title='Quedan pocas unidades' style='color: orange'></i>";
+
+                }else if(productos[i].unidades >= 1 && productos[i].unidades <10 ){
+                    html += "<i class='fas fa-battery-half unidades' title='Quedan pocas unidades' style='color: orange'></i>" +
+                        "<label>¡Quedan&nbsp;"+productos[i].unidades+"&nbsp;unidades!</label>";
+
 
                 }else{
                     html += "<i class='fas fa-battery-full unidad unidades' title='Producto disponible' style='color: green'></i>";
