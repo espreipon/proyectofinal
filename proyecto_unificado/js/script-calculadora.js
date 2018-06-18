@@ -16,12 +16,7 @@
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     document.getElementById("result").innerHTML = this.responseText;
-                    //document.getElementById("result").style.border="2px solid black";
-                    //document.getElementById("result").style.padding="10px";
-                    //document.getElementById("result").style.borderRadius="10px";
                     document.getElementById("result").style.textAlign = "justify";
-                    //document.getElementById("result").style.backgroundColor="#ffd29d";
-
                 }
             };
             xhttp.send('petValue=' + petValue + '&ageValue=' + ageValue + '&ageText=' + ageText + '&weigthValue=' + weigthValue + '&actValue=' + actValue);
