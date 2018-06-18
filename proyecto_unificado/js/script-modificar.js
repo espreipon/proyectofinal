@@ -10,14 +10,14 @@ function validaPassword() {
         regExpPass = /(?=^.{8,20}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 
     if(oldPass != "" && newPass != "" && newPass2 != "") {
-        if (regExpPass.test(newPass)) {
+        if (regExpPass.test(newPass) ) {
             if (newPass == newPass2) {
                 updatePassword();
             } else {
                 alert("Las nuevas contraseñas no coinciden");
             }
         } else {
-            alert("La nueva contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula, un numero y un caracter especial. Longitud de 8 a 20 caracteres");
+            alert("La contraseña no es adecuada. Debe contener al menos una letra mayúscula, una minúscula y un numero. Longitud de 8 a 20 caracteres");
         }
     }else{
         alert("Los campos contraseña no pueden estar vacios");

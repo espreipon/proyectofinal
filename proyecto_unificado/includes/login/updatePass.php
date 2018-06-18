@@ -14,7 +14,7 @@ header("Cache-Control: no-cache, must-revalidate");
 
 
 if ($conn->connect_error) {
- die("La conexion falló: " . $conexion->connect_error);
+ die("La conexion falló: " . $conn->connect_error);
 }
 
 $myObj = new stdClass();
@@ -25,7 +25,7 @@ if($myObj->loggedin) {
 
 $oldPass = $_POST['oldPass'];
 $newPass = $_POST['newPass'];
-
+$hash;
 
 //Comprobar si la oldPass introducida coincide con la del usuario.
 //$sql = "SELECT * FROM $tbl_name WHERE username = '.$username.'";
@@ -44,6 +44,7 @@ if ($resultado = $conn->query($sql)) {
     }
     //echo "<br>pass antigua coincide con la bdd? ".password_verify($oldPass, $hash); 
     if (password_verify($oldPass, $hash)) {
+    //if ($hashOldPass == $hash) {
         $hashNewPass = password_hash($newPass, PASSWORD_DEFAULT);
         $query = "UPDATE usuarios SET password = '$hashNewPass' WHERE username = '$username'";
         //echo "<br>hash antiguo: ".$hash;
