@@ -63,9 +63,21 @@ function valida() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             var data = JSON.parse(this.response);
-
+            if(data.loggedin == false) {
+                alert('Logeate antes de realizar la compra.');
+                return;
+            }
+            if(data.listNotBought.length > 0) {
+                var text = 'No se han podido realizar la compra por falta de stock en algunos productos: ';
+                for(var i = 0, iLen = data.listNotBought.length; i < iLen; i++) {
+                    text += '['+data.listNotBought[i].nombre + ' - Cantidad Deseada: ' + data.listNotBought[i].cantidad + ' - Max. Stock: ' + data.listNotBought[i].unidades+']';
+                }
+                alert(text);
+                return;
+            } else {
+                window.location.href = 'finCompra.html';
+            }
         }
     };
-    window.location.href = 'finCompra.html';
     xhttp.send();
 }

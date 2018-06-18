@@ -61,6 +61,7 @@ function renderProductos(typeId) {
 }
 
 function renderCarrito() {
+    var lastTopScroll = $('.carritoContainer').scrollTop();
     document.getElementById('carrito').innerHTML = '';
     xmlhttp = getXMLRequest();
     xmlhttp.onreadystatechange = function () {
@@ -85,7 +86,7 @@ function renderCarrito() {
                         "       <div class='aniadir'>AÑADIR</div>" +
                         "   </li>" +
                         "</ul><br>";
-                    html += "<ul>";
+                    html += "<ul class='carritoContainer'>";
                     for (var i = 0, iLen = carrito.length; i < iLen; i++) {
                         html +=
 
@@ -100,8 +101,9 @@ function renderCarrito() {
                     }
                     html += "</ul>";
                     html += "<br><li class='pull-right total' ><b>TOTAL</b>: " + (Math.round(total * 100) / 100) + "€</li>";
-                    html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' onclick='saveCart()' value='Aceptar y pagar'></a>"
+                    html += "<br><br><a href='pago.html'><input class='btn botonn pull-right' type='button' value='Aceptar y pagar'></a>"
                     document.getElementById('carrito').innerHTML = html;
+                    $('.carritoContainer').scrollTop(lastTopScroll);
                 } else {
                     alert("Inicia sesion");
                 }

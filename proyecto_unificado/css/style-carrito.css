@@ -109,3 +109,7 @@
 .botonn {
     color: black;
 }
+.carritoContainer{
+    max-height: 300px;
+    overflow-y: scroll;
+}
