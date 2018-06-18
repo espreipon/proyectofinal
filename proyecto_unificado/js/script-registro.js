@@ -59,7 +59,7 @@ function registro() {
         if (this.readyState == 4 && this.status == 200) {
             var data = this.responseText;
             alert(data);
-            //window.location.href = "login.html";
+            window.location.href = "login.html";
 
 
         }
