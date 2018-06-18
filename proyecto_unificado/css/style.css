@@ -42,12 +42,12 @@ ul{
     text-decoration:none;
     min-width: 145px;
     font-size: 16px;
-    
+
 }
 
 .nav:hover li a:hover {
     color:#009997;
-    
+
 }
 
 .nav li ul{
@@ -58,8 +58,8 @@ ul{
 }
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; 
- }
+    margin-top: 0;
+}
 
 
 /* SLIDE */
@@ -91,7 +91,7 @@ ul{
     background: none;
 }
 
-/* HR */ 
+/* HR */
 
 hr{
     width: 70%;

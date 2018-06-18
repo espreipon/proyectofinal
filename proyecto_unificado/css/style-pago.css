@@ -14,7 +14,7 @@
 .reveal-if-active input[type=text] {
   width: 100%;
 }
-  
+
 .reveal-if-active.active {
   opacity: 1;
   height: auto;
