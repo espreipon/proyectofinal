@@ -16,6 +16,7 @@ header("Cache-Control: no-cache, must-revalidate");
 $myObj = new stdClass();
 $myObj->loggedin = isset($_SESSION['loggedin']);
 $myObj->affected_rows = 0;
+
 if($myObj->loggedin && isset($_GET["id"]) && isset($_SESSION['userId'])) {
     $idProducto = $_GET["id"];
     $userId = $_SESSION['userId'];
